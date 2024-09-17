@@ -1,5 +1,6 @@
 package dat.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -8,6 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 @Entity
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

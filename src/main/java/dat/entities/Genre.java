@@ -1,5 +1,7 @@
 package dat.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -8,12 +10,15 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 @Entity
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Genre {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
+    @JsonProperty ("genres") // vil helst have genres-objektets id!!
     private int id;
+    @JsonProperty ("genres")
     private String name;
-    private String description;
+
 
 }

@@ -1,5 +1,7 @@
 package dat.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
@@ -12,20 +14,26 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonProperty ("id")
     private Long id;
 
+    @JsonProperty ("title")
     private String title;
 
     @Column(name = "release_date")
+    @JsonProperty ("release_date")
     private LocalDate releaseDate;
 
     @Column(columnDefinition = "TEXT")
+    @JsonProperty ("overview")
     private String overview;
 
-    @ManyToMany
+    @ManyToMany (cascade = CascadeType.ALL)
+    @JsonProperty ("genres")
     @JoinTable(
             name = "movie_genre",
             joinColumns = @JoinColumn(name = "movie_id"),
@@ -33,7 +41,8 @@ public class Movie {
     )
     private Set<Genre> genres;
 
-    @ManyToMany
+    @ManyToMany (cascade = CascadeType.ALL)
+    @JsonProperty ("Actors")
     @JoinTable(
             name = "movie_actor",
             joinColumns = @JoinColumn(name = "movie_id"),
@@ -41,7 +50,8 @@ public class Movie {
     )
     private Set<Actor> actors;
 
-    @ManyToOne
+    @ManyToOne (cascade = CascadeType.ALL)
+    @JsonProperty ("job : director")
     @JoinColumn(name = "director_id")
     private Director director;
 }

@@ -7,6 +7,9 @@ import okhttp3.Response;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FetchTMDbData {
         static String apiKey = System.getenv("STRING_API_KEY");
     public static void main(String[] args) {
@@ -20,9 +23,11 @@ public class FetchTMDbData {
             Request request = null;
             int test = 0;
 
+            List<Movie> movieList = new ArrayList<>();
+
             for (int page = 1; page < 49; page++) {
                 request = new Request.Builder()
-                        .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page + "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
+                        .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page + "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=popularity.desc&with_original_language=da")
                         .get()
                         .addHeader("accept", "application/json")
                         .addHeader("Authorization", "Bearer " + apiKey) // Replace with your actual API key
@@ -50,7 +55,8 @@ public class FetchTMDbData {
                             // Fetch and print movie credits
                             fetchMovieCredits(client, objectMapper, movieId);
                             test++;
-                            objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
+                           Movie movieObject = objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
+                            movieList.add(movieObject);
                         }
                     } else {
                         System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
@@ -61,6 +67,11 @@ public class FetchTMDbData {
             }
 
         System.out.println(test);
+
+
+            for (Movie movie : movieList) {
+                System.out.println(movie);
+            }
             }
 
 
