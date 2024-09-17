@@ -1,5 +1,6 @@
 package dat.data;
 
+import dat.entities.Movie;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -49,6 +50,7 @@ public class FetchTMDbData {
                             // Fetch and print movie credits
                             fetchMovieCredits(client, objectMapper, movieId);
                             test++;
+                            objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
                         }
                     } else {
                         System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
