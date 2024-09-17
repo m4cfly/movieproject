@@ -7,16 +7,19 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class FetchTMDbData {
+        static String apiKey = System.getenv("STRING_API_KEY");
     public static void main(String[] args) {
         OkHttpClient client = new OkHttpClient();
         ObjectMapper objectMapper = new ObjectMapper(); // Jackson object mapper to parse JSON
+
+        System.out.println(apiKey);
 
         // Prepare the initial API request to discover movies
         Request request = new Request.Builder()
                 .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=1&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
                 .get()
                 .addHeader("accept", "application/json")
-                .addHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YzAzNDNjYWY0ZTk3MDQzZWJmNGMwYTZjNWYzNTczMCIsIm5iZiI6MTcyNjU2NDIzNi4zMzY4NzQsInN1YiI6IjY2ZTkzOWZlYjI5MTdlYjE4MDBhYjBkNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ercbd4Jzbh8Q2MI4v_GP6z-4YW-mT3M3DCnlA0zj440") // Replace with your actual API key
+                .addHeader("Authorization", "Bearer " + apiKey) // Replace with your actual API key
                 .build();
 
         try {
@@ -54,7 +57,7 @@ public class FetchTMDbData {
     private static void fetchMovieDetails(OkHttpClient client, ObjectMapper objectMapper, String movieId) throws Exception {
         Request movieRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId)
-                .addHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YzAzNDNjYWY0ZTk3MDQzZWJmNGMwYTZjNWYzNTczMCIsIm5iZiI6MTcyNjU2NDIzNi4zMzY4NzQsInN1YiI6IjY2ZTkzOWZlYjI5MTdlYjE4MDBhYjBkNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ercbd4Jzbh8Q2MI4v_GP6z-4YW-mT3M3DCnlA0zj440")
+                .addHeader("Authorization", "Bearer " + apiKey)
                 .addHeader("accept", "application/json")
                 .build();
 
@@ -73,7 +76,7 @@ public class FetchTMDbData {
     private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId) throws Exception {
         Request creditsRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId + "/credits")
-                .addHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5YzAzNDNjYWY0ZTk3MDQzZWJmNGMwYTZjNWYzNTczMCIsIm5iZiI6MTcyNjU2NDIzNi4zMzY4NzQsInN1YiI6IjY2ZTkzOWZlYjI5MTdlYjE4MDBhYjBkNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ercbd4Jzbh8Q2MI4v_GP6z-4YW-mT3M3DCnlA0zj440")
+                .addHeader("Authorization", "Bearer " + apiKey)
                 .addHeader("accept", "application/json")
                 .build();
 
