@@ -12,46 +12,56 @@ public class FetchTMDbData {
         OkHttpClient client = new OkHttpClient();
         ObjectMapper objectMapper = new ObjectMapper(); // Jackson object mapper to parse JSON
 
-        System.out.println(apiKey);
+//        System.out.println(apiKey);
 
         // Prepare the initial API request to discover movies
-        Request request = new Request.Builder()
-                .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=1&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
-                .get()
-                .addHeader("accept", "application/json")
-                .addHeader("Authorization", "Bearer " + apiKey) // Replace with your actual API key
-                .build();
 
-        try {
-            // Execute the request and get the response
-            Response response = client.newCall(request).execute();
+            Request request = null;
+            int test = 0;
 
-            if (response.isSuccessful()) {
-                String jsonResponse = response.body().string();
+            for (int page = 1; page < 49; page++) {
+                request = new Request.Builder()
+                        .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page + "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
+                        .get()
+                        .addHeader("accept", "application/json")
+                        .addHeader("Authorization", "Bearer " + apiKey) // Replace with your actual API key
+                        .build();try {
 
-                // Parse the JSON response
-                JsonNode rootNode = objectMapper.readTree(jsonResponse);
-                JsonNode movies = rootNode.get("results");
+                            // Execute the request and get the response
+                    Response response = client.newCall(request).execute();
 
-                for (JsonNode movie : movies) {
-                    String movieId = movie.get("id").asText();
-                    String movieTitle = movie.get("title").asText();
+                    if (response.isSuccessful()) {
+                        String jsonResponse = response.body().string();
 
-                    System.out.println("Movie: " + movieTitle);
+                        // Parse the JSON response
+                        JsonNode rootNode = objectMapper.readTree(jsonResponse);
+                        JsonNode movies = rootNode.get("results");
 
-                    // Fetch and print movie details
-                    fetchMovieDetails(client, objectMapper, movieId);
+                        for (JsonNode movie : movies) {
+                            String movieId = movie.get("id").asText();
+                            String movieTitle = movie.get("title").asText();
 
-                    // Fetch and print movie credits
-                    fetchMovieCredits(client, objectMapper, movieId);
+                            System.out.println("Movie: " + movieTitle);
+
+                            // Fetch and print movie details
+                            fetchMovieDetails(client, objectMapper, movieId);
+
+                            // Fetch and print movie credits
+                            fetchMovieCredits(client, objectMapper, movieId);
+                            test++;
+                        }
+                    } else {
+                        System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
-            } else {
-                System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+
+        System.out.println(test);
+            }
+
+
 
     // Fetch detailed information about a movie
     private static void fetchMovieDetails(OkHttpClient client, ObjectMapper objectMapper, String movieId) throws Exception {
