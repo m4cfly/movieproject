@@ -1,5 +1,6 @@
 package dat.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
@@ -12,6 +13,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
