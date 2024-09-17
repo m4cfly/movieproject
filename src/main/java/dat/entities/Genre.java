@@ -15,9 +15,9 @@ public class Genre {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    @JsonProperty ("genres") // vil helst have genres-objektets id!!
+    @JsonProperty ("id") // vil helst have genres-objektets id!!
     private int id;
-    @JsonProperty ("genres")
+    @JsonProperty ("name")
     private String name;
 
 

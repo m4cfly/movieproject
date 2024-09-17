@@ -3,6 +3,7 @@ package dat.entities;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
@@ -15,6 +16,7 @@ import java.util.Set;
 @AllArgsConstructor
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
+@EqualsAndHashCode
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -51,7 +53,7 @@ public class Movie {
     private Set<Actor> actors;
 
     @ManyToOne (cascade = CascadeType.ALL)
-    @JsonProperty ("job : director")
+    @JsonProperty ("job : director") // problem med at director-titlen ligger indenfor job, og at job også har andre titler vi ikke vil have
     @JoinColumn(name = "director_id")
     private Director director;
 }

@@ -23,7 +23,7 @@ public class FetchTMDbData {
             Request request = null;
             int test = 0;
 
-            List<Movie> movieList = new ArrayList<>();
+            List<Movie[]> movieList = new ArrayList<>();
 
             for (int page = 1; page < 49; page++) {
                 request = new Request.Builder()
@@ -55,7 +55,7 @@ public class FetchTMDbData {
                             // Fetch and print movie credits
                             fetchMovieCredits(client, objectMapper, movieId);
                             test++;
-                           Movie movieObject = objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
+                           Movie[] movieObject = objectMapper.readValue(jsonResponse, Movie[].class); // prøver om vi evt. kan lave om til Movie objekter?
                             movieList.add(movieObject);
                         }
                     } else {
@@ -69,7 +69,7 @@ public class FetchTMDbData {
         System.out.println(test);
 
 
-            for (Movie movie : movieList) {
+            for (Movie[] movie : movieList) {
                 System.out.println(movie);
             }
             }
