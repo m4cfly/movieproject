@@ -1,18 +1,21 @@
 package dat.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Set;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Movie {
     @Id
@@ -20,6 +23,8 @@ public class Movie {
     private Long id;
 
     private String title;
+
+
 
     @Column(name = "release_date")
     private LocalDate releaseDate;
@@ -46,4 +51,5 @@ public class Movie {
     @ManyToOne
     @JoinColumn(name = "director_id")
     private Director director;
+
 }

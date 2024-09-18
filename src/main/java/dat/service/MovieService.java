@@ -1,99 +1,63 @@
 package dat.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import dat.DTO.ActorDTO;
-import dat.DTO.DirectorDTO;
-import dat.DTO.GenreDTO;
 import dat.DTO.MovieDTO;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.*;
+import dat.dao.MovieDAO;
+import dat.dao.JSONMovieDAO;
+import lombok.RequiredArgsConstructor;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
-import java.io.File;
-import java.io.IOException;
-import java.time.LocalDate;
-import java.util.Arrays;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
+@RequiredArgsConstructor
 public class MovieService {
 
+    private final MovieDAO movieDAO;
 
-        ObjectMapper om = new ObjectMapper();
-        private static final String FILE_PATH = "movieInfo.json";
-
-        public static void main(String[] args) {
-            dat.DTO.MovieDTO movie = new dat.DTO.MovieDTO();
-            movie.readDTOsFromFile();
-            // movie readMovieFromFile = new Movie();
+    public void fetchAndInsertMovies(String apiUrl) {
+        try {
+            String jsonResponse = fetchDataFromApi(apiUrl);
+            List<MovieDTO> movies = parseJsonToMovies(jsonResponse);
+            movieDAO.saveMovies(movies);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        public void readDTOsFromFile(){
-            try {
-                dat.DTO.MovieDTO[] movieDTOS = om.readValue(new File("movieInfo"), dat.DTO.MovieDTO[].class);
-                for (dat.DTO.MovieDTO movieDTO : movieDTOS) {
-                    System.out.println(movieDTO);
-                }
-            }catch(IOException e){
-                throw new RuntimeException(e);
+    }
+
+    private String fetchDataFromApi(String apiUrl) throws Exception {
+        StringBuilder response = new StringBuilder();
+        URL url = new URL(apiUrl);
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+        connection.setRequestMethod("GET");
+
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                response.append(line);
             }
         }
-    public void writeDTOsToFile(){
-        List<MovieDTO> movies = Arrays.asList(
-                new MovieDTO("sveske","djohn","1990-01-01",
-                        new GenreDTO("Genrenavn","Beskrivelse"),
-                        new ActorDTO("ActorNavn",LocalDate.of(2000,10,10),
-                        new DirectorDTO("DirectorName",LocalDate.of(2000,10,10)));
-        MovieDTO[] accountArray = movies.toArray(new MovieDTO[0]);
-        for (MovieDTO accountDTO : accountArray) {
-            System.out.println(accountDTO);
-        }
 
-        try {
-            om
-                    .writerWithDefaultPrettyPrinter()
-                    .writeValue(new File(FILE_PATH), movies);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        return response.toString();
     }
 
-    @ToString
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    private static class MovieDTO{
-        private String title;
-        private LocalDate releaseDate;
+    private List<MovieDTO> parseJsonToMovies(String jsonResponse) throws Exception {
+        ObjectMapper objectMapper = new ObjectMapper();
+        MovieDTO[] movieDTOS = objectMapper.readValue(jsonResponse, MovieDTO[].class);
+        return List.of(movieDTOS);
+    }
 
-    }
-    @ToString
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    private static class GenreDTO{
-        private String name;
-        private String description;
+    public static void main(String[] args) {
+        MovieDAO movieDAO = new JSONMovieDAO(new ObjectMapper());
+        MovieService movieService = new MovieService(movieDAO);
 
+        String apiUrl = "https://api.themoviedb.org/3/movie/tt0145487"; // Replace with your API URL
+        movieService.fetchAndInsertMovies(apiUrl);
     }
-    @ToString
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    private static class ActorDTO{
-        private String name;
-        private LocalDate birthdate;
-    }
-    @ToString
-    @NoArgsConstructor
-    @AllArgsConstructor
-    @Getter
-    @Setter
-    private static class DirectorDTO{
-            private String name;
-            private LocalDate birthdate;
-    }
+
 }
-
-

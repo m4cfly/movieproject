@@ -16,10 +16,10 @@ public class Director {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique=true)
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(unique=true)
+    @Column(name = "birthdate", nullable = false)
     private int birthdate;
 
     public Long getId() {
