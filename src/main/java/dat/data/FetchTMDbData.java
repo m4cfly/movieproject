@@ -10,6 +10,7 @@ import okhttp3.Response;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -62,11 +63,16 @@ public class FetchTMDbData {
                             // Fetch and print movie credits
                             fetchMovieCredits(client, objectMapper, movieId);
                             test++;
-                            movie = objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
-                            actorArray = objectMapper.readValue(jsonResponse, Actor[].class);
-                            genreArray = objectMapper.readValue(jsonResponse, Genre[].class);
-                            director = objectMapper.readValue(jsonResponse, Director.class);
+//                            movie = objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
+//                        System.out.println(movie);
+//                            actorArray = objectMapper.readValue(jsonResponse, Actor[].class);
+//                        System.out.println(actorArray);
+//                            genreArray = objectMapper.readValue(jsonResponse, Genre[].class);
+//                        System.out.println(genreArray);
+//                            director = objectMapper.readValue(jsonResponse, Director.class);
+//                        System.out.println(director);
                         }
+
                     } else {
                         System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
                     }
@@ -120,10 +126,11 @@ public class FetchTMDbData {
                     String actorCharacter = actor.get("character").asText();
                     String actorId = actor.get("id").asText();  // Get the actor's ID
 
-                    System.out.println(" - " + actorName + " as " + actorCharacter);
+
+//                    System.out.println(" - " + actorName + " as " + actorCharacter + " -  (" + birthDate + ")");
 
                     // Fetch the birthdate of the actor
-                    fetchActorDetails(client, objectMapper, actorId);
+                    fetchActorDetails(client, objectMapper, actorId, actorCharacter);
                 }
 
                 // Identify the director from the crew
@@ -134,7 +141,7 @@ public class FetchTMDbData {
                         String directorId = crewMember.get("id").asText();
                         System.out.println("Director:");
                         // Fetch the director's details (name, birthdate)
-                        fetchActorDetails(client, objectMapper, directorId);
+                        fetchDirectorDetails(client, objectMapper, directorId);
                         break;  // We only need the first director, assuming only one exists
                     }
                 }
@@ -145,9 +152,32 @@ public class FetchTMDbData {
         }
     }
 
+    private static void fetchDirectorDetails(OkHttpClient client, ObjectMapper objectMapper, String directorId) throws IOException {
+        Request actorRequest = new Request.Builder()
+                .url("https://api.themoviedb.org/3/person/" + directorId)
+                .addHeader("Authorization", "Bearer " + apiKey)
+                .addHeader("accept", "application/json")
+                .build();
+
+        try (Response actorResponse = client.newCall(actorRequest).execute()) {
+            if (actorResponse.isSuccessful()) {
+                String jsonResponse = actorResponse.body().string();
+                JsonNode actorDetails = objectMapper.readTree(jsonResponse);
+
+                // Extract and print the birthdate of the actor
+                String birthDate = actorDetails.has("birthday") ? actorDetails.get("birthday").asText() : "Unknown";
+                String actorName = actorDetails.get("name").asText();
+
+                System.out.println(" - " + actorName  + " - " + actorName + " (Birthdate: " + birthDate + ")");
+            } else {
+                System.out.println("Failed to fetch details for actor ID " + directorId + ": " + actorResponse.code());
+            }
+        }
+
+    }
 
 
-    private static void fetchActorDetails(OkHttpClient client, ObjectMapper objectMapper, String actorId) throws Exception {
+    private static void fetchActorDetails(OkHttpClient client, ObjectMapper objectMapper, String actorId, String actorCharacter) throws Exception {
         Request actorRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/person/" + actorId)
                 .addHeader("Authorization", "Bearer " + apiKey)
@@ -163,7 +193,7 @@ public class FetchTMDbData {
                 String birthDate = actorDetails.has("birthday") ? actorDetails.get("birthday").asText() : "Unknown";
                 String actorName = actorDetails.get("name").asText();
 
-                System.out.println(" - " + actorName + " (Birthdate: " + birthDate + ")");
+                System.out.println(" - " + actorName + " as " + actorCharacter  + " - " + actorName + " (Birthdate: " + birthDate + ")");
             } else {
                 System.out.println("Failed to fetch details for actor ID " + actorId + ": " + actorResponse.code());
             }
