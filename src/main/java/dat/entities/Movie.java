@@ -14,8 +14,9 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 @Builder
+@Entity
+@Table(name = "movies") // Specifies the table name
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Movie {
     @Id
@@ -23,7 +24,6 @@ public class Movie {
     private Long id;
 
     private String title;
-
 
 
     @Column(name = "release_date")
@@ -52,4 +52,27 @@ public class Movie {
     @JoinColumn(name = "director_id")
     private Director director;
 
+    public Set<Genre> getGenres() {
+        return genres;
+    }
+
+    public void setGenres(Set<Genre> genres) {
+        this.genres = genres;
+    }
+
+    public Set<Actor> getActors() {
+        return actors;
+    }
+
+    public void setActors(Set<Actor> actors) {
+        this.actors = actors;
+    }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
+    }
 }

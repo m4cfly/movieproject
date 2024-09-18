@@ -24,7 +24,7 @@ public class MovieService {
         try {
             String jsonResponse = fetchDataFromApi(apiUrl);
             List<MovieDTO> movies = parseJsonToMovies(jsonResponse);
-            movieDAO.saveMovies(movies);
+            //movieDAO.saveMovies(movies);
         } catch (Exception e) {
             e.printStackTrace();
         }

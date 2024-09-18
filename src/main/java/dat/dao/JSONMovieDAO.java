@@ -2,7 +2,7 @@ package dat.dao;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import dat.DTO.MovieDTO;
-import dat.dao.MovieDAO;
+import dat.entities.Movie;
 
 import java.io.File;
 import java.io.IOException;
@@ -34,5 +34,20 @@ public class JSONMovieDAO implements MovieDAO {
         } catch (IOException e) {
             throw new RuntimeException("Failed to load movies", e);
         }
+    }
+
+    @Override
+    public void insertMovie(Movie movie) {
+
+    }
+
+    @Override
+    public Movie findMovieById(Long id) {
+        return null;
+    }
+
+    @Override
+    public List<Movie> getAllMovies() {
+        return List.of();
     }
 }
