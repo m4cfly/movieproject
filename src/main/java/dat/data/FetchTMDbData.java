@@ -13,7 +13,7 @@ public class FetchTMDbData {
         OkHttpClient client = new OkHttpClient();
         ObjectMapper objectMapper = new ObjectMapper(); // Jackson object mapper to parse JSON
 
-//        System.out.println(apiKey);
+        System.out.println(apiKey);
 
         // Prepare the initial API request to discover movies
 
