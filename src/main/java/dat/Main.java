@@ -13,6 +13,7 @@ public class Main {
         EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory("moviedb");
 
         FetchTMDbData fetch = new FetchTMDbData();
+
         System.out.println(fetch);
 
     }
