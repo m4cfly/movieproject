@@ -26,6 +26,11 @@ public class FetchTMDbData {
             Request request = null;
             int test = 0;
 
+        Movie movie = null;
+        Actor[] actorArray = null;
+        Genre[] genreArray = null;
+        Director director = null;
+
             for (int page = 1; page < 49; page++) {
                 request = new Request.Builder()
                         .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page + "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
@@ -44,9 +49,9 @@ public class FetchTMDbData {
                         JsonNode rootNode = objectMapper.readTree(jsonResponse);
                         JsonNode movies = rootNode.get("results");
 
-                        for (JsonNode movie : movies) {
-                            String movieId = movie.get("id").asText();
-                            String movieTitle = movie.get("title").asText();
+                        for (JsonNode movie1 : movies) {
+                            String movieId = movie1.get("id").asText();
+                            String movieTitle = movie1.get("title").asText();
 
 
                             System.out.println("Movie: " + movieTitle);
@@ -57,10 +62,10 @@ public class FetchTMDbData {
                             // Fetch and print movie credits
                             fetchMovieCredits(client, objectMapper, movieId);
                             test++;
-                            objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
-                            objectMapper.readValue(jsonResponse, Actor.class);
-                            objectMapper.readValue(jsonResponse, Genre.class);
-                            objectMapper.readValue(jsonResponse, Director.class);
+                            movie = objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
+                            actorArray = objectMapper.readValue(jsonResponse, Actor[].class);
+                            genreArray = objectMapper.readValue(jsonResponse, Genre[].class);
+                            director = objectMapper.readValue(jsonResponse, Director.class);
                         }
                     } else {
                         System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
