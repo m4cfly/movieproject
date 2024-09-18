@@ -28,6 +28,8 @@ public class MovieDTO {
     private List<GenreDTO> genres;
     private List<ActorDTO> actors;
     private Long directorId;
+
+
     ObjectMapper om = new ObjectMapper();
     private static final String FILE_PATH = "movieInfo.json";
 
@@ -44,7 +46,6 @@ public class MovieDTO {
         }catch(IOException e){
             throw new RuntimeException(e);
         }
-
     }
 //    public void writeDTOsToFile(){
 //        List<MovieDTO> movies = Arrays.asList(

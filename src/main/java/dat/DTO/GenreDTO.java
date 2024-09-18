@@ -11,4 +11,6 @@ public class GenreDTO {
     private Long id;
     private String name;
     private String description; // Description of the genre, if needed
+
+
 }
