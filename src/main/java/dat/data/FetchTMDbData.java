@@ -11,15 +11,16 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FetchTMDbData {
     static String apiKey = System.getenv("STRING_API_KEY");
+    static ObjectMapper objectMapper = new ObjectMapper();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         OkHttpClient client = new OkHttpClient();
-        ObjectMapper objectMapper = new ObjectMapper();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);  // Enable pretty-printing
 
         List<MovieDTO> moviesList = new ArrayList<>();  // List to store movies
@@ -113,7 +114,7 @@ public class FetchTMDbData {
     }
 
     // Fetch credits (cast and crew) for the movie
-    private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws IOException {
+    private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws Exception {
         Request creditsRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId + "/credits")
                 .addHeader("Authorization", "Bearer " + apiKey)
@@ -131,6 +132,8 @@ public class FetchTMDbData {
                 if (castArray != null && castArray.isArray()) {
                     for (JsonNode castNode : castArray) {
                         ActorDTO cast = objectMapper.treeToValue(castNode, ActorDTO.class);
+                        String birthdate = fetchPersonDetails(client, String.valueOf(cast.getId()));
+                        cast.setBirthDate(birthdate);;
                         actorList.add(cast);
                     }
                 }
@@ -142,6 +145,8 @@ public class FetchTMDbData {
                     for (JsonNode crewNode : crewArray) {
                         if (crewNode.get("job").asText().equals("Director")) {
                             DirectorDTO crew = objectMapper.treeToValue(crewNode, DirectorDTO.class);
+                            String birthdate = fetchPersonDetails(client, String.valueOf(crew.getId()));
+                            crew.setBirthDate(birthdate);
                             directorList.add(crew);
                         }
 
@@ -158,4 +163,22 @@ public class FetchTMDbData {
             }
         }
     }
+
+    private static String fetchPersonDetails(OkHttpClient client, String personId) throws Exception {
+        Request personRequest = new Request.Builder()
+                .url("https://api.themoviedb.org/3/person/" + personId)
+                .addHeader("Authorization", "Bearer " + apiKey)
+                .addHeader("accept", "application/json")
+                .build();
+
+        try (Response personResponse = client.newCall(personRequest).execute()) {
+            if (personResponse.isSuccessful()) {
+                String jsonResponse = personResponse.body().string();
+                JsonNode personDetails = objectMapper.readTree(jsonResponse);
+                return personDetails.get("birthday").asText(); // Fetch the birthdate
+            }
+        }
+        return "Unknown"; // Return unknown if birthdate not found
+    }
 }
+
