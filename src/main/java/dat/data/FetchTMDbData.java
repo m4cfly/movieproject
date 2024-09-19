@@ -1,10 +1,7 @@
 package dat.data;
 
-import dat.DTO.MovieDTO;
-import dat.dao.JSONMovieDAO;
-import dat.dao.MovieDAO;
-import dat.entities.Movie;
-import dat.service.MovieService;
+import dat.DTO.*;
+
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -22,27 +19,24 @@ public class FetchTMDbData {
 
     public static void main(String[] args) {
         OkHttpClient client = new OkHttpClient();
-        ObjectMapper objectMapper = new ObjectMapper(); // Jackson object mapper to parse JSON
-        objectMapper.enable(SerializationFeature.INDENT_OUTPUT); // Enable pretty-printing
-      //  MovieDAO movieDAO = new JSONMovieDAO(new ObjectMapper());
-       // MovieService movieService = new MovieService(movieDAO);
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);  // Enable pretty-printing
 
-        System.out.println(apiKey);
+        List<MovieDTO> moviesList = new ArrayList<>();  // List to store movies
 
-        List<MovieDTO> moviesList = new ArrayList<>(); // List to collect movies
+        int test = 0;
 
-        // Prepare the initial API request to discover movies
-        for (int page = 1; page < 2; page++) {
+        // Discover movies (API request)
+        for (int page = 1; page <= 49; page++) {
             Request request = new Request.Builder()
-                    .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page + "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
+                    .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page +
+                            "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
                     .get()
                     .addHeader("accept", "application/json")
-                    .addHeader("Authorization", "Bearer " + apiKey) // Replace with your actual API key
+                    .addHeader("Authorization", "Bearer " + apiKey)
                     .build();
-            try {
-                // Execute the request and get the response
-                Response response = client.newCall(request).execute();
 
+            try (Response response = client.newCall(request).execute()) {
                 if (response.isSuccessful()) {
                     String jsonResponse = response.body().string();
 
@@ -51,38 +45,26 @@ public class FetchTMDbData {
                     JsonNode movies = rootNode.get("results");
 
                     for (JsonNode movieNode : movies) {
-                        String movieId = movieNode.get("id").asText();
-                        String movieTitle = movieNode.get("title").asText();
-                        String movieReleaseDate = movieNode.get("release_date").asText();
-                        String movieOverview = movieNode.get("overview").asText();
-                        //String moviePoster = movieNode.get("poster_path").asText(); //Til billeder xD
-
-                        System.out.println("Movie: " + movieTitle);
-
-                        // Create Movie object
                         MovieDTO movie = objectMapper.treeToValue(movieNode, MovieDTO.class);
 
-                        // Fetch and add more movie details if necessary
+                        String movieId = movieNode.get("id").asText();
+
+                        // Fetch and update movie details and credits
                         fetchMovieDetails(client, objectMapper, movieId, movie);
                         fetchMovieCredits(client, objectMapper, movieId, movie);
 
-//                        movie = objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
-                        System.out.println(movie);
-//                            actorArray = objectMapper.readValue(jsonResponse, Actor[].class);
-//                        System.out.println(actorArray);
-//                            genreArray = objectMapper.readValue(jsonResponse, Genre[].class);
-//                        System.out.println(genreArray);
-//                            director = objectMapper.readValue(jsonResponse, Director.class);
-//                        System.out.println(director);
+                        test++;
+                        // Print the movie details (optional)
+                        System.out.println(movie + "\n" + String.valueOf(test) + "\n");
 
 
-                        // Add movie to the list
+                        // Add movie to list
                         moviesList.add(movie);
                     }
                 } else {
                     System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
                 }
-            } catch (Exception e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
@@ -96,7 +78,8 @@ public class FetchTMDbData {
         }
     }
 
-    private static void fetchMovieDetails(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws Exception {
+    // Fetch detailed information about the movie
+    private static void fetchMovieDetails(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws IOException {
         Request movieRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId)
                 .addHeader("Authorization", "Bearer " + apiKey)
@@ -107,31 +90,30 @@ public class FetchTMDbData {
             if (movieResponse.isSuccessful()) {
                 String jsonResponse = movieResponse.body().string();
                 JsonNode movieDetails = objectMapper.readTree(jsonResponse);
-                System.out.println("Details: " + movieDetails.toPrettyString());
 
-                // Extract the "genres" array
+                // Parse and populate genres
+                List<GenreDTO> genres = new ArrayList<>();
                 JsonNode genresArray = movieDetails.get("genres");
                 if (genresArray != null && genresArray.isArray()) {
-                    System.out.println("Genres:");
-                    for (JsonNode genre : genresArray) {
-                        // Grab the "name" field
-                        String genreName = genre.get("name").asText();
-                        System.out.println(" - " + genreName);
-                        // Optionally, add the genreName to the movie object if needed
+                    for (JsonNode genreNode : genresArray) {
+                        GenreDTO genre = objectMapper.treeToValue(genreNode, GenreDTO.class);
+                        genres.add(genre);
                     }
                 }
+                movie.setGenres(genres);
 
-                // Update movie object with other details if needed
-                // Example: movie.setDescription(movieDetails.get("overview").asText());
+                // Update other movie details (e.g., overview, runtime, release_date)
+                movie.setOverview(movieDetails.get("overview").asText());
+                movie.setRuntime(movieDetails.get("runtime").asInt());
+                movie.setReleaseDate(movieDetails.get("release_date").asText());
             } else {
                 System.out.println("Failed to fetch movie details for ID " + movieId + ": " + movieResponse.code());
             }
         }
     }
 
-
-    // Fetch credits (actors and crew) for a movie and update the Movie object
-    private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws Exception {
+    // Fetch credits (cast and crew) for the movie
+    private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws IOException {
         Request creditsRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId + "/credits")
                 .addHeader("Authorization", "Bearer " + apiKey)
@@ -143,21 +125,34 @@ public class FetchTMDbData {
                 String jsonResponse = creditsResponse.body().string();
                 JsonNode creditsDetails = objectMapper.readTree(jsonResponse);
 
-                // Print cast (actors) information
-                JsonNode cast = creditsDetails.get("cast");
-                System.out.println("Actors:");
-                for (JsonNode actor : cast) {
-                    System.out.println(" - " + actor.get("name").asText() + " as " + actor.get("character").asText());
-                    // Update movie object with actors if needed
+                // Parse cast
+                List<ActorDTO> actorList = new ArrayList<>();
+                JsonNode castArray = creditsDetails.get("cast");
+                if (castArray != null && castArray.isArray()) {
+                    for (JsonNode castNode : castArray) {
+                        ActorDTO cast = objectMapper.treeToValue(castNode, ActorDTO.class);
+                        actorList.add(cast);
+                    }
                 }
 
-                // Print crew information
-                JsonNode crew = creditsDetails.get("crew");
-                System.out.println("Crew:");
-                for (JsonNode crewMember : crew) {
-                    System.out.println(" - " + crewMember.get("name").asText() + " (" + crewMember.get("job").asText() + ")");
-                    // Update movie object with crew information if needed
+                // Parse crew
+                List<DirectorDTO> directorList = new ArrayList<>();
+                JsonNode crewArray = creditsDetails.get("crew");
+                if (crewArray != null && crewArray.isArray()) {
+                    for (JsonNode crewNode : crewArray) {
+                        if (crewNode.get("job").asText().equals("Director")) {
+                            DirectorDTO crew = objectMapper.treeToValue(crewNode, DirectorDTO.class);
+                            directorList.add(crew);
+                        }
+
+                    }
                 }
+
+                // Set cast and crew in the movie DTO
+                CreditsDTO credits = new CreditsDTO();
+                credits.setActors(actorList);
+                credits.setDirector(directorList);
+                movie.setCredits(credits);
             } else {
                 System.out.println("Failed to fetch credits for movie ID " + movieId + ": " + creditsResponse.code());
             }

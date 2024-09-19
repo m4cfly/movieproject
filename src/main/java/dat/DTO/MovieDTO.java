@@ -15,15 +15,9 @@ import java.util.List;
 public class MovieDTO {
     private boolean adult;
 
-    @JsonProperty("backdrop_path")
-    private String backdropPath;
-
-    @JsonProperty("belongs_to_collection")
-    private Object belongsToCollection;  // Assuming it can be null
-
     private int budget;
     private List<GenreDTO> genres;
-    private String homepage;
+
     private long id;
 
     @JsonProperty("imdb_id")
@@ -41,8 +35,6 @@ public class MovieDTO {
     private String overview;
     private double popularity;
 
-    @JsonProperty("poster_path")
-    private String posterPath;
 
     @JsonProperty("production_companies")
     private List<ProductionCompanyDTO> productionCompanies;
@@ -62,7 +54,6 @@ public class MovieDTO {
     private String status;
     private String tagline;
     private String title;
-    private boolean video;
 
     @JsonProperty("vote_average")
     private double voteAverage;
@@ -73,137 +64,3 @@ public class MovieDTO {
     private CreditsDTO credits;  // Nested DTO for credits (cast and crew)
 }
 
-@Data
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@JsonIgnoreProperties(ignoreUnknown = true)
-class GenreDTO {
-    private long id;
-    private String name;
-}
-
-@Data
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@JsonIgnoreProperties(ignoreUnknown = true)
-class ProductionCompanyDTO {
-    private long id;
-
-    @JsonProperty("logo_path")
-    private String logoPath;
-
-    private String name;
-
-    @JsonProperty("origin_country")
-    private String originCountry;
-}
-
-@Data
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@JsonIgnoreProperties(ignoreUnknown = true)
-class ProductionCountryDTO {
-    @JsonProperty("iso_3166_1")
-    private String iso31661;
-
-    private String name;
-}
-
-@Data
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@JsonIgnoreProperties(ignoreUnknown = true)
-class SpokenLanguageDTO {
-    @JsonProperty("english_name")
-    private String englishName;
-
-    @JsonProperty("iso_639_1")
-    private String iso6391;
-
-    private String name;
-}
-
-@Data
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@JsonIgnoreProperties(ignoreUnknown = true)
-class CreditsDTO {
-    private List<CastDTO> cast;
-    private List<CrewDTO> crew;
-}
-
-@Data
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@JsonIgnoreProperties(ignoreUnknown = true)
-class CastDTO {
-    private boolean adult;
-    private int gender;
-    private long id;
-
-    @JsonProperty("known_for_department")
-    private String knownForDepartment;
-
-    private String name;
-
-    @JsonProperty("original_name")
-    private String originalName;
-
-    private double popularity;
-
-    @JsonProperty("profile_path")
-    private String profilePath;
-
-    @JsonProperty("cast_id")
-    private int castId;
-
-    private String character;
-
-    @JsonProperty("credit_id")
-    private String creditId;
-
-    private int order;
-}
-
-@Data
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@JsonIgnoreProperties(ignoreUnknown = true)
-class CrewDTO {
-    private boolean adult;
-    private int gender;
-    private long id;
-
-    @JsonProperty("known_for_department")
-    private String knownForDepartment;
-
-    private String name;
-
-    @JsonProperty("original_name")
-    private String originalName;
-
-    private double popularity;
-
-    @JsonProperty("profile_path")
-    private String profilePath;
-
-    @JsonProperty("credit_id")
-    private String creditId;
-
-    private String department;
-    private String job;
-}
