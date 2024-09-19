@@ -1,5 +1,6 @@
 package dat.data;
 
+import dat.DTO.MovieDTO;
 import dat.dao.JSONMovieDAO;
 import dat.dao.MovieDAO;
 import dat.entities.Movie;
@@ -28,7 +29,7 @@ public class FetchTMDbData {
 
         System.out.println(apiKey);
 
-        List<Movie> moviesList = new ArrayList<>(); // List to collect movies
+        List<MovieDTO> moviesList = new ArrayList<>(); // List to collect movies
 
         // Prepare the initial API request to discover movies
         for (int page = 1; page < 2; page++) {
@@ -59,11 +60,21 @@ public class FetchTMDbData {
                         System.out.println("Movie: " + movieTitle);
 
                         // Create Movie object
-                        Movie movie = objectMapper.treeToValue(movieNode, Movie.class);
+                        MovieDTO movie = objectMapper.treeToValue(movieNode, MovieDTO.class);
 
                         // Fetch and add more movie details if necessary
                         fetchMovieDetails(client, objectMapper, movieId, movie);
                         fetchMovieCredits(client, objectMapper, movieId, movie);
+
+//                        movie = objectMapper.readValue(jsonResponse, Movie.class); // prøver om vi evt. kan lave om til Movie objekter?
+                        System.out.println(movie);
+//                            actorArray = objectMapper.readValue(jsonResponse, Actor[].class);
+//                        System.out.println(actorArray);
+//                            genreArray = objectMapper.readValue(jsonResponse, Genre[].class);
+//                        System.out.println(genreArray);
+//                            director = objectMapper.readValue(jsonResponse, Director.class);
+//                        System.out.println(director);
+
 
                         // Add movie to the list
                         moviesList.add(movie);
@@ -85,7 +96,7 @@ public class FetchTMDbData {
         }
     }
 
-    private static void fetchMovieDetails(OkHttpClient client, ObjectMapper objectMapper, String movieId, Movie movie) throws Exception {
+    private static void fetchMovieDetails(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws Exception {
         Request movieRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId)
                 .addHeader("Authorization", "Bearer " + apiKey)
@@ -120,7 +131,7 @@ public class FetchTMDbData {
 
 
     // Fetch credits (actors and crew) for a movie and update the Movie object
-    private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId, Movie movie) throws Exception {
+    private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws Exception {
         Request creditsRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId + "/credits")
                 .addHeader("Authorization", "Bearer " + apiKey)
