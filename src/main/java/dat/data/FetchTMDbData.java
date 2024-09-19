@@ -1,6 +1,8 @@
 package dat.data;
 
 import dat.entities.Movie;
+import dat.config.HibernateConfig;
+import jakarta.persistence.EntityManager;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -17,6 +19,11 @@ public class FetchTMDbData {
     static Map<Integer, String> genreMap = new HashMap<>();
 
     public static void main(String[] args) {
+        EntityManager entityManager = HibernateConfig.getEntityManagerFactory("MovieDB").createEntityManager();
+
+        // Create a MovieRepository instance with the EntityManager
+        MovieRepository movieRepository = new MovieRepository(entityManager);
+
         OkHttpClient client = new OkHttpClient();
         ObjectMapper objectMapper = new ObjectMapper(); // Jackson object mapper to parse JSON
 
@@ -49,6 +56,9 @@ public class FetchTMDbData {
                         Movie movie = objectMapper.treeToValue(movieNode, Movie.class); // Convert JSON object to Movie
                         movieList.add(movie);
 
+                        // Save the movie to PostgreSQL database
+                        movieRepository.save(movie);
+
                         // Print Movie information
                         System.out.println("\nMovie: " + movie.getTitle());
                         printGenres(movieNode);
@@ -64,6 +74,8 @@ public class FetchTMDbData {
 
         // Optionally, print the total number of movies fetched
         System.out.println("Total Movies Fetched: " + movieList.size());
+
+
     }
 
     // Fetch and store genres in a map
@@ -150,7 +162,7 @@ public class FetchTMDbData {
                         String birthdate = fetchPersonDetails(client, objectMapper, directorId); // Fetch birthdate
                         System.out.println(directorName + " (Born: " + birthdate + ")");
                         directorFound = true;
-                        break; // only one director
+                        break; // Assume only one director
                     }
                 }
                 if (!directorFound) {
@@ -177,6 +189,6 @@ public class FetchTMDbData {
                 return personDetails.get("birthday").asText(); // Fetch the birthdate
             }
         }
-        return "null"; // Return unknown if birthdate not found
+        return "Unknown"; // Return unknown if birthdate not found
     }
 }
