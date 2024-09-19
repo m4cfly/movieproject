@@ -1,6 +1,9 @@
 package dat.config;
 
-import dat.entities.Person;
+import dat.entities.Movie;
+import dat.entities.Actor;
+import dat.entities.Director;
+import dat.entities.Genre;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -26,9 +29,12 @@ public class HibernateConfig {
         return emfTest;
     }
 
-    // TODO: IMPORTANT: Add Entity classes here for them to be registered with Hibernate
+    // Register your entity classes with Hibernate
     private static void getAnnotationConfiguration(Configuration configuration) {
-        configuration.addAnnotatedClass(Person.class);
+        configuration.addAnnotatedClass(Movie.class);     // Add Movie entity
+        configuration.addAnnotatedClass(Actor.class);     // Add Actor entity
+        configuration.addAnnotatedClass(Director.class);  // Add Director entity
+        configuration.addAnnotatedClass(Genre.class);     // Add Genre entity
     }
 
     private static EntityManagerFactory createEMF(boolean forTest, String DBName) {
@@ -42,7 +48,7 @@ public class HibernateConfig {
             } else if (System.getenv("DEPLOYED") != null) {
                 setDeployedProperties(props, DBName);
             } else {
-                props = setDevProperties(props, DBName);
+                props = setDevProperties(props, "MovieDB");  // Use MovieDB as your database
             }
             configuration.setProperties(props);
             getAnnotationConfiguration(configuration);
@@ -72,21 +78,20 @@ public class HibernateConfig {
     }
 
     private static Properties setDeployedProperties(Properties props, String DBName) {
-        props.setProperty("hibernate.connection.url", System.getenv("CONNECTION_STR") + DBName);
+        props.setProperty("hibernate.connection.url", System.getenv("CONNECTION_STR") + "MovieDB");  // Explicitly use MovieDB
         props.setProperty("hibernate.connection.username", System.getenv("DB_USERNAME"));
         props.setProperty("hibernate.connection.password", System.getenv("DB_PASSWORD"));
         return props;
     }
 
     private static Properties setDevProperties(Properties props, String DBName) {
-        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + DBName);
+        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + "MovieDB");  // Explicitly use MovieDB
         props.put("hibernate.connection.username", "postgres");
         props.put("hibernate.connection.password", "postgres");
         return props;
     }
 
     private static Properties setTestProperties(Properties props) {
-        //        props.put("hibernate.dialect", "org.hibernate.dialect.PostgreSQLDialect");
         props.put("hibernate.connection.driver_class", "org.testcontainers.jdbc.ContainerDatabaseDriver");
         props.put("hibernate.connection.url", "jdbc:tc:postgresql:15.3-alpine3.18:///test_db");
         props.put("hibernate.connection.username", "postgres");

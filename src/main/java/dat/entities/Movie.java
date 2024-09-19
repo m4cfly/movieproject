@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
-
 import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.Set;
@@ -13,7 +12,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonIgnoreProperties(ignoreUnknown = true) // This tells Jackson to ignore unknown fields like "adult"
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,6 +25,9 @@ public class Movie {
 
     @Column(columnDefinition = "TEXT")
     private String overview;
+
+    @Column(name = "vote_average")
+    private Double voteAverage; // New field added to store the vote average from the API
 
     @ManyToMany
     @JoinTable(
@@ -46,4 +48,6 @@ public class Movie {
     @ManyToOne
     @JoinColumn(name = "director_id")
     private Director director;
+
+    // Other fields from the API can be added here if needed
 }
