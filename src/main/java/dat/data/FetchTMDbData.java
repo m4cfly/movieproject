@@ -8,29 +8,47 @@ import okhttp3.Request;
 import okhttp3.Response;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.type.TypeReference;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 public class FetchTMDbData {
+
     static String apiKey = System.getenv("STRING_API_KEY");
     static Map<Integer, String> genreMap = new HashMap<>();
+    static ObjectMapper objectMapper = new ObjectMapper(); // Jackson object mapper
 
     public static void main(String[] args) {
-        EntityManager entityManager = HibernateConfig.getEntityManagerFactory("MovieDB").createEntityManager();
+        String filePath = "movies.json";
 
-        // Create a MovieRepository instance with the EntityManager
-        MovieRepository movieRepository = new MovieRepository(entityManager);
+        // Load movies from file if they exist
+        List<Movie> movieList = readMoviesFromFile(filePath);
+        if (movieList == null || movieList.isEmpty()) {
+            movieList = new ArrayList<>();
 
+            // Fetch movies from API
+            fetchMovieData(movieList);
+
+            // Save movies to file
+            writeMoviesToFile(movieList, filePath);
+        } else {
+            System.out.println("Movies loaded from file: " + filePath);
+        }
+
+        // Optionally save movies to database
+        saveMoviesToDatabase(movieList);
+    }
+
+    public static void fetchMovieData(List<Movie> movieList) {
         OkHttpClient client = new OkHttpClient();
-        ObjectMapper objectMapper = new ObjectMapper(); // Jackson object mapper to parse JSON
 
         // Fetch and store genres in the genreMap
-        fetchGenreMap(client, objectMapper);
-
-        List<Movie> movieList = new ArrayList<>(); // List to store movie entities
+        fetchGenreMap(client);
 
         // Loop through pages to fetch data
         for (int page = 1; page < 49; page++) {
@@ -38,7 +56,7 @@ public class FetchTMDbData {
                     .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page + "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
                     .get()
                     .addHeader("accept", "application/json")
-                    .addHeader("Authorization", "Bearer " + apiKey) // Replace with your actual API key
+                    .addHeader("Authorization", "Bearer " + apiKey)
                     .build();
             try {
                 // Execute the request and get the response
@@ -56,13 +74,10 @@ public class FetchTMDbData {
                         Movie movie = objectMapper.treeToValue(movieNode, Movie.class); // Convert JSON object to Movie
                         movieList.add(movie);
 
-                        // Save the movie to PostgreSQL database
-                        movieRepository.save(movie);
-
                         // Print Movie information
                         System.out.println("\nMovie: " + movie.getTitle());
                         printGenres(movieNode);
-                        printActorsAndDirector(client, objectMapper, movie.getId().toString());
+                        printActorsAndDirector(client, movie.getId().toString());
                     }
                 } else {
                     System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
@@ -71,15 +86,39 @@ public class FetchTMDbData {
                 e.printStackTrace();
             }
         }
+    }
 
-        // Optionally, print the total number of movies fetched
-        System.out.println("Total Movies Fetched: " + movieList.size());
+    public static void writeMoviesToFile(List<Movie> movieList, String filePath) {
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(filePath), movieList);
+            System.out.println("Movies saved to file: " + filePath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
+    public static List<Movie> readMoviesFromFile(String filePath) {
+        try {
+            return objectMapper.readValue(new File(filePath), new TypeReference<List<Movie>>() {});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
+    public static void saveMoviesToDatabase(List<Movie> movieList) {
+        EntityManager entityManager = HibernateConfig.getEntityManagerFactory("MovieDB").createEntityManager();
+        MovieRepository movieRepository = new MovieRepository(entityManager);
+
+        for (Movie movie : movieList) {
+            movieRepository.save(movie);
+        }
+
+        movieRepository.close();
     }
 
     // Fetch and store genres in a map
-    private static void fetchGenreMap(OkHttpClient client, ObjectMapper objectMapper) {
+    private static void fetchGenreMap(OkHttpClient client) {
         Request genreRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/genre/movie/list?language=en-US")
                 .get()
@@ -106,7 +145,6 @@ public class FetchTMDbData {
         }
     }
 
-    // Fetch and print genres using the genre map
     private static void printGenres(JsonNode movieNode) {
         System.out.print("Genres: ");
         JsonNode genres = movieNode.get("genre_ids");
@@ -122,13 +160,11 @@ public class FetchTMDbData {
         System.out.println();
     }
 
-    // Fetch detailed information about a movie and print actors and director
-    private static void printActorsAndDirector(OkHttpClient client, ObjectMapper objectMapper, String movieId) throws Exception {
-        fetchMovieCredits(client, objectMapper, movieId);
+    private static void printActorsAndDirector(OkHttpClient client, String movieId) throws Exception {
+        fetchMovieCredits(client, movieId);
     }
 
-    // Fetch credits (actors and crew) for a movie
-    private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId) throws Exception {
+    private static void fetchMovieCredits(OkHttpClient client, String movieId) throws Exception {
         Request creditsRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId + "/credits")
                 .addHeader("Authorization", "Bearer " + apiKey)
@@ -140,18 +176,16 @@ public class FetchTMDbData {
                 String jsonResponse = creditsResponse.body().string();
                 JsonNode creditsDetails = objectMapper.readTree(jsonResponse);
 
-                // Print cast (actors) information
                 System.out.println("Actors:");
                 JsonNode cast = creditsDetails.get("cast");
                 for (JsonNode actor : cast) {
                     String actorName = actor.get("name").asText();
                     String character = actor.get("character").asText();
                     String actorId = actor.get("id").asText(); // Get actor ID
-                    String birthdate = fetchPersonDetails(client, objectMapper, actorId); // Fetch birthdate
+                    String birthdate = fetchPersonDetails(client, actorId); // Fetch birthdate
                     System.out.println(" - " + actorName + " as " + character + " (Born: " + birthdate + ")");
                 }
 
-                // Print director information
                 System.out.print("Director: ");
                 boolean directorFound = false;
                 JsonNode crew = creditsDetails.get("crew");
@@ -159,7 +193,7 @@ public class FetchTMDbData {
                     if ("Director".equals(crewMember.get("job").asText())) {
                         String directorName = crewMember.get("name").asText();
                         String directorId = crewMember.get("id").asText(); // Get director ID
-                        String birthdate = fetchPersonDetails(client, objectMapper, directorId); // Fetch birthdate
+                        String birthdate = fetchPersonDetails(client, directorId); // Fetch birthdate
                         System.out.println(directorName + " (Born: " + birthdate + ")");
                         directorFound = true;
                         break; // Assume only one director
@@ -174,8 +208,7 @@ public class FetchTMDbData {
         }
     }
 
-    // Fetch person details (for birthdate)
-    private static String fetchPersonDetails(OkHttpClient client, ObjectMapper objectMapper, String personId) throws Exception {
+    private static String fetchPersonDetails(OkHttpClient client, String personId) throws Exception {
         Request personRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/person/" + personId)
                 .addHeader("Authorization", "Bearer " + apiKey)

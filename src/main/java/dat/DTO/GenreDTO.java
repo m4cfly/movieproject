@@ -10,5 +10,5 @@ import lombok.AllArgsConstructor;
 public class GenreDTO {
     private Long id;
     private String name;
-    private String description; // Description of the genre, if needed
+    private String description;
 }
