@@ -1,6 +1,7 @@
 package dat.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,12 +22,14 @@ public class Movie {
 
     private String title;
 
+    @JsonProperty("release_date") // Ensures JSON field maps correctly to this field
     @Column(name = "release_date")
     private LocalDate releaseDate;
 
     @Column(columnDefinition = "TEXT")
     private String overview;
 
+    @JsonProperty("vote_average") // Ensures JSON field maps correctly to this field
     @Column(name = "vote_average")
     private Double voteAverage;
 

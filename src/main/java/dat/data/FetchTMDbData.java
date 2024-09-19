@@ -1,14 +1,16 @@
 package dat.data;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import dat.entities.Movie;
 import dat.config.HibernateConfig;
 import jakarta.persistence.EntityManager;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.core.type.TypeReference;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,6 +24,12 @@ public class FetchTMDbData {
     static String apiKey = System.getenv("STRING_API_KEY");
     static Map<Integer, String> genreMap = new HashMap<>();
     static ObjectMapper objectMapper = new ObjectMapper(); // Jackson object mapper
+
+    static {
+        // Configure the ObjectMapper
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        objectMapper.registerModule(new JavaTimeModule()); // Handles LocalDate deserialization
+    }
 
     public static void main(String[] args) {
         String filePath = "movies.json";
@@ -51,7 +59,7 @@ public class FetchTMDbData {
         fetchGenreMap(client);
 
         // Loop through pages to fetch data
-        for (int page = 1; page < 49; page++) {
+        for (int page = 1; page < 2; page++) {
             Request request = new Request.Builder()
                     .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page + "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
                     .get()

@@ -1,6 +1,8 @@
 package dat.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import dat.entities.Movie;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
