@@ -13,12 +13,9 @@ import java.time.LocalDate;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class DirectorDTO {
-    private int gender;
     private long id;
     @JsonProperty ("birth_date")
     private String birthDate;
     private String name;
-    private double popularity;
-    private String department;
     private String job;
 }

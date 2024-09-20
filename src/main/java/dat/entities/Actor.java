@@ -1,28 +1,28 @@
 package dat.entities;
 
-import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.*;
 
-@Getter
-@Setter
+import java.time.LocalDate;
+
+@Data
 @ToString
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
-
+@Builder
+@Entity
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Actor {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name = "name", nullable = false)
+    private long id;
+    @JsonProperty ("birth_date")
+    private String birthDate;
     private String name;
+    @JsonProperty("cast_id")
+    private int actorId;
+    private String character;
 
-    @Column(name = "birthdate", nullable = false)
-    private int birthdate;
-
-    public Long getId() {
-        return id;
-    }
 }

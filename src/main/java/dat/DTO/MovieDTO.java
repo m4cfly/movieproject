@@ -23,8 +23,6 @@ public class MovieDTO {
     @JsonProperty("imdb_id")
     private String imdbId;
 
-    @JsonProperty("origin_country")
-    private List<String> originCountry;
 
     @JsonProperty("original_language")
     private String originalLanguage;
@@ -36,22 +34,11 @@ public class MovieDTO {
     private double popularity;
 
 
-    @JsonProperty("production_companies")
-    private List<ProductionCompanyDTO> productionCompanies;
-
-    @JsonProperty("production_countries")
-    private List<ProductionCountryDTO> productionCountries;
-
     @JsonProperty("release_date")
     private String releaseDate;
 
     private long revenue;
-    private int runtime;
 
-    @JsonProperty("spoken_languages")
-    private List<SpokenLanguageDTO> spokenLanguages;
-
-    private String status;
     private String tagline;
     private String title;
 

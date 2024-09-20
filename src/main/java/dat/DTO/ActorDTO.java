@@ -13,20 +13,13 @@ import java.time.LocalDate;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ActorDTO {
-    private int gender;
-    private long id;
 
+    private long id;
     @JsonProperty ("birth_date")
     private String birthDate;
     private String name;
-
-
-    private double popularity;
-
-
     @JsonProperty("cast_id")
     private int actorId;
-
     private String character;
 
 }
