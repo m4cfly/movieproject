@@ -105,7 +105,6 @@ public class FetchTMDbData {
 
                 // Update other movie details (e.g., overview, runtime, release_date)
                 movie.setOverview(movieDetails.get("overview").asText());
-                movie.setRuntime(movieDetails.get("runtime").asInt());
                 movie.setReleaseDate(movieDetails.get("release_date").asText());
             } else {
                 System.out.println("Failed to fetch movie details for ID " + movieId + ": " + movieResponse.code());
