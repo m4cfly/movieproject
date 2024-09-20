@@ -50,7 +50,7 @@ public class HibernateConfig {
             } else if (System.getenv("DEPLOYED") != null) {
                 setDeployedProperties(props, DBName);
             } else {
-                props = setDevProperties(props, "MovieDB");  // Use MovieDB as your database
+                props = setDevProperties(props, "moviedb");  // Use MovieDB as your database
             }
             configuration.setProperties(props);
             getAnnotationConfiguration(configuration);
@@ -88,7 +88,7 @@ public class HibernateConfig {
     }
 
     private static Properties setDevProperties(Properties props, String DBName) {
-        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + "MovieDB");  // Explicitly use MovieDB
+        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + "moviedb");  // Explicitly use MovieDB
         props.put("hibernate.connection.username", "postgres");
         props.put("hibernate.connection.password", "postgres");
         return props;
@@ -107,7 +107,7 @@ public class HibernateConfig {
 
     // New method to save movies to the database
     public static void saveMoviesToDatabase(List<Movie> movieList) {
-        EntityManager entityManager = getEntityManagerFactory("MovieDB").createEntityManager();
+        EntityManager entityManager = getEntityManagerFactory("moviedb").createEntityManager();
 
         try {
             entityManager.getTransaction().begin();
