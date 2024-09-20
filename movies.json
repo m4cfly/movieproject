@@ -1,0 +1,3899 @@
+[ {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 27,
+    "name" : "Horror"
+  }, {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1353082,
+  "overview" : "",
+  "popularity" : 1.071,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Mulm",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1423271,
+      "name" : "Jens Sætter-Lassen",
+      "popularity" : 1.089,
+      "character" : "Jacob",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 564024,
+      "name" : "Julie Christiansen",
+      "popularity" : 2.789,
+      "character" : "Maja",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4926816,
+      "name" : "Louis Trinskjær",
+      "popularity" : 0.094,
+      "character" : "Johannes",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2009771,
+      "name" : "Martin Geertz",
+      "popularity" : 0.001,
+      "character" : "Psykolog Lars Juel",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2140569,
+      "name" : "Nadia Nouamani",
+      "popularity" : 1.667,
+      "character" : "Jamilla",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2190163,
+      "name" : "Mie Gren",
+      "popularity" : 3.457,
+      "character" : "Youtuber",
+      "cast_id" : 6
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2449077,
+      "name" : "Karim Theilgaard",
+      "popularity" : 1.872,
+      "character" : "Asim",
+      "cast_id" : 7
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4926821,
+      "name" : "Annamaria Tolstrup",
+      "popularity" : 0.041,
+      "character" : "Gitte",
+      "cast_id" : 8
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2680660,
+      "name" : "Martin Vrede Nielsen",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2680660,
+      "name" : "Martin Vrede Nielsen",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4926825,
+      "name" : "Teddy Vork",
+      "popularity" : 0.017,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4666855,
+      "name" : "Frida S. Klüver",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4926830,
+      "name" : "Keld Hjortskov",
+      "popularity" : 0.04,
+      "department" : "Production",
+      "job" : "Co-Executive Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4926831,
+      "name" : "Kenneth Eriksen",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Executive Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2189748,
+      "name" : "Michael Vrede",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Co-Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1180801,
+      "name" : "Thomas Yong",
+      "popularity" : 0.32,
+      "department" : "Production",
+      "job" : "Line Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2220480,
+      "name" : "Josefine Skov",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Music"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Mulm",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-12-05",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 28,
+    "name" : "Action"
+  }, {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1261050,
+  "overview" : "In 2008, a group of men from Denmark and across Europe pull off the biggest heist of all time on Danish soil. Kasper, a boxer with few chances left in life, is offered the opportunity to plan the robbery by its foreign initiators.",
+  "popularity" : 3.017,
+  "revenue" : 0,
+  "runtime" : 110,
+  "status" : null,
+  "tagline" : null,
+  "title" : "De lydløse",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1149906,
+      "name" : "Gustav Dyekjær Giese",
+      "popularity" : 0.886,
+      "character" : "Kasper",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 89626,
+      "name" : "Reda Kateb",
+      "popularity" : 5.075,
+      "character" : "Slimani",
+      "cast_id" : 6
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1602451,
+      "name" : "Amanda Collin",
+      "popularity" : 8.753,
+      "character" : "Maria",
+      "cast_id" : 10
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1428298,
+      "name" : "Christopher Wagelin",
+      "popularity" : 7.838,
+      "character" : "Hasse",
+      "cast_id" : 8
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 92429,
+      "name" : "Jens Hultén",
+      "popularity" : 4.911,
+      "character" : "Joppe",
+      "cast_id" : 9
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2852067,
+      "name" : "Granit Rushiti",
+      "popularity" : 0.035,
+      "character" : "Mo",
+      "cast_id" : 11
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4892215,
+      "name" : "Amin Ahmed",
+      "popularity" : 0.001,
+      "character" : "Warsame",
+      "cast_id" : 29
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1921850,
+      "name" : "Camilla Lau",
+      "popularity" : 6.293,
+      "character" : "Aaliya",
+      "cast_id" : 30
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4892216,
+      "name" : "Dagmar Madicken Greve Halse",
+      "popularity" : 0.426,
+      "character" : "Sara",
+      "cast_id" : 31
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1934698,
+      "name" : "Ida Cæcilie Rasmussen",
+      "popularity" : 0.789,
+      "character" : "Pumpkin",
+      "cast_id" : 32
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4892217,
+      "name" : "Mohammed Abbas",
+      "popularity" : 0.001,
+      "character" : "Mohammed",
+      "cast_id" : 33
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2284302,
+      "name" : "Sandra Stojiljkovic",
+      "popularity" : 8.427,
+      "character" : "Elin",
+      "cast_id" : 34
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 2464892,
+      "name" : "Victor Iván",
+      "popularity" : 4.285,
+      "character" : "Josef",
+      "cast_id" : 35
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1566,
+      "name" : "Anders Hove",
+      "popularity" : 4.476,
+      "character" : "Olaf",
+      "cast_id" : 36
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2998436,
+      "name" : "Mickey Nørregaard",
+      "popularity" : 1.769,
+      "character" : "Boxing Coach Assistant",
+      "cast_id" : 37
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 90605,
+      "name" : "Anastasios Soulis",
+      "popularity" : 2.999,
+      "character" : "Juventus",
+      "cast_id" : 38
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1178823,
+      "name" : "Olaf Højgaard",
+      "popularity" : 1.933,
+      "character" : "Police Officer",
+      "cast_id" : 39
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4892219,
+      "name" : "Dennis Petersen",
+      "popularity" : 0.001,
+      "character" : "Shooting Officer",
+      "cast_id" : 40
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1954416,
+      "name" : "Mads Kruse",
+      "popularity" : 4.764,
+      "character" : "Police Officer (Car chase)",
+      "cast_id" : 41
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1879020,
+      "name" : "Frederik Louis Hviid",
+      "popularity" : 0.575,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1159911,
+      "name" : "Morten Green",
+      "popularity" : 2.414,
+      "department" : "Sound",
+      "job" : "Sound"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 114541,
+      "name" : "Anders Frithiof August",
+      "popularity" : 1.134,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4791728,
+      "name" : "Anja Philip",
+      "popularity" : 0.85,
+      "department" : "Production",
+      "job" : "Casting"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1321584,
+      "name" : "Sabine Hviid",
+      "popularity" : 3.687,
+      "department" : "Art",
+      "job" : "Production Design"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2038237,
+      "name" : "Emilie Boge Dresler",
+      "popularity" : 0.35,
+      "department" : "Costume & Make-Up",
+      "job" : "Costume Designer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1879022,
+      "name" : "Kasper Dissing",
+      "popularity" : 0.632,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1746292,
+      "name" : "Lotta Forsblad",
+      "popularity" : 3.82,
+      "department" : "Production",
+      "job" : "Casting"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1922960,
+      "name" : "Christina Pind Rasmussen",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Line Producer"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1639085,
+      "name" : "Lizette Jonjic",
+      "popularity" : 7.833,
+      "department" : "Production",
+      "job" : "Co-Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1447720,
+      "name" : "Adam Wallensten",
+      "popularity" : 4.516,
+      "department" : "Camera",
+      "job" : "Director of Photography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1159911,
+      "name" : "Morten Green",
+      "popularity" : 2.414,
+      "department" : "Sound",
+      "job" : "Sound Designer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 147699,
+      "name" : "Jessica Balac",
+      "popularity" : 0.847,
+      "department" : "Production",
+      "job" : "Line Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1367026,
+      "name" : "Jean-Christophe Reymond",
+      "popularity" : 0.486,
+      "department" : "Production",
+      "job" : "Co-Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1119431,
+      "name" : "Benjamin Salomon",
+      "popularity" : 0.001,
+      "department" : "Art",
+      "job" : "Production Design"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1973132,
+      "name" : "Martin Juel Dirkov",
+      "popularity" : 0.026,
+      "department" : "Sound",
+      "job" : "Original Music Composer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4892214,
+      "name" : "Maria Engberg Refsgaard",
+      "popularity" : 0.001,
+      "department" : "Costume & Make-Up",
+      "job" : "Special Effects Makeup Artist"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1372321,
+      "name" : "Anders Albjerg Kristiansen",
+      "popularity" : 0.618,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 3512384,
+      "name" : "Line Plougsbæk",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Post Producer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "De lydløse",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-10-31",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 10751,
+    "name" : "Family"
+  } ],
+  "id" : 1227608,
+  "overview" : "Plot details unknown.",
+  "popularity" : 1.962,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Børnene fra Sølvgade",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3585255,
+      "name" : "Ida Skelbæk-Knudsen",
+      "popularity" : 1.581,
+      "character" : "Katinka",
+      "cast_id" : 10
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 2099616,
+      "name" : "Alfred Erik Nordhøj Kann",
+      "popularity" : 1.238,
+      "character" : "Tristan",
+      "cast_id" : 11
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4251311,
+      "name" : "Amelia Ahmad Abdullatif",
+      "popularity" : 0.001,
+      "character" : "Petra",
+      "cast_id" : 12
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4468075,
+      "name" : "Alfred Rivera",
+      "popularity" : 0.001,
+      "character" : "Kirk",
+      "cast_id" : 13
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 82538,
+      "name" : "Jakob Fauerby",
+      "popularity" : 0.74,
+      "character" : "Miss Nelly",
+      "cast_id" : 14
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1184,
+      "name" : "Anders W. Berthelsen",
+      "popularity" : 3.236,
+      "character" : "Brian",
+      "cast_id" : 15
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4468082,
+      "name" : "Dick Haysø",
+      "popularity" : 0.001,
+      "character" : "Lars Hotter",
+      "cast_id" : 16
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2999154,
+      "name" : "Katinka Lærke Petersen",
+      "popularity" : 2.15,
+      "character" : "Jessica",
+      "cast_id" : 17
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 588175,
+      "name" : "Lars Ranthe",
+      "popularity" : 6.723,
+      "character" : "Hr. Moth",
+      "cast_id" : 18
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 107559,
+      "name" : "Ditte Hansen",
+      "popularity" : 2.505,
+      "character" : "Kommunetrolden",
+      "cast_id" : 19
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1828982,
+      "name" : "Mehdi Avaz",
+      "popularity" : 5.864,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1288260,
+      "name" : "Lars Wissing",
+      "popularity" : 1.656,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3192089,
+      "name" : "Michael Sauer Christensen",
+      "popularity" : 0.001,
+      "department" : "Crew",
+      "job" : "Cinematography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2383262,
+      "name" : "Thomas Volmer Schulz",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Original Music Composer"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 228759,
+      "name" : "Renée Simonsen",
+      "popularity" : 2.155,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4422634,
+      "name" : "Charlotte Snede Sørensen",
+      "popularity" : 0.001,
+      "department" : "Art",
+      "job" : "Production Design"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2361859,
+      "name" : "Juan Bastias",
+      "popularity" : 0.001,
+      "department" : "Costume & Make-Up",
+      "job" : "Costume Design"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 559150,
+      "name" : "Karin Jagd",
+      "popularity" : 3.314,
+      "department" : "Production",
+      "job" : "Casting"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1783838,
+      "name" : "Stephanie Wiese",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Børnene fra Sølvgade",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-10-10",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1076241,
+  "overview" : "The young chef August has big dreams and gets the chance in a recognized Michelin kitchen. He is tested professionally and mentally by the kitchen's harsh, uncompromising and eccentric head chef, but at the same time has towering expectations of himself. It creates a cavalcade of problems and lies over the course of an evening.",
+  "popularity" : 2.568,
+  "revenue" : 0,
+  "runtime" : 23,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Salmon",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1444453,
+      "name" : "Lucas Lynggaard Tønnesen",
+      "popularity" : 3.947,
+      "character" : "",
+      "cast_id" : 10
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1194836,
+      "name" : "Kasper Leisner",
+      "popularity" : 3.487,
+      "character" : "",
+      "cast_id" : 11
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3881141,
+      "name" : "Dia Jovanovic",
+      "popularity" : 0.001,
+      "character" : "",
+      "cast_id" : 12
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3881143,
+      "name" : "Victor Hugo",
+      "popularity" : 0.001,
+      "character" : "",
+      "cast_id" : 13
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3881144,
+      "name" : "Clara Herman",
+      "popularity" : 0.001,
+      "character" : "",
+      "cast_id" : 14
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3881145,
+      "name" : "Bertram Ask",
+      "popularity" : 0.001,
+      "character" : "",
+      "cast_id" : 15
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3881137,
+      "name" : "Andreas Hayden",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Sound"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2659049,
+      "name" : "Mattis Huus Heurlin",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3306079,
+      "name" : "Milan Bjørnild",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3306079,
+      "name" : "Milan Bjørnild",
+      "popularity" : 0.001,
+      "department" : "Camera",
+      "job" : "Director of Photography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2659049,
+      "name" : "Mattis Huus Heurlin",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2659049,
+      "name" : "Mattis Huus Heurlin",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3021518,
+      "name" : "Karoline Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3881139,
+      "name" : "Eigil Pock-Steen Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Music"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3237999,
+      "name" : "Pelle Axel Von Schantz Iversen",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Salmon",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-10-03",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1076175,
+  "overview" : "In a home for struggling girls, young Milo is transitioning gender with the support of care worker Nicki. One day, through the thin walls of the institution, Milo hears something they wish they hadn’t. They push the emergency button.",
+  "popularity" : 3.494,
+  "revenue" : 0,
+  "runtime" : 19,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Sværddrage",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3880910,
+      "name" : "Anna Charlie Zerbib Streizt",
+      "popularity" : 0.001,
+      "character" : "Milo",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1388464,
+      "name" : "Niklas Herskind",
+      "popularity" : 1.778,
+      "character" : "Nicki",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 135945,
+      "name" : "Petrine Agger",
+      "popularity" : 3.083,
+      "character" : "Birgit",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2640821,
+      "name" : "Isabella Møller Hansen",
+      "popularity" : 0.768,
+      "character" : "Nadja",
+      "cast_id" : 5
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3880909,
+      "name" : "Amalie Maria Nielsen",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4252495,
+      "name" : "Oscar Anker Wiedeman",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3880909,
+      "name" : "Amalie Maria Nielsen",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Sværddrage",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-10-03",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ ],
+  "id" : 1082942,
+  "overview" : "A 16-year-old boy who spend summer with his grandparents falls in love with an older young man but when tragedy strikes, he falls into a dark hole of self-harm, lust, and loneliness.",
+  "popularity" : 6.445,
+  "revenue" : 0,
+  "runtime" : 87,
+  "status" : null,
+  "tagline" : null,
+  "title" : "B.O.Y. - Bruises of Yesterday",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 6120,
+      "name" : "Bodil Jørgensen",
+      "popularity" : 5.669,
+      "character" : "",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 6134,
+      "name" : "Jens Jørn Spottag",
+      "popularity" : 2.137,
+      "character" : "",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 34866,
+      "name" : "Paw Henriksen",
+      "popularity" : 3.91,
+      "character" : "",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3907135,
+      "name" : "Alexander Mayah Larsen",
+      "popularity" : 0.001,
+      "character" : "",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3907136,
+      "name" : "Noa Viktor Risbro Hjerrild",
+      "popularity" : 0.001,
+      "character" : "",
+      "cast_id" : 6
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1475410,
+      "name" : "Søren Green",
+      "popularity" : 6.161,
+      "department" : "Directing",
+      "job" : "Director"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "B.O.Y. - Bruises of Yesterday",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-09-28",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1325024,
+  "overview" : "15-year old Fanny has just finished school, but instead of celebrating with her friends, she has to spend the summer trying to say goodbye to her dying mother, whose final wish is to be together in their summer home. Not knowing how much time she has left, they have to find a way to live in the meantime.",
+  "popularity" : 10.8,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Min evige sommer",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2204700,
+      "name" : "Kaya Toft Loholt",
+      "popularity" : 0.723,
+      "character" : "Fanny",
+      "cast_id" : 6
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1155671,
+      "name" : "Maria Rossing",
+      "popularity" : 1.856,
+      "character" : "Karin",
+      "cast_id" : 7
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1640021,
+      "name" : "Anders Mossling",
+      "popularity" : 12.634,
+      "character" : "Johan",
+      "cast_id" : 8
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 3409829,
+      "name" : "Jasper Kruse Svabo",
+      "popularity" : 0.544,
+      "character" : "Jamie",
+      "cast_id" : 9
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4623033,
+      "name" : "Mika Hyllekvist Nielsen",
+      "popularity" : 0.001,
+      "character" : "Christina",
+      "cast_id" : 10
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3755030,
+      "name" : "Maja Osmani Winther",
+      "popularity" : 0.001,
+      "character" : "Nanna",
+      "cast_id" : 11
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1107287,
+      "name" : "Fredrik Stenberg Ditlev-Simonsen",
+      "popularity" : 1.24,
+      "character" : "Tom",
+      "cast_id" : 12
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3833263,
+      "name" : "Frederik Emil Mathiasen",
+      "popularity" : 0.001,
+      "character" : "Joakim",
+      "cast_id" : 13
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1674313,
+      "name" : "Sylvia Le Fanu",
+      "popularity" : 0.241,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1674313,
+      "name" : "Sylvia Le Fanu",
+      "popularity" : 0.241,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1947202,
+      "name" : "Mads Lind Knudsen",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1150129,
+      "name" : "Katja Adomeit",
+      "popularity" : 1.16,
+      "department" : "Production",
+      "job" : "Executive Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2812478,
+      "name" : "Jeppe Wowk",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Min evige sommer",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-09-23",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 27,
+    "name" : "Horror"
+  }, {
+    "id" : 53,
+    "name" : "Thriller"
+  }, {
+    "id" : 9648,
+    "name" : "Mystery"
+  } ],
+  "id" : 1353670,
+  "overview" : "",
+  "popularity" : 4.13,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Amnesia",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "character" : "Person 2",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4668384,
+      "name" : "Sebastian Poulsen",
+      "popularity" : 0.001,
+      "character" : "Person 1",
+      "cast_id" : 2
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4668384,
+      "name" : "Sebastian Poulsen",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Amnesia",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-09-13",
+  "spoken_languages" : null,
+  "vote_average" : 9.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 99,
+    "name" : "Documentary"
+  } ],
+  "id" : 1355274,
+  "overview" : "",
+  "popularity" : 3.632,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Var min far pædofil?",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Var min far pædofil?",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-09-11",
+  "spoken_languages" : null,
+  "vote_average" : 10.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ ],
+  "id" : 1353949,
+  "overview" : "",
+  "popularity" : 2.198,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Kristoffer Olsson - Min vigtigste kamp",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4930811,
+      "name" : "Kristoffer Olsson",
+      "popularity" : 0.014,
+      "character" : "",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4930813,
+      "name" : "Lena Olsson",
+      "popularity" : 0.014,
+      "character" : "",
+      "cast_id" : 2
+    } ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Kristoffer Olsson - Min vigtigste kamp",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-09-08",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 35,
+    "name" : "Comedy"
+  } ],
+  "id" : 1353505,
+  "overview" : "",
+  "popularity" : 2.498,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Platt-Form Er vi gået for langt",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 71157,
+      "name" : "Mille Lehfeldt",
+      "popularity" : 6.209,
+      "character" : "",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 82538,
+      "name" : "Jakob Fauerby",
+      "popularity" : 0.74,
+      "character" : "",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 148724,
+      "name" : "Laus Høybye",
+      "popularity" : 2.04,
+      "character" : "",
+      "cast_id" : 3
+    } ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Platt-Form Er vi gået for langt",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-09-07",
+  "spoken_languages" : null,
+  "vote_average" : 4.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ ],
+  "id" : 1358603,
+  "overview" : "",
+  "popularity" : 0.0,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Hvis grise kunne tale",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Hvis grise kunne tale",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ ],
+  "id" : 1341413,
+  "overview" : "",
+  "popularity" : 1.619,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Niels Hausgaard 80 år",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 938308,
+      "name" : "Niels Hausgaard",
+      "popularity" : 2.197,
+      "character" : "",
+      "cast_id" : 1
+    } ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Niels Hausgaard 80 år",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-31",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 99,
+    "name" : "Documentary"
+  } ],
+  "id" : 1340482,
+  "overview" : "",
+  "popularity" : 1.957,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "De ødelagte heste",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "De ødelagte heste",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-29",
+  "spoken_languages" : null,
+  "vote_average" : 10.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 35,
+    "name" : "Comedy"
+  }, {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1339861,
+  "overview" : "The idealistic Lærke is put to the test when she drags her boyfriend and child to her parents' St. Hans Eve party, because what should have been a cosy family moment soon turns into a psychological power struggle between two generations. When Lærke ends up being brought down by her own principles, she throws herself into a last childish attempt to take back control.",
+  "popularity" : 1.681,
+  "revenue" : 0,
+  "runtime" : 15,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Heks",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 6120,
+      "name" : "Bodil Jørgensen",
+      "popularity" : 5.669,
+      "character" : "Mormor",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1255681,
+      "name" : "Anders Juul",
+      "popularity" : 3.093,
+      "character" : "Sofus",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1297500,
+      "name" : "Johanne Louise Schmidt",
+      "popularity" : 2.54,
+      "character" : "Lærke",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 6131,
+      "name" : "Michael Moritzen",
+      "popularity" : 4.302,
+      "character" : "Morfar",
+      "cast_id" : 6
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4908931,
+      "name" : "Beinta K. Clothier",
+      "popularity" : 0.324,
+      "character" : "Eydna",
+      "cast_id" : 7
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4908932,
+      "name" : "Agnes Helvang",
+      "popularity" : 0.378,
+      "character" : "Esther",
+      "cast_id" : 8
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4908330,
+      "name" : "Agnes Trier",
+      "popularity" : 0.625,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4908330,
+      "name" : "Agnes Trier",
+      "popularity" : 0.625,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2826927,
+      "name" : "Stephanie Stål Axelgård",
+      "popularity" : 0.001,
+      "department" : "Crew",
+      "job" : "Cinematography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3191674,
+      "name" : "Mira Thu",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Heks",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-27",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1339859,
+  "overview" : "At a psychiatric ward, on the last day of the year, Elias finds himself racing against time. Haunted by hallucinations and fueled by emotions, he needs to declare his love for his nurse before time runs out.",
+  "popularity" : 1.032,
+  "revenue" : 0,
+  "runtime" : 20,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Sygt Forelsket",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4908329,
+      "name" : "Alexander Saul",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4908329,
+      "name" : "Alexander Saul",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Sygt Forelsket",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-27",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 80,
+    "name" : "Crime"
+  } ],
+  "id" : 1339637,
+  "overview" : "This is the story of a red suitcase and how its dramatic journey, over the course of a day, forever changes a young woman's life. A Danish crime short film in 4 chapters, shot on 4 different analog film formats: 8mm, 16mm, 35mm, and 65mm.",
+  "popularity" : 2.828,
+  "revenue" : 0,
+  "runtime" : 30,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Intet Vover",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1032398,
+      "name" : "Fanny Leander Bornedal",
+      "popularity" : 2.29,
+      "character" : "Anne",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 15086,
+      "name" : "Nicolas Bro",
+      "popularity" : 5.636,
+      "character" : "Arne",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 234102,
+      "name" : "Maria Erwolter",
+      "popularity" : 4.632,
+      "character" : "The Boss",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 6134,
+      "name" : "Jens Jørn Spottag",
+      "popularity" : 2.137,
+      "character" : "Søren",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 571346,
+      "name" : "Carsten Bjørnlund",
+      "popularity" : 4.512,
+      "character" : "Politimand",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1916717,
+      "name" : "Rudi Køhnke",
+      "popularity" : 6.861,
+      "character" : "Toby",
+      "cast_id" : 7
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1505679,
+      "name" : "Ali Abdul Amir Najel",
+      "popularity" : 0.001,
+      "character" : "Tommy",
+      "cast_id" : 8
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1439622,
+      "name" : "Bo Thomas",
+      "popularity" : 2.474,
+      "character" : "Fixer",
+      "cast_id" : 9
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3778684,
+      "name" : "Jesper Tønnes",
+      "popularity" : 1.04,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3778684,
+      "name" : "Jesper Tønnes",
+      "popularity" : 1.04,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1557854,
+      "name" : "Anders Lindved",
+      "popularity" : 0.001,
+      "department" : "Crew",
+      "job" : "Cinematography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4907425,
+      "name" : "Patricia Weber",
+      "popularity" : 0.001,
+      "department" : "Art",
+      "job" : "Production Design"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4856848,
+      "name" : "Nina Helbak",
+      "popularity" : 0.001,
+      "department" : "Costume & Make-Up",
+      "job" : "Costume Design"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Intet Vover",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-27",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1339624,
+  "overview" : "A young nurse is kidnapped by a psychotic man with an absurd and desperate wish.",
+  "popularity" : 1.037,
+  "revenue" : 0,
+  "runtime" : 10,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Frit Fald",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2662259,
+      "name" : "Ivan Elmer",
+      "popularity" : 1.72,
+      "department" : "Directing",
+      "job" : "Director"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Frit Fald",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-26",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1339615,
+  "overview" : "Aksel wakes up with a beautiful and loving woman by his side, the morning sun and a gentle breeze coming in through the window. However, this idyll doesn't last long, as the day gradually falls more and more apart.",
+  "popularity" : 1.569,
+  "revenue" : 0,
+  "runtime" : 9,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Tillykke Aksel",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3626756,
+      "name" : "Anders Khayat",
+      "popularity" : 0.001,
+      "character" : "Aksel",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 4120038,
+      "name" : "Ann Celina Fønsskov",
+      "popularity" : 0.001,
+      "character" : "Rebekka",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4907337,
+      "name" : "Siri Seidler",
+      "popularity" : 0.009,
+      "character" : "Julie",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2969412,
+      "name" : "Sigurd Holm",
+      "popularity" : 0.001,
+      "character" : "Man on street",
+      "cast_id" : 4
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3501178,
+      "name" : "Kasper Leegaard",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3501178,
+      "name" : "Kasper Leegaard",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4907341,
+      "name" : "Carl Ranfelt",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4907345,
+      "name" : "Olivia Sinclair",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4907348,
+      "name" : "Jeppe Dengsø",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Music"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2729524,
+      "name" : "Jonah Pinny",
+      "popularity" : 0.001,
+      "department" : "Crew",
+      "job" : "Cinematography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3978700,
+      "name" : "Jasmin Falk Jensen",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Tillykke Aksel",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-26",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 9648,
+    "name" : "Mystery"
+  } ],
+  "id" : 1300500,
+  "overview" : "Esther, a photographer goes to a summerhouse to take a series of photos of Sophie, her former childhood friend. Sophie is terminally ill and waiting for a heart transplant. During Esther's time in the summerhouse a doubt occurs,  leading to tension-filled moments as Esther tries to uncover the truth behind Sophie's actions.",
+  "popularity" : 4.697,
+  "revenue" : 0,
+  "runtime" : 19,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Shutter",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2450862,
+      "name" : "Anna Søgaard Frandsen",
+      "popularity" : 0.71,
+      "character" : "Sophie",
+      "cast_id" : 9
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 4757402,
+      "name" : "Sandra Turéll Henningsen",
+      "popularity" : 0.001,
+      "character" : "Esther",
+      "cast_id" : 10
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 591209,
+      "name" : "Morten Holst",
+      "popularity" : 2.024,
+      "character" : "Rune (Voice)",
+      "cast_id" : 11
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3779175,
+      "name" : "Marta Eliseo Tronhjem",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4757178,
+      "name" : "Birk Jakob Nielsen",
+      "popularity" : 0.001,
+      "department" : "Camera",
+      "job" : "Director of Photography"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 3599348,
+      "name" : "Kristoffer Bjerg",
+      "popularity" : 0.68,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2958100,
+      "name" : "Giulio Conversi",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Sound Designer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4757396,
+      "name" : "Nanna Dufour",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3363798,
+      "name" : "Sofie Fors Holmark",
+      "popularity" : 0.43,
+      "department" : "Crew",
+      "job" : "Mixing Engineer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4757397,
+      "name" : "Oscar Barañano Nielsen",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4757449,
+      "name" : "Nino Ujmajuridze",
+      "popularity" : 0.001,
+      "department" : "Art",
+      "job" : "Set Designer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4757451,
+      "name" : "Rebekka Wilma Sølvhøj Ravn",
+      "popularity" : 0.001,
+      "department" : "Costume & Make-Up",
+      "job" : "Makeup Artist"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4757434,
+      "name" : "Laurits Schifter Lorenzen",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Foley"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4757444,
+      "name" : "Simone Vejlin",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Production Manager"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4757455,
+      "name" : "Emil Mark Knudsen",
+      "popularity" : 0.001,
+      "department" : "Crew",
+      "job" : "Score Engineer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Shutter",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-26",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ ],
+  "id" : 1340139,
+  "overview" : "When an aging man realizes that his lonely existence has made him deathly pale, he makes a fateful decision venturing to a tanning salon for the first time in his life.",
+  "popularity" : 1.0,
+  "revenue" : 0,
+  "runtime" : 15,
+  "status" : null,
+  "tagline" : null,
+  "title" : "I Solen",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 115214,
+      "name" : "Lars Simonsen",
+      "popularity" : 1.36,
+      "character" : "Asbjørn",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2999154,
+      "name" : "Katinka Lærke Petersen",
+      "popularity" : 2.15,
+      "character" : "Joy",
+      "cast_id" : 2
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4909593,
+      "name" : "Jonathan Rafael-Weis",
+      "popularity" : 0.062,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4909593,
+      "name" : "Jonathan Rafael-Weis",
+      "popularity" : 0.062,
+      "department" : "Writing",
+      "job" : "Writer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "I Solen",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-25",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 35,
+    "name" : "Comedy"
+  } ],
+  "id" : 1337663,
+  "overview" : "",
+  "popularity" : 1.386,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Jonas Mogensen - Trummerum",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1949848,
+      "name" : "Jonas Mogensen",
+      "popularity" : 2.001,
+      "character" : "",
+      "cast_id" : 1
+    } ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Jonas Mogensen - Trummerum",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-23",
+  "spoken_languages" : null,
+  "vote_average" : 8.667,
+  "vote_count" : 3
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 27,
+    "name" : "Horror"
+  } ],
+  "id" : 1337617,
+  "overview" : "",
+  "popularity" : 1.378,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Friday the 13th (Short)",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "character" : "Lasse/Druknet/Fange/Jason Voorhees",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4668384,
+      "name" : "Sebastian Poulsen",
+      "popularity" : 0.001,
+      "character" : "Jason Voorhees/Sebastian",
+      "cast_id" : 2
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4668384,
+      "name" : "Sebastian Poulsen",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4668384,
+      "name" : "Sebastian Poulsen",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Friday the 13th (Short)",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-23",
+  "spoken_languages" : null,
+  "vote_average" : 9.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ ],
+  "id" : 1317159,
+  "overview" : "How far are you willing to go to save the people you love? This is the question Christian (Nikolaj Lie Kaas) is forced to answer when he is smuggled into Syria in a desperate search for his son Adam. It's a deadly and soul-searching journey into a brutal, war-torn country. Gradually, Christian realises that he must be willing to sacrifice everything he believes in to be reunited with his son. WAY HOME is a powerful and gripping drama about powerlessness, forgiveness and the love for our children.",
+  "popularity" : 2.429,
+  "revenue" : 0,
+  "runtime" : 98,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Vejen hjem",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1018,
+      "name" : "Nikolaj Lie Kaas",
+      "popularity" : 8.754,
+      "character" : "Christian",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1552847,
+      "name" : "Albert Rudbeck Lindhardt",
+      "popularity" : 4.079,
+      "character" : "Adam",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 2661746,
+      "name" : "Arian Kashef",
+      "popularity" : 4.396,
+      "character" : "Abu Hassan",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1458362,
+      "name" : "Besir Zeciri",
+      "popularity" : 7.633,
+      "character" : "Abu Amin",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1508552,
+      "name" : "Harki Bhambra",
+      "popularity" : 4.52,
+      "character" : "Bilal",
+      "cast_id" : 6
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1171128,
+      "name" : "Tom Austen",
+      "popularity" : 3.267,
+      "character" : "Abu Talha",
+      "cast_id" : 7
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3553678,
+      "name" : "Majd Eid",
+      "popularity" : 5.489,
+      "character" : "Nazir",
+      "cast_id" : 8
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4895251,
+      "name" : "Ahmad Al-Sukar",
+      "popularity" : 0.574,
+      "character" : "Hamza",
+      "cast_id" : 9
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 72372,
+      "name" : "Charlotte Sieling",
+      "popularity" : 2.66,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 72372,
+      "name" : "Charlotte Sieling",
+      "popularity" : 2.66,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1959114,
+      "name" : "Jesper Fink",
+      "popularity" : 5.138,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1266259,
+      "name" : "Nagieb Khaja",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Vejen hjem",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-20",
+  "spoken_languages" : null,
+  "vote_average" : 3.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 18,
+    "name" : "Drama"
+  } ],
+  "id" : 1276696,
+  "overview" : "",
+  "popularity" : 28.421,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Kontra",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4662258,
+      "name" : "Andrea Hjejle",
+      "popularity" : 0.001,
+      "character" : "Fanny",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4662259,
+      "name" : "Anna Lehrmann",
+      "popularity" : 0.001,
+      "character" : "Lilja",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4662261,
+      "name" : "Nikoline Mejnert Smith",
+      "popularity" : 0.001,
+      "character" : "Kajsa",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1194836,
+      "name" : "Kasper Leisner",
+      "popularity" : 3.846,
+      "character" : "Thomas",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2187720,
+      "name" : "Safina Coster-Waldau",
+      "popularity" : 1.976,
+      "character" : "Asta",
+      "cast_id" : 5
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2327390,
+      "name" : "Jonas Risvig",
+      "popularity" : 2.121,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2327390,
+      "name" : "Jonas Risvig",
+      "popularity" : 2.121,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3711109,
+      "name" : "Jesper Christensen",
+      "popularity" : 0.001,
+      "department" : "Crew",
+      "job" : "Cinematography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3149519,
+      "name" : "Mie Sofie Nielsen",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1424980,
+      "name" : "Rie Lykke",
+      "popularity" : 0.722,
+      "department" : "Art",
+      "job" : "Production Design"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Kontra",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-16",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 99,
+    "name" : "Documentary"
+  } ],
+  "id" : 1329679,
+  "overview" : "",
+  "popularity" : 0.945,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Skål Kirsten - Danmarks Ældste",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Skål Kirsten - Danmarks Ældste",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-14",
+  "spoken_languages" : null,
+  "vote_average" : 10.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 99,
+    "name" : "Documentary"
+  } ],
+  "id" : 1339064,
+  "overview" : "",
+  "popularity" : 1.14,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Tynd på sprøjte",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4904907,
+      "name" : "Pernille Kathleen",
+      "popularity" : 0.675,
+      "character" : "",
+      "cast_id" : 1
+    } ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Tynd på sprøjte",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-08",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 18,
+    "name" : "Drama"
+  }, {
+    "id" : 53,
+    "name" : "Thriller"
+  } ],
+  "id" : 1290697,
+  "overview" : "Ulrik Torp, once a fearless investigative journalist who is now tackling unemployment and a midlife crisis. He finds himself in the middle of a new political conspiracy.",
+  "popularity" : 3.961,
+  "revenue" : 0,
+  "runtime" : 99,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Mørkeland",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 82352,
+      "name" : "Lene Maria Christensen",
+      "popularity" : 3.148,
+      "character" : "Anne-Grethe Hulsig",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 15086,
+      "name" : "Nicolas Bro",
+      "popularity" : 5.636,
+      "character" : "Henrik Moll",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1184,
+      "name" : "Anders W. Berthelsen",
+      "popularity" : 3.236,
+      "character" : "Ulrik Torp",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1034338,
+      "name" : "Ina-Miriam Rosenbaum",
+      "popularity" : 1.568,
+      "character" : "Bente",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 77525,
+      "name" : "Charlotte Munck",
+      "popularity" : 3.756,
+      "character" : "Mette Torp",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 6145,
+      "name" : "Marina Bouras",
+      "popularity" : 2.885,
+      "character" : "Kriminalbetjent",
+      "cast_id" : 6
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2986674,
+      "name" : "Ellaha Lack",
+      "popularity" : 4.69,
+      "character" : "Sara Yassin",
+      "cast_id" : 7
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2986668,
+      "name" : "Mathilde Arcel Fock",
+      "popularity" : 0.827,
+      "character" : "Emma",
+      "cast_id" : 8
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2895212,
+      "name" : "Mathilde Eusebius",
+      "popularity" : 1.828,
+      "character" : "Julie Torp",
+      "cast_id" : 9
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2134894,
+      "name" : "Amira Jensen",
+      "popularity" : 0.723,
+      "character" : "Social og sundhedshjælper",
+      "cast_id" : 14
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2595279,
+      "name" : "Mohamed Djeziri",
+      "popularity" : 3.307,
+      "character" : "Abdel Yassi",
+      "cast_id" : 15
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1491453,
+      "name" : "Sofia Nolsøe Mikkelsen",
+      "popularity" : 0.527,
+      "character" : "Katrine Tabor-Nielsen",
+      "cast_id" : 16
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 88544,
+      "name" : "Tommy Kenter",
+      "popularity" : 4.814,
+      "character" : "Otto Brathenberg",
+      "cast_id" : 17
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2847036,
+      "name" : "Sara Fanta Traore",
+      "popularity" : 1.433,
+      "character" : "Jobkonsulent",
+      "cast_id" : 18
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 2189732,
+      "name" : "Brian Hjulmann",
+      "popularity" : 3.925,
+      "character" : "Asbjørn",
+      "cast_id" : 19
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 3096731,
+      "name" : "Patrick A. Hansen",
+      "popularity" : 0.353,
+      "character" : "Simon",
+      "cast_id" : 20
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1122833,
+      "name" : "Jan Tjerrild",
+      "popularity" : 1.411,
+      "character" : "Ministersekretær",
+      "cast_id" : 21
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1158298,
+      "name" : "Lane Lind",
+      "popularity" : 1.624,
+      "character" : "Marta Spang-Johansen",
+      "cast_id" : 22
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 212907,
+      "name" : "Mikkel Serup",
+      "popularity" : 0.445,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1114057,
+      "name" : "Marie Østerbye",
+      "popularity" : 1.843,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1874685,
+      "name" : "Sara Namer",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1365201,
+      "name" : "Morten Kjems Juhl",
+      "popularity" : 0.154,
+      "department" : "Production",
+      "job" : "Producer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Mørkeland",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-06",
+  "spoken_languages" : null,
+  "vote_average" : 6.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 27,
+    "name" : "Horror"
+  }, {
+    "id" : 80,
+    "name" : "Crime"
+  } ],
+  "id" : 1325566,
+  "overview" : "Confession granted by active user on 4chans's /soc/,,,  \"I'm sorry I can't do it anymore, sorry, sorry, sorry, it was you, my brother... I need to get out of here, these are my last documents, my last breath, don't communicate with me again, don't communicate with me again, it's too cold, your guts warm me up....  http://5ply547c2zadnu6bh3adnlz7fdxnxngcpfkq3n2qn6cak7xryiug6uid.onion  \"",
+  "popularity" : 0.53,
+  "revenue" : 0,
+  "runtime" : 20,
+  "status" : null,
+  "tagline" : null,
+  "title" : "demonophobia III, confession for the 7. Mordkommission der Berliner Polizei",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 3,
+      "id" : 4759154,
+      "name" : "Levi José Jiménez",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 3,
+      "id" : 4759154,
+      "name" : "Levi José Jiménez",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4868285,
+      "name" : "/soc/ user",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "demonophobia III, confession for the 7. Mordkommission der Berliner Polizei",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-08-05",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 35,
+    "name" : "Comedy"
+  } ],
+  "id" : 1321651,
+  "overview" : "",
+  "popularity" : 1.081,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Conrad Molden - ÆØÅ",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2516525,
+      "name" : "Conrad Molden",
+      "popularity" : 0.001,
+      "character" : "",
+      "cast_id" : 1
+    } ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Conrad Molden - ÆØÅ",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-07-26",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 99,
+    "name" : "Documentary"
+  }, {
+    "id" : 16,
+    "name" : "Animation"
+  } ],
+  "id" : 1316583,
+  "overview" : "A Visualization of A Cut is an experimental animated documentary in three chapters that explores the connection between the cinematic cut and human relations extracted from home movies.\r Three chapters exploring the connection between cinematic cutting and human relationships extracted from home movies. A meditation on life, love and loss explored through a montage of home movies of six Scandinavian families, the materiality of paper and the thread that connects them.",
+  "popularity" : 1.754,
+  "revenue" : 0,
+  "runtime" : 8,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Una visualizzazione di un taglio",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1569258,
+      "name" : "Thomas Richard Christensen",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Sound Mixer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1292360,
+      "name" : "Bruno Caetano",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Co-Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3119882,
+      "name" : "Anton Friisgaard",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Music"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2678754,
+      "name" : "Claudia Munksgaard-Palmqvist",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4366977,
+      "name" : "Andreia Bertini",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Color Grading"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3000233,
+      "name" : "Lana Tankosa Nikolic",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1642496,
+      "name" : "Draško Ivezić",
+      "popularity" : 4.646,
+      "department" : "Production",
+      "job" : "Co-Producer"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2678754,
+      "name" : "Claudia Munksgaard-Palmqvist",
+      "popularity" : 0.001,
+      "department" : "Visual Effects",
+      "job" : "Animation"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2678754,
+      "name" : "Claudia Munksgaard-Palmqvist",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3119882,
+      "name" : "Anton Friisgaard",
+      "popularity" : 0.001,
+      "department" : "Crew",
+      "job" : "Compositor"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Una visualizzazione di un taglio",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-07-25",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 18,
+    "name" : "Drama"
+  }, {
+    "id" : 53,
+    "name" : "Thriller"
+  } ],
+  "id" : 1113120,
+  "overview" : "Eva, an idealistic prison officer, is faced with the dilemma of her life when a young man from her past gets transferred to the prison where she works. Without revealing her secret, Eva asks to be moved to the young man’s ward – the toughest and most violent in the prison. Here begins an unsettling psychological thriller, where Eva’s sense of justice puts both her morality and future at stake.",
+  "popularity" : 6.264,
+  "revenue" : 0,
+  "runtime" : 100,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Vogter",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 32683,
+      "name" : "Sidse Babett Knudsen",
+      "popularity" : 9.418,
+      "character" : "Eva Hansen",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1442695,
+      "name" : "Sebastian Bull Sarning",
+      "popularity" : 1.533,
+      "character" : "Mikkel",
+      "cast_id" : 9
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 234907,
+      "name" : "Dar Salim",
+      "popularity" : 11.906,
+      "character" : "Rami",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 6145,
+      "name" : "Marina Bouras",
+      "popularity" : 2.885,
+      "character" : "Helle",
+      "cast_id" : 8
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1366062,
+      "name" : "Olaf Johannessen",
+      "popularity" : 11.225,
+      "character" : "Head of Institution",
+      "cast_id" : 7
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1433475,
+      "name" : "Jacob Ulrik Lohmann",
+      "popularity" : 4.898,
+      "character" : "Priest",
+      "cast_id" : 6
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1949745,
+      "name" : "Siir Tilif",
+      "popularity" : 3.697,
+      "character" : "Jurist",
+      "cast_id" : 10
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4010506,
+      "name" : "Rami Zayat",
+      "popularity" : 0.001,
+      "character" : "Ali",
+      "cast_id" : 12
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1731560,
+      "name" : "Mathias Petersen",
+      "popularity" : 2.75,
+      "character" : "Simon",
+      "cast_id" : 18
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1934698,
+      "name" : "Ida Cæcilie Rasmussen",
+      "popularity" : 0.789,
+      "character" : "Læge",
+      "cast_id" : 11
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1923202,
+      "name" : "Gustav Möller",
+      "popularity" : 20.133,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1923202,
+      "name" : "Gustav Möller",
+      "popularity" : 20.133,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1616241,
+      "name" : "Emil Nygaard Albertsen",
+      "popularity" : 0.811,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1616242,
+      "name" : "Lina Flint",
+      "popularity" : 0.995,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1077404,
+      "name" : "Jon Ekstrand",
+      "popularity" : 0.859,
+      "department" : "Sound",
+      "job" : "Original Music Composer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1616244,
+      "name" : "Jasper Spanning",
+      "popularity" : 1.804,
+      "department" : "Camera",
+      "job" : "Director of Photography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1994076,
+      "name" : "Rasmus Stensgaard Madsen",
+      "popularity" : 0.01,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1995112,
+      "name" : "Kristina Kovacs",
+      "popularity" : 0.39,
+      "department" : "Art",
+      "job" : "Production Design"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Vogter",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-07-10",
+  "spoken_languages" : null,
+  "vote_average" : 7.0,
+  "vote_count" : 10
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 99,
+    "name" : "Documentary"
+  } ],
+  "id" : 1245202,
+  "overview" : "After actor Søren Spanning's stroke in 2014, his children document their family's adaptation over six years, navigating their evolving relationship and coping with grief until his death in 2020.",
+  "popularity" : 1.948,
+  "revenue" : 0,
+  "runtime" : 59,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Vores Fars Sol",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1616244,
+      "name" : "Jasper Spanning",
+      "popularity" : 1.804,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 90061,
+      "name" : "Rosalinde Mynster",
+      "popularity" : 3.072,
+      "department" : "Directing",
+      "job" : "Director"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Vores Fars Sol",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-07-08",
+  "spoken_languages" : null,
+  "vote_average" : 8.0,
+  "vote_count" : 2
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 878,
+    "name" : "Science Fiction"
+  }, {
+    "id" : 18,
+    "name" : "Drama"
+  }, {
+    "id" : 10749,
+    "name" : "Romance"
+  } ],
+  "id" : 1053927,
+  "overview" : "Young climate change scientist, Elias falls in love with an aspiring singer, Anita. But when an opportunity arises for him to join a mission researching a dangerous climate change phenomenon – a mysterious fracture on the ocean floor – he chooses career over love. Years later, during his mission, he experiences a vision of what his life could have been like if he made a different choice and his new obsession becomes to get his old life and love back.",
+  "popularity" : 6.932,
+  "revenue" : 0,
+  "runtime" : 99,
+  "status" : null,
+  "tagline" : null,
+  "title" : "For evigt",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1290402,
+      "name" : "Simon Sears",
+      "popularity" : 2.266,
+      "character" : "Elias",
+      "cast_id" : 12
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1459336,
+      "name" : "Nanna Øland Fabricius",
+      "popularity" : 1.764,
+      "character" : "Anita",
+      "cast_id" : 11
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4469733,
+      "name" : "Viktor Hjelmsøe",
+      "popularity" : 0.001,
+      "character" : "Elias (young)",
+      "cast_id" : 20
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2450862,
+      "name" : "Anna Søgaard Frandsen",
+      "popularity" : 0.71,
+      "character" : "Anita (young)",
+      "cast_id" : 19
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 143391,
+      "name" : "Magnus Krepper",
+      "popularity" : 9.48,
+      "character" : "",
+      "cast_id" : 15
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 142874,
+      "name" : "Halldóra Geirharðsdóttir",
+      "popularity" : 1.237,
+      "character" : "",
+      "cast_id" : 13
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 2204705,
+      "name" : "Zaki Youssef",
+      "popularity" : 7.592,
+      "character" : "",
+      "cast_id" : 14
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 591209,
+      "name" : "Morten Holst",
+      "popularity" : 2.024,
+      "character" : "",
+      "cast_id" : 21
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1439639,
+      "name" : "Thomas Magnussen",
+      "popularity" : 4.899,
+      "character" : "Professor",
+      "cast_id" : 16
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2995434,
+      "name" : "Helga Kristín Helgadóttir",
+      "popularity" : 0.001,
+      "character" : "Journalist",
+      "cast_id" : 17
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3804164,
+      "name" : "Kaj Søholm Lehmkuhl",
+      "popularity" : 0.001,
+      "character" : "Climate Scientist",
+      "cast_id" : 18
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1894748,
+      "name" : "Ulaa Salim",
+      "popularity" : 2.182,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 1894748,
+      "name" : "Ulaa Salim",
+      "popularity" : 2.182,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2361833,
+      "name" : "Daniel Mühlendorph",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1669951,
+      "name" : "Grímar Jónsson",
+      "popularity" : 0.538,
+      "department" : "Production",
+      "job" : "Co-Producer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 131801,
+      "name" : "Jacob Møller",
+      "popularity" : 0.991,
+      "department" : "Camera",
+      "job" : "Director of Photography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2361837,
+      "name" : "Jenna Mangulad",
+      "popularity" : 1.123,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2389472,
+      "name" : "Valgeir Sigurðsson",
+      "popularity" : 2.988,
+      "department" : "Sound",
+      "job" : "Original Music Composer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3804162,
+      "name" : "Rune Kristansen",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Sound Designer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2361859,
+      "name" : "Juan Bastias",
+      "popularity" : 0.001,
+      "department" : "Costume & Make-Up",
+      "job" : "Costume Designer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2024377,
+      "name" : "Gustav Pontoppidan",
+      "popularity" : 0.001,
+      "department" : "Art",
+      "job" : "Art Designer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "For evigt",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-07-08",
+  "spoken_languages" : null,
+  "vote_average" : 7.0,
+  "vote_count" : 2
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ ],
+  "id" : 1306963,
+  "overview" : "Wild boar hunting at night. A teenage son is out with his father. Rituals, darkness and a reckoning which creeps and seeps out from the pitch-black night of the forest in this intense and nerve-wracking gem.",
+  "popularity" : 1.027,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Trees Painted in Tar",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 82537,
+      "name" : "Søren Malling",
+      "popularity" : 4.709,
+      "character" : "",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 2642049,
+      "name" : "Magnus Juhl Andersen",
+      "popularity" : 0.559,
+      "character" : "",
+      "cast_id" : 3
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2441025,
+      "name" : "Casper Rudolf Emil Kjeldsen",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Trees Painted in Tar",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-07-06",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ ],
+  "id" : 1317073,
+  "overview" : "",
+  "popularity" : 0.71,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Bare en ven",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 2031037,
+      "name" : "Pernille René",
+      "popularity" : 3.135,
+      "character" : "Louise",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 3716332,
+      "name" : "Kat Stephie",
+      "popularity" : 0.001,
+      "character" : "Anna",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4830361,
+      "name" : "Morten Bach Petersen",
+      "popularity" : 0.001,
+      "character" : "Simon",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4830362,
+      "name" : "Tobias Gilbert",
+      "popularity" : 0.001,
+      "character" : "Mark",
+      "cast_id" : 4
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4830363,
+      "name" : "Jacob Daniel Lewis",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Bare en ven",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-07-01",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 10749,
+    "name" : "Romance"
+  }, {
+    "id" : 10402,
+    "name" : "Music"
+  } ],
+  "id" : 1205860,
+  "overview" : "",
+  "popularity" : 2.266,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Coldness",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1565234,
+      "name" : "Tarjei Sandvik Moe",
+      "popularity" : 0.122,
+      "character" : "(voice)",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4379760,
+      "name" : "Isabella Ølshøj",
+      "popularity" : 0.001,
+      "character" : "(voice)",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4379761,
+      "name" : "Arvid Jullander",
+      "popularity" : 0.001,
+      "character" : "Bassist",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4379762,
+      "name" : "Josefine Green",
+      "popularity" : 0.001,
+      "character" : "Harmonicist",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4379765,
+      "name" : "Johanna Lernstedt",
+      "popularity" : 0.001,
+      "character" : "Woman on the docks",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4379766,
+      "name" : "Anton Thulin",
+      "popularity" : 0.001,
+      "character" : "Dancer on the docks",
+      "cast_id" : 6
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4379769,
+      "name" : "Siri Josephson",
+      "popularity" : 0.001,
+      "character" : "Woman kicking onions",
+      "cast_id" : 7
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4379775,
+      "name" : "Karla Wulff",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Musician"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4279630,
+      "name" : "Frederik Zeuthen",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Music"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 3306090,
+      "name" : "Alfred Rubin",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4379772,
+      "name" : "Victor Cornelius",
+      "popularity" : 0.001,
+      "department" : "Crew",
+      "job" : "Cinematography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3686010,
+      "name" : "Paula Franke",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Sound Designer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 3306090,
+      "name" : "Alfred Rubin",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2659059,
+      "name" : "Andreas Lübker",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 3306090,
+      "name" : "Alfred Rubin",
+      "popularity" : 0.001,
+      "department" : "Crew",
+      "job" : "Cinematography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 2065839,
+      "name" : "Mette Mikkelsen",
+      "popularity" : 3.21,
+      "department" : "Production",
+      "job" : "Executive Producer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Kulde",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-06-24",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 99,
+    "name" : "Documentary"
+  }, {
+    "id" : 80,
+    "name" : "Crime"
+  } ],
+  "id" : 1308118,
+  "overview" : "",
+  "popularity" : 0.355,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Et farligt match",
+  "credits" : {
+    "cast" : [ ],
+    "crew" : [ ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Et farligt match",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-06-22",
+  "spoken_languages" : null,
+  "vote_average" : 10.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 10752,
+    "name" : "War"
+  } ],
+  "id" : 1309006,
+  "overview" : "",
+  "popularity" : 0.486,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "The Fate of Duty",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "character" : "Mike",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4668384,
+      "name" : "Sebastian Poulsen",
+      "popularity" : 0.001,
+      "character" : "Johnny/Sergent",
+      "cast_id" : 2
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4668383,
+      "name" : "Lasse Jørgensen",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Pligtens Skæbne",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-06-21",
+  "spoken_languages" : null,
+  "vote_average" : 8.0,
+  "vote_count" : 1
+}, {
+  "adult" : false,
+  "budget" : 0,
+  "genres" : [ {
+    "id" : 35,
+    "name" : "Comedy"
+  }, {
+    "id" : 10749,
+    "name" : "Romance"
+  } ],
+  "id" : 1303028,
+  "overview" : "",
+  "popularity" : 2.727,
+  "revenue" : 0,
+  "runtime" : 0,
+  "status" : null,
+  "tagline" : null,
+  "title" : "Jeg Vågnede Af Solen",
+  "credits" : {
+    "cast" : [ {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 3626756,
+      "name" : "Anders Khayat",
+      "popularity" : 0.001,
+      "character" : "Anders",
+      "cast_id" : 1
+    }, {
+      "adult" : false,
+      "gender" : 1,
+      "id" : 1522448,
+      "name" : "Hanne Uldal",
+      "popularity" : 3.43,
+      "character" : "Ane",
+      "cast_id" : 2
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 2671170,
+      "name" : "Marco Marc",
+      "popularity" : 0.001,
+      "character" : "Niklas",
+      "cast_id" : 3
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 1632952,
+      "name" : "Sonny Lindberg",
+      "popularity" : 11.916,
+      "character" : "Sune",
+      "cast_id" : 4
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4768005,
+      "name" : "Asta Agergaard",
+      "popularity" : 0.001,
+      "character" : "Dagmar",
+      "cast_id" : 5
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 3554735,
+      "name" : "Jonathan Nissen Schmidt",
+      "popularity" : 0.001,
+      "character" : "Jonathan",
+      "cast_id" : 6
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4768007,
+      "name" : "Carl Ranfelt",
+      "popularity" : 0.001,
+      "character" : "Carl",
+      "cast_id" : 7
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4768013,
+      "name" : "Anne Kristine Johannessen",
+      "popularity" : 0.001,
+      "character" : "Sangerinde",
+      "cast_id" : 8
+    } ],
+    "crew" : [ {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4768007,
+      "name" : "Carl Ranfelt",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 3554735,
+      "name" : "Jonathan Nissen Schmidt",
+      "popularity" : 0.001,
+      "department" : "Directing",
+      "job" : "Director"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4768021,
+      "name" : "Vår Hellan Dekko",
+      "popularity" : 0.001,
+      "department" : "Production",
+      "job" : "Producer"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4768023,
+      "name" : "Asger Rød",
+      "popularity" : 0.001,
+      "department" : "Camera",
+      "job" : "Director of Photography"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4768024,
+      "name" : "Sara Seighali",
+      "popularity" : 0.001,
+      "department" : "Editing",
+      "job" : "Editor"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4768027,
+      "name" : "Alva Laier Kann-christensen",
+      "popularity" : 0.001,
+      "department" : "Art",
+      "job" : "Production Design"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4768028,
+      "name" : "Sander Myrup",
+      "popularity" : 0.001,
+      "department" : "Art",
+      "job" : "Production Design"
+    }, {
+      "adult" : false,
+      "gender" : 0,
+      "id" : 4768031,
+      "name" : "Hjalte Engelund Hansen",
+      "popularity" : 0.001,
+      "department" : "Sound",
+      "job" : "Sound"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 3554735,
+      "name" : "Jonathan Nissen Schmidt",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    }, {
+      "adult" : false,
+      "gender" : 2,
+      "id" : 4768007,
+      "name" : "Carl Ranfelt",
+      "popularity" : 0.001,
+      "department" : "Writing",
+      "job" : "Writer"
+    } ]
+  },
+  "imdb_id" : null,
+  "origin_country" : null,
+  "original_language" : "da",
+  "original_title" : "Jeg Vågnede Af Solen",
+  "production_companies" : null,
+  "production_countries" : null,
+  "release_date" : "2024-06-19",
+  "spoken_languages" : null,
+  "vote_average" : 0.0,
+  "vote_count" : 0
+} ]
