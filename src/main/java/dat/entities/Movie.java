@@ -2,6 +2,8 @@ package dat.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import dat.DTO.CreditsDTO;
 import dat.DTO.GenreDTO;
 import lombok.Builder;
@@ -23,6 +25,7 @@ import java.util.Set;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Movie {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private boolean adult;
@@ -41,6 +44,7 @@ public class Movie {
     @JsonProperty("original_title")
     private String originalTitle;
 
+    @JsonProperty("release_date") // Ensures JSON field maps correctly to this field
     @Column(name = "release_date")
     private LocalDate releaseDate;
 
@@ -48,6 +52,10 @@ public class Movie {
     private String overview;
 
     private double popularity;
+    @JsonProperty("vote_average") // Ensures JSON field maps correctly to this field
+    @Column(name = "vote_average")
+    private double voteAverage;
+
     @ManyToMany
     @JoinTable(
             name = "movie_genre",
@@ -64,8 +72,13 @@ public class Movie {
 
     private String tagline;
 
-    @JsonProperty("vote_average")
-    private double voteAverage;
+    @ManyToMany
+    @JoinTable(
+            name = "movie_actor",
+            joinColumns = @JoinColumn(name = "movie_id"),
+            inverseJoinColumns = @JoinColumn(name = "actor_id")
+    )
+    private Set<Actor> actors;
 
     @JsonProperty("vote_count")
     private int voteCount;

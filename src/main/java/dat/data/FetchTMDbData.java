@@ -1,5 +1,13 @@
 package dat.data;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import dat.entities.Movie;
+import dat.config.HibernateConfig;
+import jakarta.persistence.EntityManager;
 import dat.DTO.*;
 
 import okhttp3.OkHttpClient;
@@ -15,11 +23,51 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class FetchTMDbData {
     static String apiKey = System.getenv("STRING_API_KEY");
     static ObjectMapper objectMapper = new ObjectMapper();
-
+    static {
+        // Configure the ObjectMapper
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        objectMapper.registerModule(new JavaTimeModule()); // Handles LocalDate deserialization
+    }
     public static void main(String[] args) throws Exception {
+
+    static {
+        // Configure the ObjectMapper
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        objectMapper.registerModule(new JavaTimeModule()); // Handles LocalDate deserialization
+    }
+
+    public static void main(String[] args) {
+        String filePath = "movies.json";
+
+        // Load movies from file if they exist
+        List<Movie> movieList = readMoviesFromFile(filePath);
+        if (movieList == null || movieList.isEmpty()) {
+            movieList = new ArrayList<>();
+
+            // Fetch movies from API
+            fetchMovieData(movieList);
+
+            // Save movies to file
+            writeMoviesToFile(movieList, filePath);
+        } else {
+            System.out.println("Movies loaded from file: " + filePath);
+        }
+
+        // Optionally save movies to database
+        saveMoviesToDatabase(movieList);
+    }
+
+    public static void fetchMovieData(List<Movie> movieList) {
         OkHttpClient client = new OkHttpClient();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);  // Enable pretty-printing
 
@@ -78,6 +126,25 @@ public class FetchTMDbData {
             e.printStackTrace();
         }
     }
+        public static List<Movie> readMoviesFromFile(String filePath) {
+            try {
+                return objectMapper.readValue(new File(filePath), new TypeReference<List<Movie>>() {});
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        public static void saveMoviesToDatabase(List<Movie> movieList) {
+            EntityManager entityManager = HibernateConfig.getEntityManagerFactory("MovieDB").createEntityManager();
+            MovieRepository movieRepository = new MovieRepository(entityManager);
+
+            for (Movie movie : movieList) {
+                movieRepository.save(movie);
+            }
+
+            movieRepository.close();
+        }
 
     // Fetch detailed information about the movie
     private static void fetchMovieDetails(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws IOException {
@@ -109,10 +176,12 @@ public class FetchTMDbData {
             } else {
                 System.out.println("Failed to fetch movie details for ID " + movieId + ": " + movieResponse.code());
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
-    // Fetch credits (cast and crew) for the movie
+    // Fetch credits (actors and crew) for a movie
     private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws Exception {
         Request creditsRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId + "/credits")

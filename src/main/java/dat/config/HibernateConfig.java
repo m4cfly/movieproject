@@ -7,6 +7,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
+import java.util.List;
 import java.util.Properties;
 
 public class HibernateConfig {
@@ -99,5 +100,27 @@ public class HibernateConfig {
         props.put("hibernate.show_sql", "true");
         props.put("hibernate.hbm2ddl.auto", "create-drop"); // update for production
         return props;
+    }
+
+    // New method to save movies to the database
+    public static void saveMoviesToDatabase(List<Movie> movieList) {
+        EntityManager entityManager = getEntityManagerFactory("moviedb").createEntityManager();
+
+        try {
+            entityManager.getTransaction().begin();
+            for (Movie movie : movieList) {
+                entityManager.merge(movie);  // Merge for handling detached entities
+            }
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            if (entityManager.getTransaction().isActive()) {
+                entityManager.getTransaction().rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            if (entityManager != null) {
+                entityManager.close();
+            }
+        }
     }
 }
