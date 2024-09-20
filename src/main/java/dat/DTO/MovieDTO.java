@@ -18,7 +18,7 @@ public class MovieDTO {
     private int budget;
     private List<GenreDTO> genres;
 
-    private long id;
+    private int id;
 
     @JsonProperty("imdb_id")
     private String imdbId;
@@ -37,7 +37,7 @@ public class MovieDTO {
     @JsonProperty("release_date")
     private String releaseDate;
 
-    private long revenue;
+    private int revenue;
 
     private String tagline;
     private String title;

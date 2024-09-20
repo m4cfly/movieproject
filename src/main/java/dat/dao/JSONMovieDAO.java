@@ -18,19 +18,19 @@ public class JSONMovieDAO implements MovieDAO {
     }
 
     @Override
-    public void saveMovies(List<MovieDTO> movies) {
+    public void saveMovies(Movie movie) {
         try {
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(FILE_PATH), movies);
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(FILE_PATH), movie);
         } catch (IOException e) {
             throw new RuntimeException("Failed to save movies", e);
         }
     }
 
     @Override
-    public List<MovieDTO> loadMovies() {
+    public List<Movie> loadMovies() {
         try {
-            MovieDTO[] movieDTOS = objectMapper.readValue(new File(FILE_PATH), MovieDTO[].class);
-            return List.of(movieDTOS);
+            Movie[] movieS = objectMapper.readValue(new File(FILE_PATH), Movie[].class);
+            return List.of(movieS);
         } catch (IOException e) {
             throw new RuntimeException("Failed to load movies", e);
         }

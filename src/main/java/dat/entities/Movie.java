@@ -2,19 +2,16 @@ package dat.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import dat.DTO.MovieDTO;
 import jakarta.persistence.*;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import dat.DTO.CreditsDTO;
 import dat.DTO.GenreDTO;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 
-import jakarta.persistence.*;
-import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @Data
 @NoArgsConstructor
@@ -46,7 +43,7 @@ public class Movie {
 
     @JsonProperty("release_date") // Ensures JSON field maps correctly to this field
     @Column(name = "release_date")
-    private LocalDate releaseDate;
+    private String releaseDate;
 
     @Column(columnDefinition = "TEXT")
     private String overview;
@@ -72,13 +69,6 @@ public class Movie {
 
     private String tagline;
 
-    @ManyToMany
-    @JoinTable(
-            name = "movie_actor",
-            joinColumns = @JoinColumn(name = "movie_id"),
-            inverseJoinColumns = @JoinColumn(name = "actor_id")
-    )
-    private Set<Actor> actors;
 
     @JsonProperty("vote_count")
     private int voteCount;
@@ -107,4 +97,37 @@ public class Movie {
     public void setDirector(Director director) {
         this.credits.setDirector(director);
     }
+
+
+    public Movie(MovieDTO movieDTO) {
+        this.id = (long) movieDTO.getId();  // Assuming the DTO ID is an int, we cast to long
+        this.adult = movieDTO.isAdult();
+        this.title = movieDTO.getTitle();
+        this.budget = movieDTO.getBudget();
+        this.imdbId = movieDTO.getImdbId();
+        this.originalLanguage = movieDTO.getOriginalLanguage();
+        this.originalTitle = movieDTO.getOriginalTitle();
+        this.releaseDate = movieDTO.getReleaseDate();
+        this.overview = movieDTO.getOverview();
+        this.popularity = movieDTO.getPopularity();
+        this.voteAverage = movieDTO.getVoteAverage();
+        this.revenue = movieDTO.getRevenue();
+        this.tagline = movieDTO.getTagline();
+        this.voteCount = movieDTO.getVoteCount();
+
+        // Convert List<GenreDTO> to List<Genre>
+        if (movieDTO.getGenres() != null) {
+            this.genres = new ArrayList<>();
+            for (GenreDTO genreDTO : movieDTO.getGenres()) {
+                this.genres.add(new Genre(genreDTO));
+            }
+        }
+
+        // Convert credits from DTO to entity if necessary
+        if (movieDTO.getCredits() != null) {
+            this.credits = new Credits(movieDTO.getCredits());
+        }
+
+    }
+
 }

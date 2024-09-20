@@ -5,9 +5,9 @@ import dat.entities.Movie;
 import java.util.List;
 
 public interface MovieDAO {
-    void saveMovies(List<MovieDTO> movies);
+    void saveMovies(Movie movie);
 
-    List<MovieDTO> loadMovies();
+    List<Movie> loadMovies();
 
     void insertMovie(Movie movie);
     Movie findMovieById(Long id);

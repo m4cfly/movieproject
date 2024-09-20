@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class DirectorDTO {
-    private long id;
+    private int id;
     @JsonProperty ("birth_date")
     private String birthDate;
     private String name;

@@ -13,5 +13,5 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class CreditsDTO {
     private List<ActorDTO> actors;
-    private List<DirectorDTO> director;
+    private DirectorDTO director;
 }

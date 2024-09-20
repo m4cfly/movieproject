@@ -10,6 +10,6 @@ import lombok.*;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GenreDTO {
-    private long id;
+    private int id;
     private String name;
 }

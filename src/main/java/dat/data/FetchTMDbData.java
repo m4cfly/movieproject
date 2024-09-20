@@ -5,11 +5,13 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import dat.dao.JPAMovieDAO;
 import dat.entities.Movie;
 import dat.config.HibernateConfig;
 import jakarta.persistence.EntityManager;
 import dat.DTO.*;
 
+import jakarta.persistence.EntityManagerFactory;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -31,15 +33,10 @@ import java.util.List;
 import java.util.Map;
 
 public class FetchTMDbData {
+    EntityManagerFactory entityManagerFactory = HibernateConfig.getEntityManagerFactory("moviedb");
+    EntityManager entityManager = entityManagerFactory.createEntityManager();
     static String apiKey = System.getenv("STRING_API_KEY");
     static ObjectMapper objectMapper = new ObjectMapper();
-    static {
-        // Configure the ObjectMapper
-        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        objectMapper.registerModule(new JavaTimeModule()); // Handles LocalDate deserialization
-    }
-    public static void main(String[] args) throws Exception {
-
     static {
         // Configure the ObjectMapper
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
@@ -57,8 +54,6 @@ public class FetchTMDbData {
             // Fetch movies from API
             fetchMovieData(movieList);
 
-            // Save movies to file
-            writeMoviesToFile(movieList, filePath);
         } else {
             System.out.println("Movies loaded from file: " + filePath);
         }
@@ -68,6 +63,7 @@ public class FetchTMDbData {
     }
 
     public static void fetchMovieData(List<Movie> movieList) {
+        JPAMovieDAO jpaMovieDAO = new JPAMovieDAO();
         OkHttpClient client = new OkHttpClient();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);  // Enable pretty-printing
 
@@ -109,11 +105,12 @@ public class FetchTMDbData {
 
                         // Add movie to list
                         moviesList.add(movie);
+                        jpaMovieDAO.saveMovies(new Movie(movie));
                     }
                 } else {
                     System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
                 }
-            } catch (IOException e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
@@ -207,7 +204,7 @@ public class FetchTMDbData {
                 }
 
                 // Parse crew
-                List<DirectorDTO> directorList = new ArrayList<>();
+                DirectorDTO directorDTO = new DirectorDTO();
                 JsonNode crewArray = creditsDetails.get("crew");
                 if (crewArray != null && crewArray.isArray()) {
                     for (JsonNode crewNode : crewArray) {
@@ -215,7 +212,7 @@ public class FetchTMDbData {
                             DirectorDTO crew = objectMapper.treeToValue(crewNode, DirectorDTO.class);
                             String birthdate = fetchPersonDetails(client, String.valueOf(crew.getId()));
                             crew.setBirthDate(birthdate);
-                            directorList.add(crew);
+                            directorDTO = crew;
                         }
 
                     }
@@ -224,7 +221,7 @@ public class FetchTMDbData {
                 // Set cast and crew in the movie DTO
                 CreditsDTO credits = new CreditsDTO();
                 credits.setActors(actorList);
-                credits.setDirector(directorList);
+                credits.setDirector(directorDTO);
                 movie.setCredits(credits);
             } else {
                 System.out.println("Failed to fetch credits for movie ID " + movieId + ": " + creditsResponse.code());

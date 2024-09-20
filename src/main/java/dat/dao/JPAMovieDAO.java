@@ -9,21 +9,36 @@ import jakarta.persistence.Persistence;
 import java.util.List;
 
 public class JPAMovieDAO implements MovieDAO {
-    private EntityManagerFactory entityManagerFactory;
+    private static EntityManagerFactory entityManagerFactory;
 
-    public JPAMovieDAO() {
-        // Create an EntityManagerFactory with the persistence unit name
-        this.entityManagerFactory = Persistence.createEntityManagerFactory("moviePU");
+    private static JPAMovieDAO instance;
+
+
+
+    public static JPAMovieDAO getInstance(EntityManagerFactory emf) {
+        if (instance == null) {
+            entityManagerFactory = emf;
+            instance = new JPAMovieDAO();
+        }
+        return instance;
+
     }
 
     @Override
-    public void saveMovies(List<MovieDTO> movies) {
-
+    public void saveMovies(Movie movie) {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        entityManager.getTransaction().begin();
+        entityManager.persist(movie);
+        entityManager.getTransaction().commit();
     }
 
     @Override
-    public List<MovieDTO> loadMovies() {
-        return List.of();
+    public List<Movie> loadMovies() {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        entityManager.getTransaction().begin();
+        List<Movie> movies = entityManager.createQuery("from Movie").getResultList();
+        entityManager.getTransaction().commit();
+        return movies;
     }
 
     @Override

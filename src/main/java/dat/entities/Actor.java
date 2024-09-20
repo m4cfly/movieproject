@@ -2,6 +2,7 @@ package dat.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import dat.DTO.ActorDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
@@ -17,7 +18,7 @@ import java.time.LocalDate;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Actor {
     @Id
-    private long id;
+    private int id;
     @JsonProperty ("birth_date")
     private String birthDate;
     private String name;
@@ -25,4 +26,12 @@ public class Actor {
     private int actorId;
     private String character;
 
+    public Actor(ActorDTO actorDTO) {
+        this.id = actorDTO.getId();
+        this.birthDate = actorDTO.getBirthDate();
+        this.name = actorDTO.getName();
+        this.actorId = actorDTO.getActorId();
+        this.character = actorDTO.getCharacter();
+
+    }
 }
