@@ -44,28 +44,30 @@ public class FetchTMDbData {
     }
 
     public static void main(String[] args) {
-        String filePath = "movies.json";
-
-        // Load movies from file if they exist
-        List<Movie> movieList = readMoviesFromFile(filePath);
-        if (movieList == null || movieList.isEmpty()) {
-            movieList = new ArrayList<>();
+//        String filePath = "movies.json";
+//
+//        // Load movies from file if they exist
+//        List<Movie> movieList = readMoviesFromFile(filePath);
+//        if (movieList == null || movieList.isEmpty()) {
+//            movieList = new ArrayList<>();
 
             // Fetch movies from API
-            fetchMovieData(movieList);
+            fetchMovieData();
 
-        } else {
-            System.out.println("Movies loaded from file: " + filePath);
-        }
+//        } else {
+//            System.out.println("Movies loaded from file: " + filePath);
+//        }
 
-        // Optionally save movies to database
-        saveMoviesToDatabase(movieList);
+//        // Optionally save movies to database
+//        saveMoviesToDatabase(movieList);
     }
 
-    public static void fetchMovieData(List<Movie> movieList) {
+    public static void fetchMovieData() {
         JPAMovieDAO jpaMovieDAO = new JPAMovieDAO();
         OkHttpClient client = new OkHttpClient();
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT);  // Enable pretty-printing
+        EntityManagerFactory emf = HibernateConfig.getEntityManagerFactory("moviedb");
+        EntityManager em = emf.createEntityManager();
 
         List<MovieDTO> moviesList = new ArrayList<>();  // List to store movies
 
@@ -105,6 +107,7 @@ public class FetchTMDbData {
 
                         // Add movie to list
                         moviesList.add(movie);
+                        JPAMovieDAO.getInstance(emf);
                         jpaMovieDAO.saveMovies(new Movie(movie));
                     }
                 } else {
@@ -133,7 +136,7 @@ public class FetchTMDbData {
         }
 
         public static void saveMoviesToDatabase(List<Movie> movieList) {
-            EntityManager entityManager = HibernateConfig.getEntityManagerFactory("MovieDB").createEntityManager();
+            EntityManager entityManager = HibernateConfig.getEntityManagerFactory("moviedb").createEntityManager();
             MovieRepository movieRepository = new MovieRepository(entityManager);
 
             for (Movie movie : movieList) {

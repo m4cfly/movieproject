@@ -23,7 +23,7 @@ import java.util.List;
 public class Movie {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     private boolean adult;
 
@@ -53,7 +53,7 @@ public class Movie {
     @Column(name = "vote_average")
     private double voteAverage;
 
-    @ManyToMany
+    @ManyToMany (cascade = CascadeType.PERSIST)
     @JoinTable(
             name = "movie_genre",
             joinColumns = @JoinColumn(name = "movie_id"),
@@ -62,9 +62,9 @@ public class Movie {
     private List<Genre> genres;
 
 
-    private long revenue;
+    private int revenue;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.PERSIST)
     private Credits credits;
 
     private String tagline;
@@ -100,7 +100,7 @@ public class Movie {
 
 
     public Movie(MovieDTO movieDTO) {
-        this.id = (long) movieDTO.getId();  // Assuming the DTO ID is an int, we cast to long
+        this.id = movieDTO.getId();
         this.adult = movieDTO.isAdult();
         this.title = movieDTO.getTitle();
         this.budget = movieDTO.getBudget();
@@ -119,7 +119,8 @@ public class Movie {
         if (movieDTO.getGenres() != null) {
             this.genres = new ArrayList<>();
             for (GenreDTO genreDTO : movieDTO.getGenres()) {
-                this.genres.add(new Genre(genreDTO));
+                Genre genre = new Genre(genreDTO); // Ensures both ID and name are set
+                this.genres.add(genre);
             }
         }
 
