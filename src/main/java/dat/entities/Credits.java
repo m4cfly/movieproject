@@ -8,6 +8,7 @@ import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Data
 @ToString
@@ -58,5 +59,18 @@ public class Credits {
 
     public void removeActor(Actor actor) {
         this.actors.remove(actor);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Credits)) return false;
+        Credits credits = (Credits) o;
+        return Objects.equals(getId(), credits.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
     }
 }

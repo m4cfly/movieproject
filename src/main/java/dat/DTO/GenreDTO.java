@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GenreDTO {
-    private int id;  // Genre ID
+    private long id;  // Genre ID
 
     private String name;  // Genre name (e.g., "Action", "Drama")
 }

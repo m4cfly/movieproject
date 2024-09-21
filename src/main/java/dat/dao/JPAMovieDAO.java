@@ -1,9 +1,13 @@
 package dat.dao;
 
 import dat.entities.Movie;
+import dat.entities.Genre;
+import dat.entities.Director;
+import dat.entities.Actor;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class JPAMovieDAO implements MovieDAO {
@@ -16,73 +20,72 @@ public class JPAMovieDAO implements MovieDAO {
 
     @Override
     public void saveMovie(Movie movie) {
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        EntityManager em = entityManagerFactory.createEntityManager();
         try {
-            entityManager.getTransaction().begin();
+            em.getTransaction().begin();
 
-            if (movie.getDirector() != null && movie.getDirector().getId() == null) {
-                entityManager.persist(movie.getDirector());
+            // Håndter genrer
+            List<Genre> managedGenres = new ArrayList<>();
+            for (Genre genre : movie.getGenres()) {
+                managedGenres.add(em.merge(genre));
+            }
+            movie.setGenres(managedGenres);
+
+            // Håndter instruktør
+            if (movie.getDirector() != null) {
+                Director managedDirector = em.merge(movie.getDirector());
+                movie.setDirector(managedDirector);
             }
 
-            if (movie.getId() == null) {
-                entityManager.persist(movie);
-            } else {
-                entityManager.merge(movie);
+            // Håndter skuespillere
+            List<Actor> managedActors = new ArrayList<>();
+            for (Actor actor : movie.getActors()) {
+                Actor managedActor = em.merge(actor);
+                managedActor.setMovie(movie);
+                managedActors.add(managedActor);
             }
+            movie.setActors(managedActors);
 
-            entityManager.getTransaction().commit();
-            System.out.println("Movie saved successfully: " + movie.getTitle());
+            // Gem eller opdater filmen
+            movie = em.merge(movie);
+
+            em.getTransaction().commit();
+            System.out.println("Film gemt med succes: " + movie.getTitle());
         } catch (Exception e) {
-            if (entityManager.getTransaction().isActive()) {
-                entityManager.getTransaction().rollback();
+            if (em.getTransaction().isActive()) {
+                em.getTransaction().rollback();
             }
-            System.err.println("Error saving movie: " + e.getMessage());
+            System.err.println("Fejl ved gemning af film: " + e.getMessage());
             e.printStackTrace();
         } finally {
-            entityManager.close();
+            em.close();
         }
     }
 
     @Override
     public void saveMovies(List<Movie> movies) {
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        try {
-            entityManager.getTransaction().begin();
-            for (Movie movie : movies) {
-                if (movie.getId() == null) {
-                    entityManager.persist(movie);
-                } else {
-                    entityManager.merge(movie);
-                }
-            }
-            entityManager.getTransaction().commit();
-        } catch (Exception e) {
-            if (entityManager.getTransaction().isActive()) {
-                entityManager.getTransaction().rollback();
-            }
-            e.printStackTrace();
-        } finally {
-            entityManager.close();
+        for (Movie movie : movies) {
+            saveMovie(movie);
         }
     }
 
     @Override
     public Movie findMovieById(Long id) {
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        EntityManager em = entityManagerFactory.createEntityManager();
         try {
-            return entityManager.find(Movie.class, id);
+            return em.find(Movie.class, id);
         } finally {
-            entityManager.close();
+            em.close();
         }
     }
 
     @Override
     public List<Movie> getAllMovies() {
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        EntityManager em = entityManagerFactory.createEntityManager();
         try {
-            return entityManager.createQuery("SELECT m FROM Movie m", Movie.class).getResultList();
+            return em.createQuery("SELECT m FROM Movie m", Movie.class).getResultList();
         } finally {
-            entityManager.close();
+            em.close();
         }
     }
 

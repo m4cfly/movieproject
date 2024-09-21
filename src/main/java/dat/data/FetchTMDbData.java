@@ -71,14 +71,16 @@ public class FetchTMDbData {
                     JsonNode movies = rootNode.get("results");
 
                     for (JsonNode movieNode : movies) {
-                        MovieDTO movie = objectMapper.treeToValue(movieNode, MovieDTO.class);
+                        MovieDTO movieDTO = objectMapper.treeToValue(movieNode, MovieDTO.class);
+                        movieDTO.setId(movieNode.get("id").asLong());
                         String movieId = movieNode.get("id").asText();
 
-                        fetchMovieDetails(client, objectMapper, movieId, movie);
-                        fetchMovieCredits(client, objectMapper, movieId, movie);
+                        fetchMovieDetails(client, objectMapper, movieId, movieDTO);
+                        fetchMovieCredits(client, objectMapper, movieId, movieDTO);
 
-                        moviesList.add(movie);
-                        jpaMovieDAO.saveMovie(new Movie(movie));
+                        moviesList.add(movieDTO);
+                        Movie movie = new Movie(movieDTO);
+                        jpaMovieDAO.saveMovie(movie);
                     }
                 } else {
                     System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
@@ -169,6 +171,9 @@ public class FetchTMDbData {
                     for (JsonNode crewNode : crewArray) {
                         if ("Director".equals(crewNode.get("job").asText())) {
                             directorDTO = objectMapper.treeToValue(crewNode, DirectorDTO.class);
+                            String birthdate = fetchPersonDetails(client, String.valueOf(directorDTO.getId()));
+                            directorDTO.setBirthDate(birthdate);
+                            break;
                         }
                     }
                 }
@@ -195,7 +200,7 @@ public class FetchTMDbData {
             if (personResponse.isSuccessful()) {
                 String jsonResponse = personResponse.body().string();
                 JsonNode personDetails = objectMapper.readTree(jsonResponse);
-                return personDetails.get("birthday").asText();
+                return personDetails.has("birthday") ? personDetails.get("birthday").asText() : null;
             }
         } catch (Exception e) {
             e.printStackTrace();

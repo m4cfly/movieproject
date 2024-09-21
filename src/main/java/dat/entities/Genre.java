@@ -5,32 +5,49 @@ import dat.DTO.GenreDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
+@ToString(exclude = "movies")
 @Entity
-@JsonIgnoreProperties (ignoreUnknown = true)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Genre {
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private int id;
+    private long id;  // ID kommer fra TMDb API
+
     private String name;
 
+    @ManyToMany(mappedBy = "genres")
+    private List<Movie> movies = new ArrayList<>();
 
     public Genre(GenreDTO genreDTO) {
         this.id = genreDTO.getId();
         this.name = genreDTO.getName();
     }
 
-    public Genre(List<GenreDTO> genres) {
-        for (int i = 0; i < genres.lastIndexOf(genres); i++) {
-            this.id = genres.get(i).getId();
-            this.name = genres.get(i).getName();
+    public static List<Genre> fromDTOList(List<GenreDTO> genreDTOs) {
+        List<Genre> genres = new ArrayList<>();
+        for (GenreDTO dto : genreDTOs) {
+            genres.add(new Genre(dto));
         }
+        return genres;
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Genre)) return false;
+        Genre genre = (Genre) o;
+        return Objects.equals(getId(), genre.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
     }
 }

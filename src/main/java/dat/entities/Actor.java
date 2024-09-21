@@ -8,6 +8,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Objects;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,8 +19,7 @@ import lombok.NoArgsConstructor;
 public class Actor {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     private String name;
 
@@ -34,9 +35,22 @@ public class Actor {
     private Movie movie;
 
     public Actor(ActorDTO actorDTO) {
+        this.id = actorDTO.getId();
         this.name = actorDTO.getName();
-        this.birthDate = actorDTO.getBirthDate();
-        this.job = actorDTO.getJob();
         this.character = actorDTO.getCharacter();
+        this.birthDate = actorDTO.getBirthDate();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Actor)) return false;
+        Actor actor = (Actor) o;
+        return Objects.equals(getId(), actor.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
     }
 }

@@ -8,6 +8,8 @@ import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 @Data
 @NoArgsConstructor
@@ -19,8 +21,7 @@ import java.util.List;
 public class Movie {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", columnDefinition = "BIGINT")
+    @Column(name = "id")
     private Long id;
 
     @Column(nullable = false)
@@ -45,7 +46,7 @@ public class Movie {
     @Column(nullable = false)
     private Double popularity = 0.0;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = CascadeType.MERGE)
     @JoinTable(
             name = "movie_genre",
             joinColumns = @JoinColumn(name = "movie_id"),
@@ -59,35 +60,61 @@ public class Movie {
     @OneToOne(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
     private Credits credits;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "director_id")
     private Director director;
 
     public Movie(MovieDTO movieDTO) {
+        this.id = movieDTO.getId();
         this.title = movieDTO.getTitle();
         this.originalLanguage = movieDTO.getOriginalLanguage();
         this.releaseDate = movieDTO.getReleaseDate();
         this.overview = movieDTO.getOverview();
         this.popularity = movieDTO.getPopularity();
 
-        if (movieDTO.getGenres() != null) {
-            this.genres = new ArrayList<>();
-            for (dat.DTO.GenreDTO genreDTO : movieDTO.getGenres()) {
-                this.genres.add(new Genre(genreDTO));
-            }
-        }
+        this.genres = movieDTO.getGenres().stream()
+                .map(Genre::new)
+                .collect(Collectors.toList());
 
-        if (movieDTO.getActors() != null) {
-            this.actors = new ArrayList<>();
-            for (dat.DTO.ActorDTO actorDTO : movieDTO.getActors()) {
-                Actor actor = new Actor(actorDTO);
-                actor.setMovie(this);
-                this.actors.add(actor);
-            }
-        }
+        this.actors = movieDTO.getActors().stream()
+                .map(actorDTO -> {
+                    Actor actor = new Actor(actorDTO);
+                    actor.setMovie(this);
+                    return actor;
+                })
+                .collect(Collectors.toList());
 
         if (movieDTO.getDirector() != null) {
             this.director = new Director(movieDTO.getDirector());
         }
+    }
+
+    public List<Genre> getGenres() {
+        return genres != null ? genres : new ArrayList<>();
+    }
+
+    public void setGenres(List<Genre> genres) {
+        this.genres = genres != null ? genres : new ArrayList<>();
+    }
+
+    public List<Actor> getActors() {
+        return actors != null ? actors : new ArrayList<>();
+    }
+
+    public void setActors(List<Actor> actors) {
+        this.actors = actors != null ? actors : new ArrayList<>();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Movie)) return false;
+        Movie movie = (Movie) o;
+        return Objects.equals(getId(), movie.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
     }
 }

@@ -54,7 +54,7 @@
   } ],
   "director" : {
     "id" : 2680660,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Martin Vrede Nielsen",
     "job" : "Director"
   },
@@ -183,7 +183,7 @@
   } ],
   "director" : {
     "id" : 1879020,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Frederik Louis Hviid",
     "job" : "Director"
   },
@@ -258,7 +258,7 @@
   } ],
   "director" : {
     "id" : 1828982,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Mehdi Avaz",
     "job" : "Director"
   },
@@ -309,7 +309,7 @@
   } ],
   "director" : {
     "id" : 2659049,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Mattis Huus Heurlin",
     "job" : "Director"
   },
@@ -348,7 +348,7 @@
   } ],
   "director" : {
     "id" : 3880909,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Amalie Maria Nielsen",
     "job" : "Director"
   },
@@ -393,7 +393,7 @@
   } ],
   "director" : {
     "id" : 1475410,
-    "birthDate" : null,
+    "birthDate" : "1979-01-12",
     "name" : "Søren Green",
     "job" : "Director"
   },
@@ -456,7 +456,7 @@
   } ],
   "director" : {
     "id" : 1674313,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Sylvia Le Fanu",
     "job" : "Director"
   },
@@ -507,7 +507,7 @@
   } ],
   "director" : {
     "id" : 1159284,
-    "birthDate" : null,
+    "birthDate" : "1964-05-21",
     "name" : "Joy-Maria Frederiksen",
     "job" : "Director"
   },
@@ -534,7 +534,7 @@
   } ],
   "director" : {
     "id" : 4668383,
-    "birthDate" : null,
+    "birthDate" : "2008-06-22",
     "name" : "Lasse Jørgensen",
     "job" : "Director"
   },
@@ -681,7 +681,7 @@
   } ],
   "director" : {
     "id" : 4908330,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Agnes Trier",
     "job" : "Director"
   },
@@ -696,7 +696,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 4908329,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Alexander Saul",
     "job" : "Director"
   },
@@ -759,7 +759,7 @@
   } ],
   "director" : {
     "id" : 3778684,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Jesper Tønnes",
     "job" : "Director"
   },
@@ -774,7 +774,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 2662259,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Ivan Elmer",
     "job" : "Director"
   },
@@ -813,7 +813,7 @@
   } ],
   "director" : {
     "id" : 3501178,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Kasper Leegaard",
     "job" : "Director"
   },
@@ -846,7 +846,7 @@
   } ],
   "director" : {
     "id" : 4757397,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Oscar Barañano Nielsen",
     "job" : "Director"
   },
@@ -873,7 +873,7 @@
   } ],
   "director" : {
     "id" : 4909593,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Jonathan Rafael-Weis",
     "job" : "Director"
   },
@@ -916,7 +916,7 @@
   } ],
   "director" : {
     "id" : 4668383,
-    "birthDate" : null,
+    "birthDate" : "2008-06-22",
     "name" : "Lasse Jørgensen",
     "job" : "Director"
   },
@@ -979,7 +979,7 @@
   } ],
   "director" : {
     "id" : 72372,
-    "birthDate" : null,
+    "birthDate" : "1960-07-13",
     "name" : "Charlotte Sieling",
     "job" : "Director"
   },
@@ -1024,7 +1024,7 @@
   } ],
   "director" : {
     "id" : 2327390,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Jonas Risvig",
     "job" : "Director"
   },
@@ -1173,7 +1173,7 @@
   } ],
   "director" : {
     "id" : 212907,
-    "birthDate" : null,
+    "birthDate" : "1973-04-01",
     "name" : "Mikkel Serup",
     "job" : "Director"
   },
@@ -1188,7 +1188,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 4759154,
-    "birthDate" : null,
+    "birthDate" : "2000-12-03",
     "name" : "Levi José Jiménez",
     "job" : "Director"
   },
@@ -1219,7 +1219,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 2678754,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Claudia Munksgaard-Palmqvist",
     "job" : "Director"
   },
@@ -1294,7 +1294,7 @@
   } ],
   "director" : {
     "id" : 1923202,
-    "birthDate" : null,
+    "birthDate" : "1988-01-01",
     "name" : "Gustav Möller",
     "job" : "Director"
   },
@@ -1308,9 +1308,9 @@
   "genres" : null,
   "actors" : [ ],
   "director" : {
-    "id" : 90061,
-    "birthDate" : null,
-    "name" : "Rosalinde Mynster",
+    "id" : 1616244,
+    "birthDate" : "1987-08-30",
+    "name" : "Jasper Spanning",
     "job" : "Director"
   },
   "popularity" : 1.918,
@@ -1390,7 +1390,7 @@
   } ],
   "director" : {
     "id" : 1894748,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Ulaa Salim",
     "job" : "Director"
   },
@@ -1417,7 +1417,7 @@
   } ],
   "director" : {
     "id" : 2441025,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Casper Rudolf Emil Kjeldsen",
     "job" : "Director"
   },
@@ -1456,7 +1456,7 @@
   } ],
   "director" : {
     "id" : 4830363,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Jacob Daniel Lewis",
     "job" : "Director"
   },
@@ -1513,7 +1513,7 @@
   } ],
   "director" : {
     "id" : 3306090,
-    "birthDate" : null,
+    "birthDate" : "1999-03-11",
     "name" : "Alfred Rubin",
     "job" : "Director"
   },
@@ -1550,7 +1550,7 @@
   } ],
   "director" : {
     "id" : 4668383,
-    "birthDate" : null,
+    "birthDate" : "2008-06-22",
     "name" : "Lasse Jørgensen",
     "job" : "Director"
   },
@@ -1612,9 +1612,9 @@
     "character" : "Sangerinde"
   } ],
   "director" : {
-    "id" : 3554735,
-    "birthDate" : null,
-    "name" : "Jonathan Nissen Schmidt",
+    "id" : 4768007,
+    "birthDate" : "2000-07-16",
+    "name" : "Carl Ranfelt",
     "job" : "Director"
   },
   "popularity" : 4.371,
@@ -1646,7 +1646,7 @@
   } ],
   "director" : {
     "id" : 4902151,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Darshika Karunahara",
     "job" : "Director"
   },
@@ -1677,7 +1677,7 @@
   } ],
   "director" : {
     "id" : 4756566,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Rosa Vendelboe Vestergaard",
     "job" : "Director"
   },
@@ -1733,9 +1733,9 @@
     "character" : "Søren"
   } ],
   "director" : {
-    "id" : 4793107,
-    "birthDate" : null,
-    "name" : "Karl Bjerkvold",
+    "id" : 4793106,
+    "birthDate" : "null",
+    "name" : "Martin Tandrup",
     "job" : "Director"
   },
   "popularity" : 0.306,
@@ -1779,7 +1779,7 @@
   } ],
   "director" : {
     "id" : 2652217,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Aviaja Skotte",
     "job" : "Director"
   },
@@ -1822,7 +1822,7 @@
   } ],
   "director" : {
     "id" : 4784431,
-    "birthDate" : null,
+    "birthDate" : "2006-06-03",
     "name" : "Sigrid Kemp",
     "job" : "Director"
   },
@@ -1867,7 +1867,7 @@
   } ],
   "director" : {
     "id" : 4694191,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Shabnam Alimardani Shafigh",
     "job" : "Director"
   },
@@ -1882,7 +1882,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 4553476,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Simon Anker",
     "job" : "Director"
   },
@@ -1897,7 +1897,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 4762622,
-    "birthDate" : null,
+    "birthDate" : "2004-10-18",
     "name" : "Emil Raun Jacobsen",
     "job" : "Director"
   },
@@ -1960,7 +1960,7 @@
   } ],
   "director" : {
     "id" : 2484433,
-    "birthDate" : null,
+    "birthDate" : "1998-09-28",
     "name" : "Jonatan Egholm Keis",
     "job" : "Director"
   },
@@ -2005,7 +2005,7 @@
   } ],
   "director" : {
     "id" : 2484433,
-    "birthDate" : null,
+    "birthDate" : "1998-09-28",
     "name" : "Jonatan Egholm Keis",
     "job" : "Director"
   },
@@ -2050,7 +2050,7 @@
   } ],
   "director" : {
     "id" : 4762776,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Mille Weng Andersson",
     "job" : "Director"
   },
@@ -2077,7 +2077,7 @@
   } ],
   "director" : {
     "id" : 4762775,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Franziska Düring",
     "job" : "Director"
   },
@@ -2109,9 +2109,9 @@
     "character" : "Annika Lykke Helle-Broe"
   } ],
   "director" : {
-    "id" : 4762775,
-    "birthDate" : null,
-    "name" : "Franziska Düring",
+    "id" : 4762776,
+    "birthDate" : "null",
+    "name" : "Mille Weng Andersson",
     "job" : "Director"
   },
   "popularity" : 1.048,
@@ -2149,7 +2149,7 @@
   } ],
   "director" : {
     "id" : 4762611,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Estrid Dandanell Rothmann",
     "job" : "Director"
   },
@@ -2242,7 +2242,7 @@
   } ],
   "director" : {
     "id" : 2122882,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Martin Skovbjerg",
     "job" : "Director"
   },
@@ -2263,7 +2263,7 @@
   } ],
   "director" : {
     "id" : 1371900,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Rasmus Olsen",
     "job" : "Director"
   },
@@ -2314,7 +2314,7 @@
   } ],
   "director" : {
     "id" : 4721192,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "HC Heibøll",
     "job" : "Director"
   },
@@ -2371,7 +2371,7 @@
   } ],
   "director" : {
     "id" : 564018,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Christina Rosendahl",
     "job" : "Director"
   },
@@ -2427,9 +2427,9 @@
     "character" : "General"
   } ],
   "director" : {
-    "id" : 4016184,
-    "birthDate" : null,
-    "name" : "Emil Guttorm",
+    "id" : 4016187,
+    "birthDate" : "null",
+    "name" : "Hjalte Larsen",
     "job" : "Director"
   },
   "popularity" : 1.658,
@@ -2499,7 +2499,7 @@
   } ],
   "director" : {
     "id" : 2277303,
-    "birthDate" : null,
+    "birthDate" : "2001-04-15",
     "name" : "Frederik Johnsson",
     "job" : "Director"
   },
@@ -2586,7 +2586,7 @@
   } ],
   "director" : {
     "id" : 3779168,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Mikkel Bjørn Kehlert",
     "job" : "Director"
   },
@@ -2629,7 +2629,7 @@
   } ],
   "director" : {
     "id" : 3551327,
-    "birthDate" : null,
+    "birthDate" : "2003-10-28",
     "name" : "Safien van Westing",
     "job" : "Director"
   },
@@ -2656,7 +2656,7 @@
   } ],
   "director" : {
     "id" : 4668383,
-    "birthDate" : null,
+    "birthDate" : "2008-06-22",
     "name" : "Lasse Jørgensen",
     "job" : "Director"
   },
@@ -2683,7 +2683,7 @@
   } ],
   "director" : {
     "id" : 3004038,
-    "birthDate" : null,
+    "birthDate" : "1999-09-20",
     "name" : "Oliver Birk Wisholm",
     "job" : "Director"
   },
@@ -2798,7 +2798,7 @@
   } ],
   "director" : {
     "id" : 141884,
-    "birthDate" : null,
+    "birthDate" : "1978-12-27",
     "name" : "Michael Noer",
     "job" : "Director"
   },
@@ -2849,7 +2849,7 @@
   } ],
   "director" : {
     "id" : 4428869,
-    "birthDate" : null,
+    "birthDate" : "1995-02-19",
     "name" : "Tara Salas",
     "job" : "Director"
   },
@@ -2944,7 +2944,7 @@
   } ],
   "director" : {
     "id" : 88564,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Andreas Johnsen",
     "job" : "Director"
   },
@@ -2999,7 +2999,7 @@
   } ],
   "director" : {
     "id" : 1577412,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Ulrik Gutt-Nielsen",
     "job" : "Director"
   },
@@ -3020,7 +3020,7 @@
   } ],
   "director" : {
     "id" : 2474806,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Julie Bezerra Madsen",
     "job" : "Director"
   },
@@ -3035,7 +3035,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 1112337,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Sami Saif",
     "job" : "Director"
   },
@@ -3050,7 +3050,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 2162618,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Jakob Gottschau",
     "job" : "Director"
   },
@@ -3113,7 +3113,7 @@
   } ],
   "director" : {
     "id" : 1447650,
-    "birthDate" : null,
+    "birthDate" : "1991-04-12",
     "name" : "Kasper Juhl",
     "job" : "Director"
   },
@@ -3128,7 +3128,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 4551428,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Evo Solas Smilla S. Sidney",
     "job" : "Director"
   },
@@ -3143,7 +3143,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 4537492,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Loran Batti",
     "job" : "Director"
   },
@@ -3158,7 +3158,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 4537439,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Roja Pakari",
     "job" : "Director"
   },
@@ -3173,7 +3173,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 4441701,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Patricia Bbaale Bandak",
     "job" : "Director"
   },
@@ -3188,7 +3188,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 1616235,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Mette Carla Albrechtsen",
     "job" : "Director"
   },
@@ -3227,7 +3227,7 @@
   } ],
   "director" : {
     "id" : 1318414,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Max Kestner",
     "job" : "Director"
   },
@@ -3258,7 +3258,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 1467724,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Camilla Magid",
     "job" : "Director"
   },
@@ -3381,7 +3381,7 @@
   } ],
   "director" : {
     "id" : 4056815,
-    "birthDate" : null,
+    "birthDate" : "1969-04-18",
     "name" : "Peter Molde-Amelung",
     "job" : "Director"
   },
@@ -3395,9 +3395,9 @@
   "genres" : null,
   "actors" : [ ],
   "director" : {
-    "id" : 2040206,
-    "birthDate" : null,
-    "name" : "Sebastian Cordes",
+    "id" : 1881418,
+    "birthDate" : "null",
+    "name" : "Jenny Rossander",
     "job" : "Director"
   },
   "popularity" : 0.244,
@@ -3411,7 +3411,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 2108192,
-    "birthDate" : null,
+    "birthDate" : "1997-01-01",
     "name" : "Marlene Emilie Lyngstad",
     "job" : "Director"
   },
@@ -3426,7 +3426,7 @@
   "actors" : [ ],
   "director" : {
     "id" : 4532678,
-    "birthDate" : null,
+    "birthDate" : "null",
     "name" : "Maia Torp Neergaard",
     "job" : "Director"
   },
