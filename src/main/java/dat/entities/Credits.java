@@ -8,7 +8,6 @@ import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @Data
 @ToString
@@ -16,12 +15,14 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @Entity
+@Table(name = "credits")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Credits {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name = "id", columnDefinition = "BIGINT")
+    private Long id;
 
     @ManyToMany
     @JoinTable(
@@ -29,26 +30,33 @@ public class Credits {
             joinColumns = @JoinColumn(name = "movie_id"),
             inverseJoinColumns = @JoinColumn(name = "actor_id")
     )
-    private List<Actor> actors;
+    private List<Actor> actors = new ArrayList<>();
 
     @ManyToOne
     @JoinColumn(name = "director_id")
     private Director director;
 
+    @OneToOne
+    @JoinColumn(name = "movie_id")
+    private Movie movie;
 
     public Credits(CreditsDTO creditsDTO) {
-        // Convert actors list from DTO to entity
         if (creditsDTO.getActors() != null) {
-            this.actors = new ArrayList<>();
             for (ActorDTO actorDTO : creditsDTO.getActors()) {
-                this.actors.add(new Actor(actorDTO));  // Assuming Actor has a constructor that accepts CastDTO
+                this.actors.add(new Actor(actorDTO));
             }
         }
 
-        // Convert director from DTO to entity
         if (creditsDTO.getDirector() != null) {
-            this.director = new Director(creditsDTO.getDirector());  // Assuming Director has a constructor that accepts DirectorDTO
+            this.director = new Director(creditsDTO.getDirector());
         }
     }
 
+    public void addActor(Actor actor) {
+        this.actors.add(actor);
+    }
+
+    public void removeActor(Actor actor) {
+        this.actors.remove(actor);
+    }
 }

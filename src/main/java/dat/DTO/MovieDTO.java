@@ -13,41 +13,23 @@ import java.util.List;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class MovieDTO {
-    private boolean adult;
-
-    private int budget;
-    private List<GenreDTO> genres;
 
     private int id;
-
-    @JsonProperty("imdb_id")
-    private String imdbId;
-
-
-    @JsonProperty("original_language")
-    private String originalLanguage;
-
-    @JsonProperty("original_title")
-    private String originalTitle;
-
+    private String title;
     private String overview;
-    private double popularity;
-
 
     @JsonProperty("release_date")
     private String releaseDate;
 
-    private int revenue;
+    @JsonProperty("original_language")
+    private String originalLanguage;
 
-    private String tagline;
-    private String title;
+    private List<GenreDTO> genres;
+    private List<ActorDTO> actors;
+    private DirectorDTO director;
+    private Double popularity = 0.0;
 
-    @JsonProperty("vote_average")
-    private double voteAverage;
-
-    @JsonProperty("vote_count")
-    private int voteCount;
-
-    private CreditsDTO credits;  // Nested DTO for credits (cast and crew)
+    public void setAdult(boolean adult) {
+        // Implement if needed
+    }
 }
-

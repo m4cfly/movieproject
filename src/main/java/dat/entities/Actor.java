@@ -3,35 +3,40 @@ package dat.entities;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import dat.DTO.ActorDTO;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.*;
-
-import java.time.LocalDate;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
-@ToString
-@AllArgsConstructor
 @NoArgsConstructor
-@Builder
+@AllArgsConstructor
 @Entity
+@Table(name = "actors")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Actor {
+
     @Id
-    private int id;
-    @JsonProperty ("birth_date")
-    private String birthDate;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String name;
-    @JsonProperty("cast_id")
-    private int actorId;
+
+    @JsonProperty("birth_date")
+    private String birthDate;
+
+    private String job;
+
     private String character;
 
-    public Actor(ActorDTO actorDTO) {
-        this.id = actorDTO.getId();
-        this.birthDate = actorDTO.getBirthDate();
-        this.name = actorDTO.getName();
-        this.actorId = actorDTO.getActorId();
-        this.character = actorDTO.getCharacter();
+    @ManyToOne
+    @JoinColumn(name = "movie_id")
+    private Movie movie;
 
+    public Actor(ActorDTO actorDTO) {
+        this.name = actorDTO.getName();
+        this.birthDate = actorDTO.getBirthDate();
+        this.job = actorDTO.getJob();
+        this.character = actorDTO.getCharacter();
     }
 }

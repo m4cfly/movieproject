@@ -1,60 +1,68 @@
 package dat.dao;
 
-import dat.DTO.MovieDTO;
 import dat.entities.Movie;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
-import jakarta.persistence.Persistence;
 
 import java.util.List;
 
 public class JPAMovieDAO implements MovieDAO {
-    private static EntityManagerFactory entityManagerFactory;
 
-    private static JPAMovieDAO instance;
+    private final EntityManagerFactory entityManagerFactory;
 
-
-
-    public static JPAMovieDAO getInstance(EntityManagerFactory emf) {
-        if (instance == null) {
-            entityManagerFactory = emf;
-            instance = new JPAMovieDAO();
-        }
-        return instance;
-
+    public JPAMovieDAO(EntityManagerFactory entityManagerFactory) {
+        this.entityManagerFactory = entityManagerFactory;
     }
 
     @Override
-    public void saveMovies(Movie movie) {
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        entityManager.getTransaction().begin();
-        entityManager.persist(movie);
-        entityManager.getTransaction().commit();
-    }
-
-    @Override
-    public List<Movie> loadMovies() {
-        EntityManager entityManager = entityManagerFactory.createEntityManager();
-        entityManager.getTransaction().begin();
-        List<Movie> movies = entityManager.createQuery("from Movie").getResultList();
-        entityManager.getTransaction().commit();
-        return movies;
-    }
-
-    @Override
-    public void insertMovie(Movie movie) {
+    public void saveMovie(Movie movie) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         try {
-            entityManager.getTransaction().begin(); // Begin transaction
-            entityManager.persist(movie); // Persist the movie entity
-            entityManager.getTransaction().commit(); // Commit the transaction
+            entityManager.getTransaction().begin();
+
+            if (movie.getDirector() != null && movie.getDirector().getId() == null) {
+                entityManager.persist(movie.getDirector());
+            }
+
+            if (movie.getId() == null) {
+                entityManager.persist(movie);
+            } else {
+                entityManager.merge(movie);
+            }
+
+            entityManager.getTransaction().commit();
+            System.out.println("Movie saved successfully: " + movie.getTitle());
         } catch (Exception e) {
             if (entityManager.getTransaction().isActive()) {
-                entityManager.getTransaction().rollback(); // Rollback if there's an error
+                entityManager.getTransaction().rollback();
+            }
+            System.err.println("Error saving movie: " + e.getMessage());
+            e.printStackTrace();
+        } finally {
+            entityManager.close();
+        }
+    }
+
+    @Override
+    public void saveMovies(List<Movie> movies) {
+        EntityManager entityManager = entityManagerFactory.createEntityManager();
+        try {
+            entityManager.getTransaction().begin();
+            for (Movie movie : movies) {
+                if (movie.getId() == null) {
+                    entityManager.persist(movie);
+                } else {
+                    entityManager.merge(movie);
+                }
+            }
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            if (entityManager.getTransaction().isActive()) {
+                entityManager.getTransaction().rollback();
             }
             e.printStackTrace();
         } finally {
-            entityManager.close(); // Close the EntityManager
+            entityManager.close();
         }
     }
 
@@ -62,9 +70,9 @@ public class JPAMovieDAO implements MovieDAO {
     public Movie findMovieById(Long id) {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         try {
-            return entityManager.find(Movie.class, id); // Find a movie by ID
+            return entityManager.find(Movie.class, id);
         } finally {
-            entityManager.close(); // Close the EntityManager
+            entityManager.close();
         }
     }
 
@@ -72,16 +80,19 @@ public class JPAMovieDAO implements MovieDAO {
     public List<Movie> getAllMovies() {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         try {
-            return entityManager.createQuery("SELECT m FROM Movie m", Movie.class).getResultList(); // Get all movies
+            return entityManager.createQuery("SELECT m FROM Movie m", Movie.class).getResultList();
         } finally {
-            entityManager.close(); // Close the EntityManager
+            entityManager.close();
         }
     }
 
-    // Clean up resources
-    public void close() {
-        if (entityManagerFactory != null) {
-            entityManagerFactory.close();
-        }
+    @Override
+    public List<Movie> loadMovies() {
+        return getAllMovies();
+    }
+
+    @Override
+    public void insertMovie(Movie movie) {
+        saveMovie(movie);
     }
 }

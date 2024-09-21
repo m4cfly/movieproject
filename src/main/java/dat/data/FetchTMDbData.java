@@ -5,74 +5,57 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import dat.DTO.ActorDTO;
+import dat.DTO.DirectorDTO;
+import dat.DTO.MovieDTO;
 import dat.dao.JPAMovieDAO;
 import dat.entities.Movie;
 import dat.config.HibernateConfig;
-import jakarta.persistence.EntityManager;
-import dat.DTO.*;
-
 import jakarta.persistence.EntityManagerFactory;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
 import java.io.File;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class FetchTMDbData {
-    EntityManagerFactory entityManagerFactory = HibernateConfig.getEntityManagerFactory("moviedb");
-    EntityManager entityManager = entityManagerFactory.createEntityManager();
-    static String apiKey = System.getenv("STRING_API_KEY");
+
+    static EntityManagerFactory entityManagerFactory = HibernateConfig.getEntityManagerFactory("moviedb");
     static ObjectMapper objectMapper = new ObjectMapper();
+
     static {
-        // Configure the ObjectMapper
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        objectMapper.registerModule(new JavaTimeModule()); // Handles LocalDate deserialization
+        objectMapper.registerModule(new JavaTimeModule());
     }
+
+    static String apiKey = System.getenv("STRING_API_KEY");
 
     public static void main(String[] args) {
         String filePath = "movies.json";
-
-        // Load movies from file if they exist
         List<Movie> movieList = readMoviesFromFile(filePath);
+
         if (movieList == null || movieList.isEmpty()) {
             movieList = new ArrayList<>();
-
-            // Fetch movies from API
             fetchMovieData(movieList);
-
         } else {
             System.out.println("Movies loaded from file: " + filePath);
         }
 
-        // Optionally save movies to database
         saveMoviesToDatabase(movieList);
     }
 
     public static void fetchMovieData(List<Movie> movieList) {
-        JPAMovieDAO jpaMovieDAO = new JPAMovieDAO();
+        JPAMovieDAO jpaMovieDAO = new JPAMovieDAO(entityManagerFactory);
         OkHttpClient client = new OkHttpClient();
-        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);  // Enable pretty-printing
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
 
-        List<MovieDTO> moviesList = new ArrayList<>();  // List to store movies
+        List<MovieDTO> moviesList = new ArrayList<>();
 
-        int test = 0;
-
-        // Discover movies (API request)
-        for (int page = 1; page <= 49; page++) {
+        for (int page = 1; page <= 5; page++) {
             Request request = new Request.Builder()
                     .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page +
                             "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
@@ -84,28 +67,18 @@ public class FetchTMDbData {
             try (Response response = client.newCall(request).execute()) {
                 if (response.isSuccessful()) {
                     String jsonResponse = response.body().string();
-
-                    // Parse the JSON response
                     JsonNode rootNode = objectMapper.readTree(jsonResponse);
                     JsonNode movies = rootNode.get("results");
 
                     for (JsonNode movieNode : movies) {
                         MovieDTO movie = objectMapper.treeToValue(movieNode, MovieDTO.class);
-
                         String movieId = movieNode.get("id").asText();
 
-                        // Fetch and update movie details and credits
                         fetchMovieDetails(client, objectMapper, movieId, movie);
                         fetchMovieCredits(client, objectMapper, movieId, movie);
 
-                        test++;
-                        // Print the movie details (optional)
-                        System.out.println(movie + "\n" + String.valueOf(test) + "\n");
-
-
-                        // Add movie to list
                         moviesList.add(movie);
-                        jpaMovieDAO.saveMovies(new Movie(movie));
+                        jpaMovieDAO.saveMovie(new Movie(movie));
                     }
                 } else {
                     System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
@@ -115,7 +88,6 @@ public class FetchTMDbData {
             }
         }
 
-        // Write the movie list to a JSON file
         try {
             objectMapper.writeValue(new File("movies.json"), moviesList);
             System.out.println("Movies data has been written to movies.json");
@@ -123,27 +95,26 @@ public class FetchTMDbData {
             e.printStackTrace();
         }
     }
-        public static List<Movie> readMoviesFromFile(String filePath) {
-            try {
-                return objectMapper.readValue(new File(filePath), new TypeReference<List<Movie>>() {});
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return null;
+
+    public static List<Movie> readMoviesFromFile(String filePath) {
+        try {
+            return objectMapper.readValue(new File(filePath), new TypeReference<List<Movie>>() {});
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        return null;
+    }
 
-        public static void saveMoviesToDatabase(List<Movie> movieList) {
-            EntityManager entityManager = HibernateConfig.getEntityManagerFactory("MovieDB").createEntityManager();
-            MovieRepository movieRepository = new MovieRepository(entityManager);
+    public static void saveMoviesToDatabase(List<Movie> movieList) {
+        JPAMovieDAO movieDAO = new JPAMovieDAO(entityManagerFactory);
 
-            for (Movie movie : movieList) {
-                movieRepository.save(movie);
-            }
-
-            movieRepository.close();
+        try {
+            movieDAO.saveMovies(movieList);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+    }
 
-    // Fetch detailed information about the movie
     private static void fetchMovieDetails(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws IOException {
         Request movieRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId)
@@ -155,21 +126,10 @@ public class FetchTMDbData {
             if (movieResponse.isSuccessful()) {
                 String jsonResponse = movieResponse.body().string();
                 JsonNode movieDetails = objectMapper.readTree(jsonResponse);
-
-                // Parse and populate genres
-                List<GenreDTO> genres = new ArrayList<>();
-                JsonNode genresArray = movieDetails.get("genres");
-                if (genresArray != null && genresArray.isArray()) {
-                    for (JsonNode genreNode : genresArray) {
-                        GenreDTO genre = objectMapper.treeToValue(genreNode, GenreDTO.class);
-                        genres.add(genre);
-                    }
-                }
-                movie.setGenres(genres);
-
-                // Update other movie details (e.g., overview, runtime, release_date)
+                movie.setAdult(movieDetails.has("adult") ? movieDetails.get("adult").asBoolean() : false);
                 movie.setOverview(movieDetails.get("overview").asText());
                 movie.setReleaseDate(movieDetails.get("release_date").asText());
+                movie.setPopularity(movieDetails.has("popularity") ? movieDetails.get("popularity").asDouble() : 0.0);
             } else {
                 System.out.println("Failed to fetch movie details for ID " + movieId + ": " + movieResponse.code());
             }
@@ -178,7 +138,6 @@ public class FetchTMDbData {
         }
     }
 
-    // Fetch credits (actors and crew) for a movie
     private static void fetchMovieCredits(OkHttpClient client, ObjectMapper objectMapper, String movieId, MovieDTO movie) throws Exception {
         Request creditsRequest = new Request.Builder()
                 .url("https://api.themoviedb.org/3/movie/" + movieId + "/credits")
@@ -191,41 +150,37 @@ public class FetchTMDbData {
                 String jsonResponse = creditsResponse.body().string();
                 JsonNode creditsDetails = objectMapper.readTree(jsonResponse);
 
-                // Parse cast
                 List<ActorDTO> actorList = new ArrayList<>();
                 JsonNode castArray = creditsDetails.get("cast");
+
                 if (castArray != null && castArray.isArray()) {
                     for (JsonNode castNode : castArray) {
                         ActorDTO cast = objectMapper.treeToValue(castNode, ActorDTO.class);
                         String birthdate = fetchPersonDetails(client, String.valueOf(cast.getId()));
-                        cast.setBirthDate(birthdate);;
+                        cast.setBirthDate(birthdate);
                         actorList.add(cast);
                     }
                 }
 
-                // Parse crew
-                DirectorDTO directorDTO = new DirectorDTO();
+                DirectorDTO directorDTO = null;
                 JsonNode crewArray = creditsDetails.get("crew");
+
                 if (crewArray != null && crewArray.isArray()) {
                     for (JsonNode crewNode : crewArray) {
-                        if (crewNode.get("job").asText().equals("Director")) {
-                            DirectorDTO crew = objectMapper.treeToValue(crewNode, DirectorDTO.class);
-                            String birthdate = fetchPersonDetails(client, String.valueOf(crew.getId()));
-                            crew.setBirthDate(birthdate);
-                            directorDTO = crew;
+                        if ("Director".equals(crewNode.get("job").asText())) {
+                            directorDTO = objectMapper.treeToValue(crewNode, DirectorDTO.class);
                         }
-
                     }
                 }
 
-                // Set cast and crew in the movie DTO
-                CreditsDTO credits = new CreditsDTO();
-                credits.setActors(actorList);
-                credits.setDirector(directorDTO);
-                movie.setCredits(credits);
+                movie.setActors(actorList);
+                movie.setDirector(directorDTO);
+
             } else {
                 System.out.println("Failed to fetch credits for movie ID " + movieId + ": " + creditsResponse.code());
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
@@ -240,10 +195,11 @@ public class FetchTMDbData {
             if (personResponse.isSuccessful()) {
                 String jsonResponse = personResponse.body().string();
                 JsonNode personDetails = objectMapper.readTree(jsonResponse);
-                return personDetails.get("birthday").asText(); // Fetch the birthdate
+                return personDetails.get("birthday").asText();
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        return "Unknown"; // Return unknown if birthdate not found
+        return null;
     }
 }
-

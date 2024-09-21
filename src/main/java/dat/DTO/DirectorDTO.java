@@ -1,10 +1,7 @@
 package dat.DTO;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
-
-import java.time.LocalDate;
 
 @Data
 @ToString
@@ -13,9 +10,11 @@ import java.time.LocalDate;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class DirectorDTO {
-    private int id;
-    @JsonProperty ("birth_date")
-    private String birthDate;
-    private String name;
-    private String job;
+    private int id;  // Director ID
+
+    private String birthDate;  // Director's birthdate
+
+    private String name;  // Director's name
+
+    private String job;  // Director's job (e.g., "Director")
 }

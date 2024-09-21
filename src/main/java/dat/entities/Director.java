@@ -5,21 +5,20 @@ import dat.DTO.DirectorDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.List;
-
 @Getter
 @Setter
 @ToString
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonIgnoreProperties (ignoreUnknown = true)
-
+@Table(name = "director")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Director {
 
     @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", columnDefinition = "BIGINT")
+    private Long id;
 
     @Column(name = "name", nullable = false)
     private String name;
@@ -30,14 +29,8 @@ public class Director {
     private String job;
 
     public Director(DirectorDTO directorDTO) {
-        this.id = directorDTO.getId();
         this.name = directorDTO.getName();
         this.birthdate = directorDTO.getBirthDate();
         this.job = directorDTO.getJob();
     }
-
-    public int getId() {
-        return id;
-    }
 }
-

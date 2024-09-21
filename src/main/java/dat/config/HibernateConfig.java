@@ -16,9 +16,9 @@ public class HibernateConfig {
     private static EntityManagerFactory emf;
     private static EntityManagerFactory emfTest;
 
-    public static EntityManagerFactory getEntityManagerFactory(String DBName) {
+    public static EntityManagerFactory getEntityManagerFactory(String movieDB) {
         if (emf == null)
-            emf = createEMF(false, DBName);
+            emf = createEMF(false, movieDB);
         return emf;
     }
 
@@ -37,7 +37,7 @@ public class HibernateConfig {
         configuration.addAnnotatedClass(Credits.class);
     }
 
-    private static EntityManagerFactory createEMF(boolean forTest, String DBName) {
+    private static EntityManagerFactory createEMF(boolean forTest, String movieDB) {
         try {
             Configuration configuration = new Configuration();
             Properties props = new Properties();
@@ -46,9 +46,9 @@ public class HibernateConfig {
             if (forTest) {
                 props = setTestProperties(props);
             } else if (System.getenv("DEPLOYED") != null) {
-                setDeployedProperties(props, DBName);
+                setDeployedProperties(props, movieDB);
             } else {
-                props = setDevProperties(props, DBName);
+                props = setDevProperties(props, movieDB);
             }
             configuration.setProperties(props);
             getAnnotationConfiguration(configuration);
@@ -78,14 +78,14 @@ public class HibernateConfig {
     }
 
     private static Properties setDeployedProperties(Properties props, String DBName) {
-        props.setProperty("hibernate.connection.url", System.getenv("CONNECTION_STR") + DBName);
-        props.setProperty("hibernate.connection.username", System.getenv("DB_USERNAME"));
-        props.setProperty("hibernate.connection.password", System.getenv("DB_PASSWORD"));
+        props.setProperty("hibernate.connection.url", System.getenv("CONNECTION_STR") + "movieDB");
+        props.setProperty("hibernate.connection.username", System.getenv("postgres"));
+        props.setProperty("hibernate.connection.password", System.getenv("postgres"));
         return props;
     }
 
     private static Properties setDevProperties(Properties props, String DBName) {
-        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + DBName);
+        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + "movieDB");
         props.put("hibernate.connection.username", "postgres");
         props.put("hibernate.connection.password", "postgres");
         return props;

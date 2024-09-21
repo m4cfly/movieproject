@@ -4,11 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import dat.DTO.MovieDTO;
 import jakarta.persistence.*;
-import dat.DTO.GenreDTO;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.AllArgsConstructor;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,116 +14,80 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name = "movies") // Specifies the table name
+@Table(name = "movies")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Movie {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", columnDefinition = "BIGINT")
     private Long id;
 
-    private boolean adult;
+    @Column(nullable = false)
+    private boolean adult = false;
 
     private String title;
 
-    private int budget;
-
-    @JsonProperty("imdb_id")
-    private String imdbId;
-
-
     @JsonProperty("original_language")
+    @Column(name = "original_language")
     private String originalLanguage;
 
-    @JsonProperty("original_title")
-    private String originalTitle;
-
-    @JsonProperty("release_date") // Ensures JSON field maps correctly to this field
+    @JsonProperty("release_date")
     @Column(name = "release_date")
     private String releaseDate;
 
     @Column(columnDefinition = "TEXT")
     private String overview;
 
-    private double popularity;
-    @JsonProperty("vote_average") // Ensures JSON field maps correctly to this field
-    @Column(name = "vote_average")
-    private double voteAverage;
+    @Column(nullable = false)
+    private Long budget = 0L;
 
-    @ManyToMany
+    @Column(nullable = false)
+    private Double popularity = 0.0;
+
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "movie_genre",
             joinColumns = @JoinColumn(name = "movie_id"),
             inverseJoinColumns = @JoinColumn(name = "genre_id")
     )
-    private List<Genre> genres;
+    private List<Genre> genres = new ArrayList<>();
 
+    @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Actor> actors = new ArrayList<>();
 
-    private long revenue;
-
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
     private Credits credits;
 
-    private String tagline;
-
-
-    @JsonProperty("vote_count")
-    private int voteCount;
-
-
-    public List<Genre> getGenres() {
-        return genres;
-    }
-
-    public void setGenres(List<Genre> genres) {
-        this.genres = genres;
-    }
-
-    public List<Actor> getActors() {
-        return this.credits.getActors();
-    }
-
-    public void setActors(List<Actor> actors) {
-         this.credits.setActors(actors);
-    }
-
-    public Director getDirector() {
-        return this.credits.getDirector();
-    }
-
-    public void setDirector(Director director) {
-        this.credits.setDirector(director);
-    }
-
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "director_id")
+    private Director director;
 
     public Movie(MovieDTO movieDTO) {
-        this.id = (long) movieDTO.getId();  // Assuming the DTO ID is an int, we cast to long
-        this.adult = movieDTO.isAdult();
         this.title = movieDTO.getTitle();
-        this.budget = movieDTO.getBudget();
-        this.imdbId = movieDTO.getImdbId();
         this.originalLanguage = movieDTO.getOriginalLanguage();
-        this.originalTitle = movieDTO.getOriginalTitle();
         this.releaseDate = movieDTO.getReleaseDate();
         this.overview = movieDTO.getOverview();
         this.popularity = movieDTO.getPopularity();
-        this.voteAverage = movieDTO.getVoteAverage();
-        this.revenue = movieDTO.getRevenue();
-        this.tagline = movieDTO.getTagline();
-        this.voteCount = movieDTO.getVoteCount();
 
-        // Convert List<GenreDTO> to List<Genre>
         if (movieDTO.getGenres() != null) {
             this.genres = new ArrayList<>();
-            for (GenreDTO genreDTO : movieDTO.getGenres()) {
+            for (dat.DTO.GenreDTO genreDTO : movieDTO.getGenres()) {
                 this.genres.add(new Genre(genreDTO));
             }
         }
 
-        // Convert credits from DTO to entity if necessary
-        if (movieDTO.getCredits() != null) {
-            this.credits = new Credits(movieDTO.getCredits());
+        if (movieDTO.getActors() != null) {
+            this.actors = new ArrayList<>();
+            for (dat.DTO.ActorDTO actorDTO : movieDTO.getActors()) {
+                Actor actor = new Actor(actorDTO);
+                actor.setMovie(this);
+                this.actors.add(actor);
+            }
         }
 
+        if (movieDTO.getDirector() != null) {
+            this.director = new Director(movieDTO.getDirector());
+        }
     }
-
 }

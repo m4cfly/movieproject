@@ -1,10 +1,7 @@
 package dat.DTO;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
-
-import java.time.LocalDate;
 
 @Data
 @ToString
@@ -13,14 +10,13 @@ import java.time.LocalDate;
 @Builder
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ActorDTO {
+    private int id;  // Actor ID
 
-    private int id;
-    @JsonProperty ("birth_date")
-    private String birthDate;
-    private String name;
-    @JsonProperty("cast_id")
-    private int actorId;
-    private String character;
+    private String birthDate;  // Actor's birthdate
 
+    private String name;  // Actor's name
 
+    private String job;  // Actor's job (e.g., "Actor")
+
+    private String character;  // Name of the character the actor plays
 }

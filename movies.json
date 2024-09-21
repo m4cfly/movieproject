@@ -1,2830 +1,3436 @@
 [ {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 27,
-    "name" : "Horror"
-  }, {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
   "id" : 1353082,
-  "overview" : "",
-  "popularity" : 0.676,
-  "revenue" : 0,
-  "tagline" : null,
   "title" : "Mulm",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1423271,
-      "name" : "Jens Sætter-Lassen",
-      "character" : "Jacob",
-      "birth_date" : "1986-02-06",
-      "cast_id" : 1
-    }, {
-      "id" : 564024,
-      "name" : "Julie Christiansen",
-      "character" : "Maja",
-      "birth_date" : "1987-07-08",
-      "cast_id" : 2
-    }, {
-      "id" : 4926816,
-      "name" : "Louis Trinskjær",
-      "character" : "Johannes",
-      "birth_date" : "null",
-      "cast_id" : 3
-    }, {
-      "id" : 2009771,
-      "name" : "Martin Geertz",
-      "character" : "Psykolog Lars Juel",
-      "birth_date" : "null",
-      "cast_id" : 4
-    }, {
-      "id" : 2140569,
-      "name" : "Nadia Nouamani",
-      "character" : "Jamilla",
-      "birth_date" : "1983-08-01",
-      "cast_id" : 5
-    }, {
-      "id" : 2190163,
-      "name" : "Mie Gren",
-      "character" : "Youtuber",
-      "birth_date" : "1991-02-28",
-      "cast_id" : 6
-    }, {
-      "id" : 2449077,
-      "name" : "Karim Theilgaard",
-      "character" : "Asim",
-      "birth_date" : "null",
-      "cast_id" : 7
-    }, {
-      "id" : 4926821,
-      "name" : "Annamaria Tolstrup",
-      "character" : "Gitte",
-      "birth_date" : "null",
-      "cast_id" : 8
-    } ],
-    "director" : {
-      "id" : 2680660,
-      "name" : "Martin Vrede Nielsen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1423271,
+    "birthDate" : "1986-02-06",
+    "name" : "Jens Sætter-Lassen",
+    "job" : null,
+    "character" : "Jacob"
+  }, {
+    "id" : 564024,
+    "birthDate" : "1987-07-08",
+    "name" : "Julie Christiansen",
+    "job" : null,
+    "character" : "Maja"
+  }, {
+    "id" : 4926816,
+    "birthDate" : "null",
+    "name" : "Louis Trinskjær",
+    "job" : null,
+    "character" : "Johannes"
+  }, {
+    "id" : 2009771,
+    "birthDate" : "null",
+    "name" : "Martin Geertz",
+    "job" : null,
+    "character" : "Psykolog Lars Juel"
+  }, {
+    "id" : 2140569,
+    "birthDate" : "1983-08-01",
+    "name" : "Nadia Nouamani",
+    "job" : null,
+    "character" : "Jamilla"
+  }, {
+    "id" : 2190163,
+    "birthDate" : "1991-02-28",
+    "name" : "Mie Gren",
+    "job" : null,
+    "character" : "Youtuber"
+  }, {
+    "id" : 2449077,
+    "birthDate" : "null",
+    "name" : "Karim Theilgaard",
+    "job" : null,
+    "character" : "Asim"
+  }, {
+    "id" : 4926821,
+    "birthDate" : "null",
+    "name" : "Annamaria Tolstrup",
+    "job" : null,
+    "character" : "Gitte"
+  } ],
+  "director" : {
+    "id" : 2680660,
+    "birthDate" : null,
+    "name" : "Martin Vrede Nielsen",
+    "job" : "Director"
   },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Mulm",
+  "popularity" : 0.946,
   "release_date" : "2024-12-05",
-  "vote_average" : 0.0,
-  "vote_count" : 0
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 9648,
-    "name" : "Mystery"
+  "id" : 1261050,
+  "title" : "De lydløse",
+  "overview" : "In 2008, a group of men from Denmark and across Europe pull off the biggest heist of all time on Danish soil. Kasper, a boxer with few chances left in life, is offered the opportunity to plan the robbery by its foreign initiators.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1149906,
+    "birthDate" : "1993-07-15",
+    "name" : "Gustav Dyekjær Giese",
+    "job" : null,
+    "character" : "Kasper"
+  }, {
+    "id" : 89626,
+    "birthDate" : "1977-01-15",
+    "name" : "Reda Kateb",
+    "job" : null,
+    "character" : "Slimani"
+  }, {
+    "id" : 1602451,
+    "birthDate" : "1986-03-04",
+    "name" : "Amanda Collin",
+    "job" : null,
+    "character" : "Maria"
+  }, {
+    "id" : 1428298,
+    "birthDate" : "1978-11-02",
+    "name" : "Christopher Wagelin",
+    "job" : null,
+    "character" : "Hasse"
+  }, {
+    "id" : 92429,
+    "birthDate" : "1963-12-06",
+    "name" : "Jens Hultén",
+    "job" : null,
+    "character" : "Joppe"
+  }, {
+    "id" : 2852067,
+    "birthDate" : "null",
+    "name" : "Granit Rushiti",
+    "job" : null,
+    "character" : "Mo"
+  }, {
+    "id" : 4892215,
+    "birthDate" : "null",
+    "name" : "Amin Ahmed",
+    "job" : null,
+    "character" : "Warsame"
+  }, {
+    "id" : 1921850,
+    "birthDate" : "1989-11-17",
+    "name" : "Camilla Lau",
+    "job" : null,
+    "character" : "Aaliya"
+  }, {
+    "id" : 4892216,
+    "birthDate" : "null",
+    "name" : "Dagmar Madicken Greve Halse",
+    "job" : null,
+    "character" : "Sara"
+  }, {
+    "id" : 1934698,
+    "birthDate" : "1984-09-18",
+    "name" : "Ida Cæcilie Rasmussen",
+    "job" : null,
+    "character" : "Pumpkin"
+  }, {
+    "id" : 4892217,
+    "birthDate" : "null",
+    "name" : "Mohammed Abbas",
+    "job" : null,
+    "character" : "Mohammed"
+  }, {
+    "id" : 2284302,
+    "birthDate" : "null",
+    "name" : "Sandra Stojiljkovic",
+    "job" : null,
+    "character" : "Elin"
+  }, {
+    "id" : 2464892,
+    "birthDate" : "null",
+    "name" : "Victor Iván",
+    "job" : null,
+    "character" : "Josef"
+  }, {
+    "id" : 1566,
+    "birthDate" : "1956-01-16",
+    "name" : "Anders Hove",
+    "job" : null,
+    "character" : "Olaf"
+  }, {
+    "id" : 2998436,
+    "birthDate" : "1988-10-11",
+    "name" : "Mickey Nørregaard",
+    "job" : null,
+    "character" : "Boxing Coach Assistant"
+  }, {
+    "id" : 90605,
+    "birthDate" : "1987-01-08",
+    "name" : "Anastasios Soulis",
+    "job" : null,
+    "character" : "Juventus"
+  }, {
+    "id" : 1178823,
+    "birthDate" : "1972-01-25",
+    "name" : "Olaf Højgaard",
+    "job" : null,
+    "character" : "Police Officer"
+  }, {
+    "id" : 4892219,
+    "birthDate" : "null",
+    "name" : "Dennis Petersen",
+    "job" : null,
+    "character" : "Shooting Officer"
+  }, {
+    "id" : 1954416,
+    "birthDate" : "1982-04-22",
+    "name" : "Mads Kruse",
+    "job" : null,
+    "character" : "Police Officer (Car chase)"
   } ],
-  "id" : 1300500,
-  "overview" : "Esther, a photographer goes to a summerhouse to take a series of photos of Sophie, her former childhood friend. Sophie is terminally ill and waiting for a heart transplant. During Esther's time in the summerhouse a doubt occurs,  leading to tension-filled moments as Esther tries to uncover the truth behind Sophie's actions.",
-  "popularity" : 5.751,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Shutter",
-  "credits" : {
-    "actors" : [ {
-      "id" : 2450862,
-      "name" : "Anna Søgaard Frandsen",
-      "character" : "Sophie",
-      "birth_date" : "null",
-      "cast_id" : 9
-    }, {
-      "id" : 4757402,
-      "name" : "Sandra Turéll Henningsen",
-      "character" : "Esther",
-      "birth_date" : "1989-08-25",
-      "cast_id" : 10
-    }, {
-      "id" : 591209,
-      "name" : "Morten Holst",
-      "character" : "Rune (Voice)",
-      "birth_date" : "1982-11-02",
-      "cast_id" : 11
-    } ],
-    "director" : {
-      "id" : 4757397,
-      "name" : "Oscar Barañano Nielsen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
+  "director" : {
+    "id" : 1879020,
+    "birthDate" : null,
+    "name" : "Frederik Louis Hviid",
+    "job" : "Director"
   },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Shutter",
+  "popularity" : 3.636,
+  "release_date" : "2024-10-31",
+  "original_language" : "da"
+}, {
+  "id" : 1227608,
+  "title" : "Børnene fra Sølvgade",
+  "overview" : "Plot details unknown.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 3585255,
+    "birthDate" : "null",
+    "name" : "Ida Skelbæk-Knudsen",
+    "job" : null,
+    "character" : "Katinka"
+  }, {
+    "id" : 2099616,
+    "birthDate" : "2004-08-12",
+    "name" : "Alfred Erik Nordhøj Kann",
+    "job" : null,
+    "character" : "Tristan"
+  }, {
+    "id" : 4251311,
+    "birthDate" : "null",
+    "name" : "Amelia Ahmad Abdullatif",
+    "job" : null,
+    "character" : "Petra"
+  }, {
+    "id" : 4468075,
+    "birthDate" : "null",
+    "name" : "Alfred Rivera",
+    "job" : null,
+    "character" : "Kirk"
+  }, {
+    "id" : 82538,
+    "birthDate" : "1977-06-30",
+    "name" : "Jakob Fauerby",
+    "job" : null,
+    "character" : "Miss Nelly"
+  }, {
+    "id" : 1184,
+    "birthDate" : "1969-09-28",
+    "name" : "Anders W. Berthelsen",
+    "job" : null,
+    "character" : "Brian"
+  }, {
+    "id" : 4468082,
+    "birthDate" : "null",
+    "name" : "Dick Haysø",
+    "job" : null,
+    "character" : "Lars Hotter"
+  }, {
+    "id" : 2999154,
+    "birthDate" : "1991-12-26",
+    "name" : "Katinka Lærke Petersen",
+    "job" : null,
+    "character" : "Jessica"
+  }, {
+    "id" : 588175,
+    "birthDate" : "1969-08-26",
+    "name" : "Lars Ranthe",
+    "job" : null,
+    "character" : "Hr. Moth"
+  }, {
+    "id" : 107559,
+    "birthDate" : "1970-12-06",
+    "name" : "Ditte Hansen",
+    "job" : null,
+    "character" : "Kommunetrolden"
+  } ],
+  "director" : {
+    "id" : 1828982,
+    "birthDate" : null,
+    "name" : "Mehdi Avaz",
+    "job" : "Director"
+  },
+  "popularity" : 3.717,
+  "release_date" : "2024-10-10",
+  "original_language" : "da"
+}, {
+  "id" : 1076241,
+  "title" : "Salmon",
+  "overview" : "The young chef August has big dreams and gets the chance in a recognized Michelin kitchen. He is tested professionally and mentally by the kitchen's harsh, uncompromising and eccentric head chef, but at the same time has towering expectations of himself. It creates a cavalcade of problems and lies over the course of an evening.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1444453,
+    "birthDate" : "2000-07-13",
+    "name" : "Lucas Lynggaard Tønnesen",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 1194836,
+    "birthDate" : "1975-04-29",
+    "name" : "Kasper Leisner",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 3881141,
+    "birthDate" : "null",
+    "name" : "Dia Jovanovic",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 3881143,
+    "birthDate" : "null",
+    "name" : "Victor Hugo",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 3881144,
+    "birthDate" : "null",
+    "name" : "Clara Herman",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 3881145,
+    "birthDate" : "null",
+    "name" : "Bertram Ask",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : {
+    "id" : 2659049,
+    "birthDate" : null,
+    "name" : "Mattis Huus Heurlin",
+    "job" : "Director"
+  },
+  "popularity" : 3.073,
+  "release_date" : "2024-10-03",
+  "original_language" : "da"
+}, {
+  "id" : 1076175,
+  "title" : "Sværddrage",
+  "overview" : "In a home for struggling girls, young Milo is transitioning gender with the support of care worker Nicki. One day, through the thin walls of the institution, Milo hears something they wish they hadn’t. They push the emergency button.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 3880910,
+    "birthDate" : "null",
+    "name" : "Anna Charlie Zerbib Streizt",
+    "job" : null,
+    "character" : "Milo"
+  }, {
+    "id" : 1388464,
+    "birthDate" : "1986-06-12",
+    "name" : "Niklas Herskind",
+    "job" : null,
+    "character" : "Nicki"
+  }, {
+    "id" : 135945,
+    "birthDate" : "1962-08-02",
+    "name" : "Petrine Agger",
+    "job" : null,
+    "character" : "Birgit"
+  }, {
+    "id" : 2640821,
+    "birthDate" : "null",
+    "name" : "Isabella Møller Hansen",
+    "job" : null,
+    "character" : "Nadja"
+  } ],
+  "director" : {
+    "id" : 3880909,
+    "birthDate" : null,
+    "name" : "Amalie Maria Nielsen",
+    "job" : "Director"
+  },
+  "popularity" : 5.106,
+  "release_date" : "2024-10-03",
+  "original_language" : "da"
+}, {
+  "id" : 1082942,
+  "title" : "B.O.Y. - Bruises of Yesterday",
+  "overview" : "A 16-year-old boy who spend summer with his grandparents falls in love with an older young man but when tragedy strikes, he falls into a dark hole of self-harm, lust, and loneliness.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 6120,
+    "birthDate" : "1961-03-03",
+    "name" : "Bodil Jørgensen",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 6134,
+    "birthDate" : "1957-12-13",
+    "name" : "Jens Jørn Spottag",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 34866,
+    "birthDate" : "1975-04-03",
+    "name" : "Paw Henriksen",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 3907135,
+    "birthDate" : "null",
+    "name" : "Alexander Mayah Larsen",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 3907136,
+    "birthDate" : "null",
+    "name" : "Noa Viktor Risbro Hjerrild",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : {
+    "id" : 1475410,
+    "birthDate" : null,
+    "name" : "Søren Green",
+    "job" : "Director"
+  },
+  "popularity" : 5.804,
+  "release_date" : "2024-09-28",
+  "original_language" : "da"
+}, {
+  "id" : 1325024,
+  "title" : "Min evige sommer",
+  "overview" : "15-year old Fanny has just finished school, but instead of celebrating with her friends, she has to spend the summer trying to say goodbye to her dying mother, whose final wish is to be together in their summer home. Not knowing how much time she has left, they have to find a way to live in the meantime.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 2204700,
+    "birthDate" : "null",
+    "name" : "Kaya Toft Loholt",
+    "job" : null,
+    "character" : "Fanny"
+  }, {
+    "id" : 1155671,
+    "birthDate" : "1975-11-30",
+    "name" : "Maria Rossing",
+    "job" : null,
+    "character" : "Karin"
+  }, {
+    "id" : 1640021,
+    "birthDate" : "1963-07-20",
+    "name" : "Anders Mossling",
+    "job" : null,
+    "character" : "Johan"
+  }, {
+    "id" : 3409829,
+    "birthDate" : "2004-06-05",
+    "name" : "Jasper Kruse Svabo",
+    "job" : null,
+    "character" : "Jamie"
+  }, {
+    "id" : 4623033,
+    "birthDate" : "null",
+    "name" : "Mika Hyllekvist Nielsen",
+    "job" : null,
+    "character" : "Christina"
+  }, {
+    "id" : 3755030,
+    "birthDate" : "null",
+    "name" : "Maja Osmani Winther",
+    "job" : null,
+    "character" : "Nanna"
+  }, {
+    "id" : 1107287,
+    "birthDate" : "1992-08-08",
+    "name" : "Fredrik Stenberg Ditlev-Simonsen",
+    "job" : null,
+    "character" : "Tom"
+  }, {
+    "id" : 3833263,
+    "birthDate" : "null",
+    "name" : "Frederik Emil Mathiasen",
+    "job" : null,
+    "character" : "Joakim"
+  } ],
+  "director" : {
+    "id" : 1674313,
+    "birthDate" : null,
+    "name" : "Sylvia Le Fanu",
+    "job" : "Director"
+  },
+  "popularity" : 15.268,
+  "release_date" : "2024-09-23",
+  "original_language" : "da"
+}, {
+  "id" : 1359071,
+  "title" : "Cirkusrevyen 2024",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1023,
+    "birthDate" : "1960-03-08",
+    "name" : "Niels Olsen",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 107557,
+    "birthDate" : "1965-02-14",
+    "name" : "Henrik Lykkegaard",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 121579,
+    "birthDate" : "1962-03-12",
+    "name" : "Niels Ellegaard",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 1985507,
+    "birthDate" : "1983-02-20",
+    "name" : "Silas Holst",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 3361235,
+    "birthDate" : "1981-12-27",
+    "name" : "Merete Mærkedahl",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 1206743,
+    "birthDate" : "1964-04-03",
+    "name" : "Pernille Schrøder",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : {
+    "id" : 1159284,
+    "birthDate" : null,
+    "name" : "Joy-Maria Frederiksen",
+    "job" : "Director"
+  },
+  "popularity" : 1.4,
+  "release_date" : "2024-09-20",
+  "original_language" : "da"
+}, {
+  "id" : 1353670,
+  "title" : "Amnesia",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4668383,
+    "birthDate" : "2008-06-22",
+    "name" : "Lasse Jørgensen",
+    "job" : null,
+    "character" : "Person 2"
+  }, {
+    "id" : 4668384,
+    "birthDate" : "null",
+    "name" : "Sebastian Poulsen",
+    "job" : null,
+    "character" : "Person 1"
+  } ],
+  "director" : {
+    "id" : 4668383,
+    "birthDate" : null,
+    "name" : "Lasse Jørgensen",
+    "job" : "Director"
+  },
+  "popularity" : 3.431,
+  "release_date" : "2024-09-13",
+  "original_language" : "da"
+}, {
+  "id" : 1355274,
+  "title" : "Var min far pædofil?",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 2.471,
+  "release_date" : "2024-09-11",
+  "original_language" : "da"
+}, {
+  "id" : 1353949,
+  "title" : "Kristoffer Olsson - Min vigtigste kamp",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4930811,
+    "birthDate" : "null",
+    "name" : "Kristoffer Olsson",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 4930813,
+    "birthDate" : "null",
+    "name" : "Lena Olsson",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 2.78,
+  "release_date" : "2024-09-08",
+  "original_language" : "da"
+}, {
+  "id" : 1353505,
+  "title" : "Platt-Form Er vi gået for langt",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 71157,
+    "birthDate" : "1979-12-08",
+    "name" : "Mille Lehfeldt",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 82538,
+    "birthDate" : "1977-06-30",
+    "name" : "Jakob Fauerby",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 148724,
+    "birthDate" : "null",
+    "name" : "Laus Høybye",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 2.24,
+  "release_date" : "2024-09-07",
+  "original_language" : "da"
+}, {
+  "id" : 1358603,
+  "title" : "Hvis grise kunne tale",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 1.38,
+  "release_date" : "2024-09-04",
+  "original_language" : "da"
+}, {
+  "id" : 1341413,
+  "title" : "Niels Hausgaard 80 år",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 938308,
+    "birthDate" : "1944-08-31",
+    "name" : "Niels Hausgaard",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 1.496,
+  "release_date" : "2024-08-31",
+  "original_language" : "da"
+}, {
+  "id" : 1340482,
+  "title" : "De ødelagte heste",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 1.117,
+  "release_date" : "2024-08-29",
+  "original_language" : "da"
+}, {
+  "id" : 1339861,
+  "title" : "Heks",
+  "overview" : "The idealistic Lærke is put to the test when she drags her boyfriend and child to her parents' St. Hans Eve party, because what should have been a cosy family moment soon turns into a psychological power struggle between two generations. When Lærke ends up being brought down by her own principles, she throws herself into a last childish attempt to take back control.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 6120,
+    "birthDate" : "1961-03-03",
+    "name" : "Bodil Jørgensen",
+    "job" : null,
+    "character" : "Mormor"
+  }, {
+    "id" : 1255681,
+    "birthDate" : "1981-01-14",
+    "name" : "Anders Juul",
+    "job" : null,
+    "character" : "Sofus"
+  }, {
+    "id" : 1297500,
+    "birthDate" : "1983-10-16",
+    "name" : "Johanne Louise Schmidt",
+    "job" : null,
+    "character" : "Lærke"
+  }, {
+    "id" : 6131,
+    "birthDate" : "1954-11-02",
+    "name" : "Michael Moritzen",
+    "job" : null,
+    "character" : "Morfar"
+  }, {
+    "id" : 4908931,
+    "birthDate" : "null",
+    "name" : "Beinta K. Clothier",
+    "job" : null,
+    "character" : "Eydna"
+  }, {
+    "id" : 4908932,
+    "birthDate" : "null",
+    "name" : "Agnes Helvang",
+    "job" : null,
+    "character" : "Esther"
+  } ],
+  "director" : {
+    "id" : 4908330,
+    "birthDate" : null,
+    "name" : "Agnes Trier",
+    "job" : "Director"
+  },
+  "popularity" : 1.513,
+  "release_date" : "2024-08-27",
+  "original_language" : "da"
+}, {
+  "id" : 1339859,
+  "title" : "Sygt Forelsket",
+  "overview" : "At a psychiatric ward, on the last day of the year, Elias finds himself racing against time. Haunted by hallucinations and fueled by emotions, he needs to declare his love for his nurse before time runs out.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 4908329,
+    "birthDate" : null,
+    "name" : "Alexander Saul",
+    "job" : "Director"
+  },
+  "popularity" : 0.944,
+  "release_date" : "2024-08-27",
+  "original_language" : "da"
+}, {
+  "id" : 1339637,
+  "title" : "Intet Vover",
+  "overview" : "This is the story of a red suitcase and how its dramatic journey, over the course of a day, forever changes a young woman's life. A Danish crime short film in 4 chapters, shot on 4 different analog film formats: 8mm, 16mm, 35mm, and 65mm.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1032398,
+    "birthDate" : "2000-07-24",
+    "name" : "Fanny Leander Bornedal",
+    "job" : null,
+    "character" : "Anne"
+  }, {
+    "id" : 15086,
+    "birthDate" : "1972-03-16",
+    "name" : "Nicolas Bro",
+    "job" : null,
+    "character" : "Arne"
+  }, {
+    "id" : 234102,
+    "birthDate" : "1976-12-22",
+    "name" : "Maria Erwolter",
+    "job" : null,
+    "character" : "The Boss"
+  }, {
+    "id" : 6134,
+    "birthDate" : "1957-12-13",
+    "name" : "Jens Jørn Spottag",
+    "job" : null,
+    "character" : "Søren"
+  }, {
+    "id" : 571346,
+    "birthDate" : "1973-06-28",
+    "name" : "Carsten Bjørnlund",
+    "job" : null,
+    "character" : "Politimand"
+  }, {
+    "id" : 1916717,
+    "birthDate" : "1977-05-10",
+    "name" : "Rudi Køhnke",
+    "job" : null,
+    "character" : "Toby"
+  }, {
+    "id" : 1505679,
+    "birthDate" : "null",
+    "name" : "Ali Abdul Amir Najel",
+    "job" : null,
+    "character" : "Tommy"
+  }, {
+    "id" : 1439622,
+    "birthDate" : "null",
+    "name" : "Bo Thomas",
+    "job" : null,
+    "character" : "Fixer"
+  } ],
+  "director" : {
+    "id" : 3778684,
+    "birthDate" : null,
+    "name" : "Jesper Tønnes",
+    "job" : "Director"
+  },
+  "popularity" : 2.804,
+  "release_date" : "2024-08-27",
+  "original_language" : "da"
+}, {
+  "id" : 1339624,
+  "title" : "Frit Fald",
+  "overview" : "A young nurse is kidnapped by a psychotic man with an absurd and desperate wish.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 2662259,
+    "birthDate" : null,
+    "name" : "Ivan Elmer",
+    "job" : "Director"
+  },
+  "popularity" : 1.196,
   "release_date" : "2024-08-26",
-  "vote_average" : 0.0,
-  "vote_count" : 0
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 35,
-    "name" : "Comedy"
+  "id" : 1339615,
+  "title" : "Tillykke Aksel",
+  "overview" : "Aksel wakes up with a beautiful and loving woman by his side, the morning sun and a gentle breeze coming in through the window. However, this idyll doesn't last long, as the day gradually falls more and more apart.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 3626756,
+    "birthDate" : "null",
+    "name" : "Anders Khayat",
+    "job" : null,
+    "character" : "Aksel"
   }, {
-    "id" : 10749,
-    "name" : "Romance"
+    "id" : 4120038,
+    "birthDate" : "1997-03-26",
+    "name" : "Ann Celina Fønsskov",
+    "job" : null,
+    "character" : "Rebekka"
+  }, {
+    "id" : 4907337,
+    "birthDate" : "null",
+    "name" : "Siri Seidler",
+    "job" : null,
+    "character" : "Julie"
+  }, {
+    "id" : 2969412,
+    "birthDate" : "null",
+    "name" : "Sigurd Holm",
+    "job" : null,
+    "character" : "Man on street"
   } ],
+  "director" : {
+    "id" : 3501178,
+    "birthDate" : null,
+    "name" : "Kasper Leegaard",
+    "job" : "Director"
+  },
+  "popularity" : 1.208,
+  "release_date" : "2024-08-26",
+  "original_language" : "da"
+}, {
+  "id" : 1300500,
+  "title" : "Shutter",
+  "overview" : "Esther, a photographer goes to a summerhouse to take a series of photos of Sophie, her former childhood friend. Sophie is terminally ill and waiting for a heart transplant. During Esther's time in the summerhouse a doubt occurs,  leading to tension-filled moments as Esther tries to uncover the truth behind Sophie's actions.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 2450862,
+    "birthDate" : "null",
+    "name" : "Anna Søgaard Frandsen",
+    "job" : null,
+    "character" : "Sophie"
+  }, {
+    "id" : 4757402,
+    "birthDate" : "1989-08-25",
+    "name" : "Sandra Turéll Henningsen",
+    "job" : null,
+    "character" : "Esther"
+  }, {
+    "id" : 591209,
+    "birthDate" : "1982-11-02",
+    "name" : "Morten Holst",
+    "job" : null,
+    "character" : "Rune (Voice)"
+  } ],
+  "director" : {
+    "id" : 4757397,
+    "birthDate" : null,
+    "name" : "Oscar Barañano Nielsen",
+    "job" : "Director"
+  },
+  "popularity" : 3.879,
+  "release_date" : "2024-08-26",
+  "original_language" : "da"
+}, {
+  "id" : 1340139,
+  "title" : "I Solen",
+  "overview" : "When an aging man realizes that his lonely existence has made him deathly pale, he makes a fateful decision venturing to a tanning salon for the first time in his life.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 115214,
+    "birthDate" : "1963-09-19",
+    "name" : "Lars Simonsen",
+    "job" : null,
+    "character" : "Asbjørn"
+  }, {
+    "id" : 2999154,
+    "birthDate" : "1991-12-26",
+    "name" : "Katinka Lærke Petersen",
+    "job" : null,
+    "character" : "Joy"
+  } ],
+  "director" : {
+    "id" : 4909593,
+    "birthDate" : null,
+    "name" : "Jonathan Rafael-Weis",
+    "job" : "Director"
+  },
+  "popularity" : 1.412,
+  "release_date" : "2024-08-25",
+  "original_language" : "da"
+}, {
+  "id" : 1337663,
+  "title" : "Jonas Mogensen - Trummerum",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1949848,
+    "birthDate" : "1986-10-01",
+    "name" : "Jonas Mogensen",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 1.252,
+  "release_date" : "2024-08-23",
+  "original_language" : "da"
+}, {
+  "id" : 1337617,
+  "title" : "Friday the 13th (Short)",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4668383,
+    "birthDate" : "2008-06-22",
+    "name" : "Lasse Jørgensen",
+    "job" : null,
+    "character" : "Lasse/Druknet/Fange/Jason Voorhees"
+  }, {
+    "id" : 4668384,
+    "birthDate" : "null",
+    "name" : "Sebastian Poulsen",
+    "job" : null,
+    "character" : "Jason Voorhees/Sebastian"
+  } ],
+  "director" : {
+    "id" : 4668383,
+    "birthDate" : null,
+    "name" : "Lasse Jørgensen",
+    "job" : "Director"
+  },
+  "popularity" : 1.019,
+  "release_date" : "2024-08-23",
+  "original_language" : "da"
+}, {
+  "id" : 1317159,
+  "title" : "Vejen hjem",
+  "overview" : "How far are you willing to go to save the people you love? This is the question Christian (Nikolaj Lie Kaas) is forced to answer when he is smuggled into Syria in a desperate search for his son Adam. It's a deadly and soul-searching journey into a brutal, war-torn country. Gradually, Christian realises that he must be willing to sacrifice everything he believes in to be reunited with his son. WAY HOME is a powerful and gripping drama about powerlessness, forgiveness and the love for our children.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1018,
+    "birthDate" : "1973-05-22",
+    "name" : "Nikolaj Lie Kaas",
+    "job" : null,
+    "character" : "Christian"
+  }, {
+    "id" : 1552847,
+    "birthDate" : "2001-07-12",
+    "name" : "Albert Rudbeck Lindhardt",
+    "job" : null,
+    "character" : "Adam"
+  }, {
+    "id" : 2661746,
+    "birthDate" : "1995-10-11",
+    "name" : "Arian Kashef",
+    "job" : null,
+    "character" : "Abu Hassan"
+  }, {
+    "id" : 1458362,
+    "birthDate" : "1990-07-06",
+    "name" : "Besir Zeciri",
+    "job" : null,
+    "character" : "Abu Amin"
+  }, {
+    "id" : 1508552,
+    "birthDate" : "null",
+    "name" : "Harki Bhambra",
+    "job" : null,
+    "character" : "Bilal"
+  }, {
+    "id" : 1171128,
+    "birthDate" : "1988-09-15",
+    "name" : "Tom Austen",
+    "job" : null,
+    "character" : "Abu Talha"
+  }, {
+    "id" : 3553678,
+    "birthDate" : "null",
+    "name" : "Majd Eid",
+    "job" : null,
+    "character" : "Nazir"
+  }, {
+    "id" : 4895251,
+    "birthDate" : "null",
+    "name" : "Ahmad Al-Sukar",
+    "job" : null,
+    "character" : "Hamza"
+  } ],
+  "director" : {
+    "id" : 72372,
+    "birthDate" : null,
+    "name" : "Charlotte Sieling",
+    "job" : "Director"
+  },
+  "popularity" : 4.162,
+  "release_date" : "2024-08-20",
+  "original_language" : "da"
+}, {
+  "id" : 1276696,
+  "title" : "Kontra",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4662258,
+    "birthDate" : "null",
+    "name" : "Andrea Hjejle",
+    "job" : null,
+    "character" : "Fanny"
+  }, {
+    "id" : 4662259,
+    "birthDate" : "null",
+    "name" : "Anna Lehrmann",
+    "job" : null,
+    "character" : "Lilja"
+  }, {
+    "id" : 4662261,
+    "birthDate" : "null",
+    "name" : "Nikoline Mejnert Smith",
+    "job" : null,
+    "character" : "Kajsa"
+  }, {
+    "id" : 1194836,
+    "birthDate" : "1975-04-29",
+    "name" : "Kasper Leisner",
+    "job" : null,
+    "character" : "Thomas"
+  }, {
+    "id" : 2187720,
+    "birthDate" : "2003-11-05",
+    "name" : "Safina Coster-Waldau",
+    "job" : null,
+    "character" : "Asta"
+  } ],
+  "director" : {
+    "id" : 2327390,
+    "birthDate" : null,
+    "name" : "Jonas Risvig",
+    "job" : "Director"
+  },
+  "popularity" : 10.232,
+  "release_date" : "2024-08-16",
+  "original_language" : "da"
+}, {
+  "id" : 1329679,
+  "title" : "Skål Kirsten - Danmarks Ældste",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.948,
+  "release_date" : "2024-08-14",
+  "original_language" : "da"
+}, {
+  "id" : 1339064,
+  "title" : "Tynd på sprøjte",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4904907,
+    "birthDate" : "null",
+    "name" : "Pernille Kathleen",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 1.91,
+  "release_date" : "2024-08-08",
+  "original_language" : "da"
+}, {
+  "id" : 1290697,
+  "title" : "Mørkeland",
+  "overview" : "Ulrik Torp, once a fearless investigative journalist who is now tackling unemployment and a midlife crisis. He finds himself in the middle of a new political conspiracy.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 82352,
+    "birthDate" : "1972-04-10",
+    "name" : "Lene Maria Christensen",
+    "job" : null,
+    "character" : "Anne-Grethe Hulsig"
+  }, {
+    "id" : 15086,
+    "birthDate" : "1972-03-16",
+    "name" : "Nicolas Bro",
+    "job" : null,
+    "character" : "Henrik Moll"
+  }, {
+    "id" : 1184,
+    "birthDate" : "1969-09-28",
+    "name" : "Anders W. Berthelsen",
+    "job" : null,
+    "character" : "Ulrik Torp"
+  }, {
+    "id" : 1034338,
+    "birthDate" : "1959-06-11",
+    "name" : "Ina-Miriam Rosenbaum",
+    "job" : null,
+    "character" : "Bente"
+  }, {
+    "id" : 77525,
+    "birthDate" : "1969-12-02",
+    "name" : "Charlotte Munck",
+    "job" : null,
+    "character" : "Mette Torp"
+  }, {
+    "id" : 6145,
+    "birthDate" : "1970-02-21",
+    "name" : "Marina Bouras",
+    "job" : null,
+    "character" : "Kriminalbetjent"
+  }, {
+    "id" : 2986674,
+    "birthDate" : "1991-08-15",
+    "name" : "Ellaha Lack",
+    "job" : null,
+    "character" : "Sara Yassin"
+  }, {
+    "id" : 2986668,
+    "birthDate" : "1996-07-25",
+    "name" : "Mathilde Arcel Fock",
+    "job" : null,
+    "character" : "Emma"
+  }, {
+    "id" : 2895212,
+    "birthDate" : "1993-08-26",
+    "name" : "Mathilde Eusebius",
+    "job" : null,
+    "character" : "Julie Torp"
+  }, {
+    "id" : 2134894,
+    "birthDate" : "1986-10-17",
+    "name" : "Amira Jensen",
+    "job" : null,
+    "character" : "Social og sundhedshjælper"
+  }, {
+    "id" : 2595279,
+    "birthDate" : "null",
+    "name" : "Mohamed Djeziri",
+    "job" : null,
+    "character" : "Abdel Yassi"
+  }, {
+    "id" : 1491453,
+    "birthDate" : "null",
+    "name" : "Sofia Nolsøe Mikkelsen",
+    "job" : null,
+    "character" : "Katrine Tabor-Nielsen"
+  }, {
+    "id" : 88544,
+    "birthDate" : "1950-04-05",
+    "name" : "Tommy Kenter",
+    "job" : null,
+    "character" : "Otto Brathenberg"
+  }, {
+    "id" : 2847036,
+    "birthDate" : "1992-01-01",
+    "name" : "Sara Fanta Traore",
+    "job" : null,
+    "character" : "Jobkonsulent"
+  }, {
+    "id" : 2189732,
+    "birthDate" : "1980-05-07",
+    "name" : "Brian Hjulmann",
+    "job" : null,
+    "character" : "Asbjørn"
+  }, {
+    "id" : 3096731,
+    "birthDate" : "1994-02-11",
+    "name" : "Patrick A. Hansen",
+    "job" : null,
+    "character" : "Simon"
+  }, {
+    "id" : 1122833,
+    "birthDate" : "1965-01-31",
+    "name" : "Jan Tjerrild",
+    "job" : null,
+    "character" : "Ministersekretær"
+  }, {
+    "id" : 1158298,
+    "birthDate" : "1945-03-24",
+    "name" : "Lane Lind",
+    "job" : null,
+    "character" : "Marta Spang-Johansen"
+  } ],
+  "director" : {
+    "id" : 212907,
+    "birthDate" : null,
+    "name" : "Mikkel Serup",
+    "job" : "Director"
+  },
+  "popularity" : 7.763,
+  "release_date" : "2024-08-06",
+  "original_language" : "da"
+}, {
+  "id" : 1325566,
+  "title" : "demonophobia III, confession for the 7. Mordkommission der Berliner Polizei",
+  "overview" : "Confession granted by active user on 4chans's /soc/,,,  \"I'm sorry I can't do it anymore, sorry, sorry, sorry, it was you, my brother... I need to get out of here, these are my last documents, my last breath, don't communicate with me again, don't communicate with me again, it's too cold, your guts warm me up....  http://5ply547c2zadnu6bh3adnlz7fdxnxngcpfkq3n2qn6cak7xryiug6uid.onion  \"",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 4759154,
+    "birthDate" : null,
+    "name" : "Levi José Jiménez",
+    "job" : "Director"
+  },
+  "popularity" : 0.784,
+  "release_date" : "2024-08-05",
+  "original_language" : "da"
+}, {
+  "id" : 1321651,
+  "title" : "Conrad Molden - ÆØÅ",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 2516525,
+    "birthDate" : "null",
+    "name" : "Conrad Molden",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 0.714,
+  "release_date" : "2024-07-26",
+  "original_language" : "da"
+}, {
+  "id" : 1316583,
+  "title" : "Una visualizzazione di un taglio",
+  "overview" : "A Visualization of A Cut is an experimental animated documentary in three chapters that explores the connection between the cinematic cut and human relations extracted from home movies.\r Three chapters exploring the connection between cinematic cutting and human relationships extracted from home movies. A meditation on life, love and loss explored through a montage of home movies of six Scandinavian families, the materiality of paper and the thread that connects them.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 2678754,
+    "birthDate" : null,
+    "name" : "Claudia Munksgaard-Palmqvist",
+    "job" : "Director"
+  },
+  "popularity" : 1.622,
+  "release_date" : "2024-07-25",
+  "original_language" : "da"
+}, {
+  "id" : 1113120,
+  "title" : "Vogter",
+  "overview" : "Eva, an idealistic prison officer, is faced with the dilemma of her life when a young man from her past gets transferred to the prison where she works. Without revealing her secret, Eva asks to be moved to the young man’s ward – the toughest and most violent in the prison. Here begins an unsettling psychological thriller, where Eva’s sense of justice puts both her morality and future at stake.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 32683,
+    "birthDate" : "1968-11-22",
+    "name" : "Sidse Babett Knudsen",
+    "job" : null,
+    "character" : "Eva Hansen"
+  }, {
+    "id" : 1442695,
+    "birthDate" : "1995-09-25",
+    "name" : "Sebastian Bull Sarning",
+    "job" : null,
+    "character" : "Mikkel"
+  }, {
+    "id" : 234907,
+    "birthDate" : "1977-08-18",
+    "name" : "Dar Salim",
+    "job" : null,
+    "character" : "Rami"
+  }, {
+    "id" : 6145,
+    "birthDate" : "1970-02-21",
+    "name" : "Marina Bouras",
+    "job" : null,
+    "character" : "Helle"
+  }, {
+    "id" : 1366062,
+    "birthDate" : "1961-07-08",
+    "name" : "Olaf Johannessen",
+    "job" : null,
+    "character" : "Head of Institution"
+  }, {
+    "id" : 1433475,
+    "birthDate" : "1974-02-04",
+    "name" : "Jacob Ulrik Lohmann",
+    "job" : null,
+    "character" : "Priest"
+  }, {
+    "id" : 1949745,
+    "birthDate" : "1986-07-12",
+    "name" : "Siir Tilif",
+    "job" : null,
+    "character" : "Jurist"
+  }, {
+    "id" : 4010506,
+    "birthDate" : "null",
+    "name" : "Rami Zayat",
+    "job" : null,
+    "character" : "Ali"
+  }, {
+    "id" : 1731560,
+    "birthDate" : "null",
+    "name" : "Mathias Petersen",
+    "job" : null,
+    "character" : "Simon"
+  }, {
+    "id" : 1934698,
+    "birthDate" : "1984-09-18",
+    "name" : "Ida Cæcilie Rasmussen",
+    "job" : null,
+    "character" : "Læge"
+  } ],
+  "director" : {
+    "id" : 1923202,
+    "birthDate" : null,
+    "name" : "Gustav Möller",
+    "job" : "Director"
+  },
+  "popularity" : 5.499,
+  "release_date" : "2024-07-10",
+  "original_language" : "da"
+}, {
+  "id" : 1245202,
+  "title" : "Vores Fars Sol",
+  "overview" : "After actor Søren Spanning's stroke in 2014, his children document their family's adaptation over six years, navigating their evolving relationship and coping with grief until his death in 2020.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 90061,
+    "birthDate" : null,
+    "name" : "Rosalinde Mynster",
+    "job" : "Director"
+  },
+  "popularity" : 1.918,
+  "release_date" : "2024-07-08",
+  "original_language" : "da"
+}, {
+  "id" : 1053927,
+  "title" : "For evigt",
+  "overview" : "Young climate change scientist, Elias falls in love with an aspiring singer, Anita. But when an opportunity arises for him to join a mission researching a dangerous climate change phenomenon – a mysterious fracture on the ocean floor – he chooses career over love. Years later, during his mission, he experiences a vision of what his life could have been like if he made a different choice and his new obsession becomes to get his old life and love back.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1290402,
+    "birthDate" : "1984-01-25",
+    "name" : "Simon Sears",
+    "job" : null,
+    "character" : "Elias"
+  }, {
+    "id" : 1459336,
+    "birthDate" : "1985-05-02",
+    "name" : "Nanna Øland Fabricius",
+    "job" : null,
+    "character" : "Anita"
+  }, {
+    "id" : 4469733,
+    "birthDate" : "null",
+    "name" : "Viktor Hjelmsøe",
+    "job" : null,
+    "character" : "Elias (young)"
+  }, {
+    "id" : 2450862,
+    "birthDate" : "null",
+    "name" : "Anna Søgaard Frandsen",
+    "job" : null,
+    "character" : "Anita (young)"
+  }, {
+    "id" : 143391,
+    "birthDate" : "1967-01-10",
+    "name" : "Magnus Krepper",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 142874,
+    "birthDate" : "1968-08-12",
+    "name" : "Halldóra Geirharðsdóttir",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 2204705,
+    "birthDate" : "1979-07-24",
+    "name" : "Zaki Youssef",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 591209,
+    "birthDate" : "1982-11-02",
+    "name" : "Morten Holst",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 1439639,
+    "birthDate" : "null",
+    "name" : "Thomas Magnussen",
+    "job" : null,
+    "character" : "Professor"
+  }, {
+    "id" : 2995434,
+    "birthDate" : "null",
+    "name" : "Helga Kristín Helgadóttir",
+    "job" : null,
+    "character" : "Journalist"
+  }, {
+    "id" : 3804164,
+    "birthDate" : "null",
+    "name" : "Kaj Søholm Lehmkuhl",
+    "job" : null,
+    "character" : "Climate Scientist"
+  } ],
+  "director" : {
+    "id" : 1894748,
+    "birthDate" : null,
+    "name" : "Ulaa Salim",
+    "job" : "Director"
+  },
+  "popularity" : 6.718,
+  "release_date" : "2024-07-08",
+  "original_language" : "da"
+}, {
+  "id" : 1306963,
+  "title" : "Trees Painted in Tar",
+  "overview" : "Wild boar hunting at night. A teenage son is out with his father. Rituals, darkness and a reckoning which creeps and seeps out from the pitch-black night of the forest in this intense and nerve-wracking gem.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 82537,
+    "birthDate" : "1964-02-03",
+    "name" : "Søren Malling",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 2642049,
+    "birthDate" : "1997-07-24",
+    "name" : "Magnus Juhl Andersen",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : {
+    "id" : 2441025,
+    "birthDate" : null,
+    "name" : "Casper Rudolf Emil Kjeldsen",
+    "job" : "Director"
+  },
+  "popularity" : 2.013,
+  "release_date" : "2024-07-06",
+  "original_language" : "da"
+}, {
+  "id" : 1317073,
+  "title" : "Bare en ven",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 2031037,
+    "birthDate" : "1994-10-13",
+    "name" : "Pernille René",
+    "job" : null,
+    "character" : "Louise"
+  }, {
+    "id" : 3716332,
+    "birthDate" : "1986-07-10",
+    "name" : "Kat Stephie",
+    "job" : null,
+    "character" : "Anna"
+  }, {
+    "id" : 4830361,
+    "birthDate" : "null",
+    "name" : "Morten Bach Petersen",
+    "job" : null,
+    "character" : "Simon"
+  }, {
+    "id" : 4830362,
+    "birthDate" : "null",
+    "name" : "Tobias Gilbert",
+    "job" : null,
+    "character" : "Mark"
+  } ],
+  "director" : {
+    "id" : 4830363,
+    "birthDate" : null,
+    "name" : "Jacob Daniel Lewis",
+    "job" : "Director"
+  },
+  "popularity" : 1.392,
+  "release_date" : "2024-07-01",
+  "original_language" : "da"
+}, {
+  "id" : 1205860,
+  "title" : "Coldness",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1565234,
+    "birthDate" : "1999-05-24",
+    "name" : "Tarjei Sandvik Moe",
+    "job" : null,
+    "character" : "(voice)"
+  }, {
+    "id" : 4379760,
+    "birthDate" : "null",
+    "name" : "Isabella Ølshøj",
+    "job" : null,
+    "character" : "(voice)"
+  }, {
+    "id" : 4379761,
+    "birthDate" : "null",
+    "name" : "Arvid Jullander",
+    "job" : null,
+    "character" : "Bassist"
+  }, {
+    "id" : 4379762,
+    "birthDate" : "null",
+    "name" : "Josefine Green",
+    "job" : null,
+    "character" : "Harmonicist"
+  }, {
+    "id" : 4379765,
+    "birthDate" : "null",
+    "name" : "Johanna Lernstedt",
+    "job" : null,
+    "character" : "Woman on the docks"
+  }, {
+    "id" : 4379766,
+    "birthDate" : "null",
+    "name" : "Anton Thulin",
+    "job" : null,
+    "character" : "Dancer on the docks"
+  }, {
+    "id" : 4379769,
+    "birthDate" : "null",
+    "name" : "Siri Josephson",
+    "job" : null,
+    "character" : "Woman kicking onions"
+  } ],
+  "director" : {
+    "id" : 3306090,
+    "birthDate" : null,
+    "name" : "Alfred Rubin",
+    "job" : "Director"
+  },
+  "popularity" : 2.949,
+  "release_date" : "2024-06-24",
+  "original_language" : "da"
+}, {
+  "id" : 1308118,
+  "title" : "Et farligt match",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.424,
+  "release_date" : "2024-06-22",
+  "original_language" : "da"
+}, {
+  "id" : 1309006,
+  "title" : "The Fate of Duty",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4668383,
+    "birthDate" : "2008-06-22",
+    "name" : "Lasse Jørgensen",
+    "job" : null,
+    "character" : "Mike"
+  }, {
+    "id" : 4668384,
+    "birthDate" : "null",
+    "name" : "Sebastian Poulsen",
+    "job" : null,
+    "character" : "Johnny/Sergent"
+  } ],
+  "director" : {
+    "id" : 4668383,
+    "birthDate" : null,
+    "name" : "Lasse Jørgensen",
+    "job" : "Director"
+  },
+  "popularity" : 0.582,
+  "release_date" : "2024-06-21",
+  "original_language" : "da"
+}, {
   "id" : 1303028,
-  "overview" : "",
-  "popularity" : 3.122,
-  "revenue" : 0,
-  "tagline" : null,
   "title" : "Jeg Vågnede Af Solen",
-  "credits" : {
-    "actors" : [ {
-      "id" : 3626756,
-      "name" : "Anders Khayat",
-      "character" : "Anders",
-      "birth_date" : "null",
-      "cast_id" : 1
-    }, {
-      "id" : 1522448,
-      "name" : "Hanne Uldal",
-      "character" : "Ane",
-      "birth_date" : "1950-05-14",
-      "cast_id" : 2
-    }, {
-      "id" : 2671170,
-      "name" : "Marco Marc",
-      "character" : "Niklas",
-      "birth_date" : "1994-05-05",
-      "cast_id" : 3
-    }, {
-      "id" : 1632952,
-      "name" : "Sonny Lindberg",
-      "character" : "Sune",
-      "birth_date" : "1993-02-27",
-      "cast_id" : 4
-    }, {
-      "id" : 4768005,
-      "name" : "Asta Agergaard",
-      "character" : "Dagmar",
-      "birth_date" : "null",
-      "cast_id" : 5
-    }, {
-      "id" : 3554735,
-      "name" : "Jonathan Nissen Schmidt",
-      "character" : "Jonathan",
-      "birth_date" : "1999-09-08",
-      "cast_id" : 6
-    }, {
-      "id" : 4768007,
-      "name" : "Carl Ranfelt",
-      "character" : "Carl",
-      "birth_date" : "2000-07-16",
-      "cast_id" : 7
-    }, {
-      "id" : 4768013,
-      "name" : "Anne Kristine Johannessen",
-      "character" : "Sangerinde",
-      "birth_date" : "null",
-      "cast_id" : 8
-    } ],
-    "director" : {
-      "id" : 3554735,
-      "name" : "Jonathan Nissen Schmidt",
-      "job" : "Director",
-      "birth_date" : "1999-09-08"
-    }
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 3626756,
+    "birthDate" : "null",
+    "name" : "Anders Khayat",
+    "job" : null,
+    "character" : "Anders"
+  }, {
+    "id" : 1522448,
+    "birthDate" : "1950-05-14",
+    "name" : "Hanne Uldal",
+    "job" : null,
+    "character" : "Ane"
+  }, {
+    "id" : 2671170,
+    "birthDate" : "1994-05-05",
+    "name" : "Marco Marc",
+    "job" : null,
+    "character" : "Niklas"
+  }, {
+    "id" : 1632952,
+    "birthDate" : "1993-02-27",
+    "name" : "Sonny Lindberg",
+    "job" : null,
+    "character" : "Sune"
+  }, {
+    "id" : 4768005,
+    "birthDate" : "null",
+    "name" : "Asta Agergaard",
+    "job" : null,
+    "character" : "Dagmar"
+  }, {
+    "id" : 3554735,
+    "birthDate" : "1999-09-08",
+    "name" : "Jonathan Nissen Schmidt",
+    "job" : null,
+    "character" : "Jonathan"
+  }, {
+    "id" : 4768007,
+    "birthDate" : "2000-07-16",
+    "name" : "Carl Ranfelt",
+    "job" : null,
+    "character" : "Carl"
+  }, {
+    "id" : 4768013,
+    "birthDate" : "null",
+    "name" : "Anne Kristine Johannessen",
+    "job" : null,
+    "character" : "Sangerinde"
+  } ],
+  "director" : {
+    "id" : 3554735,
+    "birthDate" : null,
+    "name" : "Jonathan Nissen Schmidt",
+    "job" : "Director"
   },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Jeg Vågnede Af Solen",
+  "popularity" : 4.371,
   "release_date" : "2024-06-19",
-  "vote_average" : 0.0,
-  "vote_count" : 0
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
+  "id" : 1338388,
+  "title" : "Takeaway",
+  "overview" : "Like so many times before, the takeaway delivery person Sheena is delivering food in a Tesla-filled summer cottage neighborhood. However, when she encounters her childhood friend Calvin and his new life in the upper class with his girlfriend Pernille, she invites herself to a rather unusual dinner.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 2040125,
+    "birthDate" : "1992-03-24",
+    "name" : "Diêm Camille",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 3331289,
+    "birthDate" : "null",
+    "name" : "Christopher Nallo",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 4952211,
+    "birthDate" : "null",
+    "name" : "Luise Kirsten Skov",
+    "job" : null,
+    "character" : ""
   } ],
+  "director" : {
+    "id" : 4902151,
+    "birthDate" : null,
+    "name" : "Darshika Karunahara",
+    "job" : "Director"
+  },
+  "popularity" : 0.001,
+  "release_date" : "2024-06-18",
+  "original_language" : "da"
+}, {
+  "id" : 1305258,
+  "title" : "Det store guldrøveri",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.431,
+  "release_date" : "2024-06-16",
+  "original_language" : "da"
+}, {
+  "id" : 1300371,
+  "title" : "We Are Fallen Angels",
+  "overview" : "Michelle Sabine is a young woman who seeks escape through her transgressive lifestyle and her dreams of becoming a star. Living in a self-created dream world, she races away from the echoes of her troubled past of addiction and self-harm.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4756564,
+    "birthDate" : "null",
+    "name" : "Michelle Sabine",
+    "job" : null,
+    "character" : "Self"
+  } ],
+  "director" : {
+    "id" : 4756566,
+    "birthDate" : null,
+    "name" : "Rosa Vendelboe Vestergaard",
+    "job" : "Director"
+  },
+  "popularity" : 1.95,
+  "release_date" : "2024-06-15",
+  "original_language" : "da"
+}, {
+  "id" : 1308657,
+  "title" : "Lyset",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4793106,
+    "birthDate" : "null",
+    "name" : "Martin Tandrup",
+    "job" : null,
+    "character" : "Martin"
+  }, {
+    "id" : 4793107,
+    "birthDate" : "null",
+    "name" : "Karl Bjerkvold",
+    "job" : null,
+    "character" : "Karl"
+  }, {
+    "id" : 4793109,
+    "birthDate" : "null",
+    "name" : "Anders Kirring",
+    "job" : null,
+    "character" : "Anders"
+  }, {
+    "id" : 4793111,
+    "birthDate" : "null",
+    "name" : "Robert Munch",
+    "job" : null,
+    "character" : "Robert"
+  }, {
+    "id" : 4793112,
+    "birthDate" : "null",
+    "name" : "Rune Pedersen",
+    "job" : null,
+    "character" : "Rune"
+  }, {
+    "id" : 4793113,
+    "birthDate" : "null",
+    "name" : "Magnus Harboe",
+    "job" : null,
+    "character" : "Magnus"
+  }, {
+    "id" : 4793114,
+    "birthDate" : "null",
+    "name" : "Søren Reimann",
+    "job" : null,
+    "character" : "Søren"
+  } ],
+  "director" : {
+    "id" : 4793107,
+    "birthDate" : null,
+    "name" : "Karl Bjerkvold",
+    "job" : "Director"
+  },
+  "popularity" : 0.306,
+  "release_date" : "2024-06-14",
+  "original_language" : "da"
+}, {
+  "id" : 1351862,
+  "title" : "Skal vi være kærester?",
+  "overview" : "Asger is at a nightclub with his three best friends. But something is bothering him. His girlfriend has been with someone else and intends to continue a relationship with them both. This opens up a wealth of emotions for Asger.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 3740235,
+    "birthDate" : "1996-10-23",
+    "name" : "Zelma Feldman Lewerissa",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 4922167,
+    "birthDate" : "null",
+    "name" : "Marie-Louise Rakhee Landschoff Meisner",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 4922170,
+    "birthDate" : "null",
+    "name" : "Mathilde Lundberg",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 2175705,
+    "birthDate" : "1998-07-03",
+    "name" : "Nina Rask",
+    "job" : null,
+    "character" : ""
+  }, {
+    "id" : 4922174,
+    "birthDate" : "null",
+    "name" : "Ali Shah Sharifi",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : {
+    "id" : 2652217,
+    "birthDate" : null,
+    "name" : "Aviaja Skotte",
+    "job" : "Director"
+  },
+  "popularity" : 0.524,
+  "release_date" : "2024-06-13",
+  "original_language" : "da"
+}, {
+  "id" : 1304112,
+  "title" : "En plads i solen",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.269,
+  "release_date" : "2024-06-13",
+  "original_language" : "da"
+}, {
+  "id" : 1306757,
+  "title" : "med andre øjne",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 2639270,
+    "birthDate" : "null",
+    "name" : "Ida Maria R. Andersen",
+    "job" : null,
+    "character" : "Mona"
+  }, {
+    "id" : 4784427,
+    "birthDate" : "null",
+    "name" : "Elmer Brun",
+    "job" : null,
+    "character" : "Frode"
+  }, {
+    "id" : 4784457,
+    "birthDate" : "null",
+    "name" : "Carl-Gustav Morgen",
+    "job" : null,
+    "character" : "New Boyfriend"
+  } ],
+  "director" : {
+    "id" : 4784431,
+    "birthDate" : null,
+    "name" : "Sigrid Kemp",
+    "job" : "Director"
+  },
+  "popularity" : 1.911,
+  "release_date" : "2024-06-12",
+  "original_language" : "da"
+}, {
+  "id" : 1285004,
+  "title" : "Yasmin",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4694317,
+    "birthDate" : "null",
+    "name" : "Yasmin Brandt",
+    "job" : null,
+    "character" : "Yasmin"
+  }, {
+    "id" : 4694321,
+    "birthDate" : "null",
+    "name" : "Clea Quist-Møller",
+    "job" : null,
+    "character" : "Karoline"
+  }, {
+    "id" : 4739342,
+    "birthDate" : "null",
+    "name" : "Hans E. Fogh",
+    "job" : null,
+    "character" : "Vagt"
+  }, {
+    "id" : 4739344,
+    "birthDate" : "null",
+    "name" : "Naveed Nasiri",
+    "job" : null,
+    "character" : "Dreng 1"
+  }, {
+    "id" : 4739345,
+    "birthDate" : "null",
+    "name" : "Shayan Alimardani Shafigh",
+    "job" : null,
+    "character" : "Dreng 2"
+  } ],
+  "director" : {
+    "id" : 4694191,
+    "birthDate" : null,
+    "name" : "Shabnam Alimardani Shafigh",
+    "job" : "Director"
+  },
+  "popularity" : 3.088,
+  "release_date" : "2024-06-12",
+  "original_language" : "da"
+}, {
+  "id" : 1249295,
+  "title" : "Mikkels kamp mod dæmonerne",
+  "overview" : "A young man struggles to break free from the demons of his past that still haunt him years after the sexual abuse he survived as a child.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 4553476,
+    "birthDate" : null,
+    "name" : "Simon Anker",
+    "job" : "Director"
+  },
+  "popularity" : 0.785,
+  "release_date" : "2024-06-12",
+  "original_language" : "da"
+}, {
+  "id" : 1358380,
+  "title" : "Malplaceret",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 4762622,
+    "birthDate" : null,
+    "name" : "Emil Raun Jacobsen",
+    "job" : "Director"
+  },
+  "popularity" : 0.319,
+  "release_date" : "2024-06-08",
+  "original_language" : "da"
+}, {
+  "id" : 1304451,
+  "title" : "Endnu en dag",
+  "overview" : "Dimi really needs to use the bathroom. But the city isn't built for homeless people like himself, and toilets are only for paying customers.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1458362,
+    "birthDate" : "1990-07-06",
+    "name" : "Besir Zeciri",
+    "job" : null,
+    "character" : "Dimi"
+  }, {
+    "id" : 1640021,
+    "birthDate" : "1963-07-20",
+    "name" : "Anders Mossling",
+    "job" : null,
+    "character" : "Security Guard"
+  }, {
+    "id" : 1640021,
+    "birthDate" : "1963-07-20",
+    "name" : "Anders Mossling",
+    "job" : null,
+    "character" : "Security Guard #2"
+  }, {
+    "id" : 1640021,
+    "birthDate" : "1963-07-20",
+    "name" : "Anders Mossling",
+    "job" : null,
+    "character" : "Security Guard #3"
+  }, {
+    "id" : 1640021,
+    "birthDate" : "1963-07-20",
+    "name" : "Anders Mossling",
+    "job" : null,
+    "character" : "Toilet Attendant"
+  }, {
+    "id" : 1640021,
+    "birthDate" : "1963-07-20",
+    "name" : "Anders Mossling",
+    "job" : null,
+    "character" : "Hipster"
+  }, {
+    "id" : 1640021,
+    "birthDate" : "1963-07-20",
+    "name" : "Anders Mossling",
+    "job" : null,
+    "character" : "Business Man"
+  }, {
+    "id" : 1640021,
+    "birthDate" : "1963-07-20",
+    "name" : "Anders Mossling",
+    "job" : null,
+    "character" : "Father"
+  } ],
+  "director" : {
+    "id" : 2484433,
+    "birthDate" : null,
+    "name" : "Jonatan Egholm Keis",
+    "job" : "Director"
+  },
+  "popularity" : 3.841,
+  "release_date" : "2024-06-07",
+  "original_language" : "da"
+}, {
+  "id" : 1271270,
+  "title" : "One More Night",
+  "overview" : "A seasoned bouncer is forced to deal with severe consequences after letting two minors slip into the nightclub, he's employed to guard.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1443046,
+    "birthDate" : "1985-03-21",
+    "name" : "Dan Boie Kratfeldt",
+    "job" : null,
+    "character" : "Mike"
+  }, {
+    "id" : 3859115,
+    "birthDate" : "null",
+    "name" : "Andreas Lykke Jørgensen",
+    "job" : null,
+    "character" : "Jasper"
+  }, {
+    "id" : 2954364,
+    "birthDate" : "1987-04-24",
+    "name" : "Daniel Flamgaard",
+    "job" : null,
+    "character" : "Speed"
+  }, {
+    "id" : 4640414,
+    "birthDate" : "null",
+    "name" : "Isabella Melchior",
+    "job" : null,
+    "character" : "Rose"
+  }, {
+    "id" : 3885493,
+    "birthDate" : "null",
+    "name" : "Sally Klie",
+    "job" : null,
+    "character" : "Roses veninde"
+  } ],
+  "director" : {
+    "id" : 2484433,
+    "birthDate" : null,
+    "name" : "Jonatan Egholm Keis",
+    "job" : "Director"
+  },
+  "popularity" : 2.409,
+  "release_date" : "2024-06-07",
+  "original_language" : "da"
+}, {
+  "id" : 1305844,
+  "title" : "min krop, men mit hoved",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4762613,
+    "birthDate" : "null",
+    "name" : "Cecillie Østerby Rasmussen",
+    "job" : null,
+    "character" : "Cecillie Østerby Rasmussen"
+  }, {
+    "id" : 4780674,
+    "birthDate" : "null",
+    "name" : "Óli Jákup Johannessen",
+    "job" : null,
+    "character" : "Óli Jákup Johannessen"
+  }, {
+    "id" : 4780673,
+    "birthDate" : "null",
+    "name" : "Viktor Örn Ingvarsson",
+    "job" : null,
+    "character" : "Viktor Örn Ingvarsson"
+  }, {
+    "id" : 4762690,
+    "birthDate" : "2003-03-24",
+    "name" : "Magnus Valls-Sjøstrand",
+    "job" : null,
+    "character" : "Magnus Valls-Sjøstrand"
+  }, {
+    "id" : 4762776,
+    "birthDate" : "null",
+    "name" : "Mille Weng Andersson",
+    "job" : null,
+    "character" : "Mille Weng Andersson"
+  } ],
+  "director" : {
+    "id" : 4762776,
+    "birthDate" : null,
+    "name" : "Mille Weng Andersson",
+    "job" : "Director"
+  },
+  "popularity" : 1.553,
+  "release_date" : "2024-06-04",
+  "original_language" : "da"
+}, {
+  "id" : 1301781,
+  "title" : "BENZIN",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4762617,
+    "birthDate" : "null",
+    "name" : "Magnus Albertsen",
+    "job" : null,
+    "character" : "Lasse"
+  }, {
+    "id" : 4762798,
+    "birthDate" : "null",
+    "name" : "Louise Christine Markus",
+    "job" : null,
+    "character" : "Karren"
+  } ],
+  "director" : {
+    "id" : 4762775,
+    "birthDate" : null,
+    "name" : "Franziska Düring",
+    "job" : "Director"
+  },
+  "popularity" : 2.074,
+  "release_date" : "2024-06-04",
+  "original_language" : "da"
+}, {
+  "id" : 1301775,
+  "title" : "KÆLLING",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4762772,
+    "birthDate" : "null",
+    "name" : "Anemone S. Zaklikowesky",
+    "job" : null,
+    "character" : "Anemone S. Zaklikowesky"
+  }, {
+    "id" : 4762773,
+    "birthDate" : "null",
+    "name" : "Signe Sønderholm",
+    "job" : null,
+    "character" : "Signe Sønderholm"
+  }, {
+    "id" : 4762774,
+    "birthDate" : "null",
+    "name" : "Annika Lykke Helle-Broe",
+    "job" : null,
+    "character" : "Annika Lykke Helle-Broe"
+  } ],
+  "director" : {
+    "id" : 4762775,
+    "birthDate" : null,
+    "name" : "Franziska Düring",
+    "job" : "Director"
+  },
+  "popularity" : 1.048,
+  "release_date" : "2024-06-04",
+  "original_language" : "da"
+}, {
+  "id" : 1301741,
+  "title" : "Tidevand",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4093629,
+    "birthDate" : "null",
+    "name" : "Sigurd Primdahl",
+    "job" : null,
+    "character" : "Oskar"
+  }, {
+    "id" : 4762609,
+    "birthDate" : "null",
+    "name" : "Marie Holleufer Skovgaard",
+    "job" : null,
+    "character" : "Evie"
+  }, {
+    "id" : 4762610,
+    "birthDate" : "null",
+    "name" : "Klara Majlund Rem",
+    "job" : null,
+    "character" : "Marie"
+  }, {
+    "id" : 4762690,
+    "birthDate" : "2003-03-24",
+    "name" : "Magnus Valls-Sjøstrand",
+    "job" : null,
+    "character" : "Festabe"
+  } ],
+  "director" : {
+    "id" : 4762611,
+    "birthDate" : null,
+    "name" : "Estrid Dandanell Rothmann",
+    "job" : "Director"
+  },
+  "popularity" : 2.469,
+  "release_date" : "2024-06-04",
+  "original_language" : "da"
+}, {
+  "id" : 1298219,
+  "title" : "Suspekt - Det Kan Godt Blive Vildere",
+  "overview" : "Experience Suspekt's historic concert film, which captures the magic of the epic evening in the Park, with over 46,000 fans gathered at Denmark's national stadium.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 2970663,
+    "birthDate" : "null",
+    "name" : "Emil Simonsen",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 2973858,
+    "birthDate" : "null",
+    "name" : "Andreas Bai Duelund",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 2973862,
+    "birthDate" : "null",
+    "name" : "Rune Rask",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 591208,
+    "birthDate" : "null",
+    "name" : "Kjartan Arngrim",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 2648660,
+    "birthDate" : "1966-12-14",
+    "name" : "Helle Thorning-Schmidt",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 4748815,
+    "birthDate" : "null",
+    "name" : "Tessa",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 4748816,
+    "birthDate" : "null",
+    "name" : "Jooks",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 89958,
+    "birthDate" : "null",
+    "name" : "Tue Track",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 1139734,
+    "birthDate" : "1977-10-14",
+    "name" : "Tina Dickow",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 148725,
+    "birthDate" : "1988-09-18",
+    "name" : "Lukas Forchhammer",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 4748821,
+    "birthDate" : "1988-04-04",
+    "name" : "Xander Linnet",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 2662256,
+    "birthDate" : "null",
+    "name" : "Benjamin Hav",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 2960537,
+    "birthDate" : "null",
+    "name" : "Emil Lange",
+    "job" : null,
+    "character" : "Self"
+  } ],
+  "director" : {
+    "id" : 2122882,
+    "birthDate" : null,
+    "name" : "Martin Skovbjerg",
+    "job" : "Director"
+  },
+  "popularity" : 1.913,
+  "release_date" : "2024-05-31",
+  "original_language" : "da"
+}, {
+  "id" : 1295266,
+  "title" : "Mikkel Klint Thorius - 100% Måske",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1556815,
+    "birthDate" : "null",
+    "name" : "Mikkel Klint Thorius",
+    "job" : null,
+    "character" : "Mikkel Klint Thorius"
+  } ],
+  "director" : {
+    "id" : 1371900,
+    "birthDate" : null,
+    "name" : "Rasmus Olsen",
+    "job" : "Director"
+  },
+  "popularity" : 2.485,
+  "release_date" : "2024-05-24",
+  "original_language" : "da"
+}, {
+  "id" : 1292085,
+  "title" : "HOLGER",
+  "overview" : "Described as 'a fairytale with its roots in the worlds of dadaism and surrealism'.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4721190,
+    "birthDate" : "null",
+    "name" : "Clara Egemark Strangholt",
+    "job" : null,
+    "character" : "The Woman"
+  }, {
+    "id" : 4721192,
+    "birthDate" : "null",
+    "name" : "HC Heibøll",
+    "job" : null,
+    "character" : "The Man"
+  }, {
+    "id" : 4721193,
+    "birthDate" : "null",
+    "name" : "Lasse Bucknell",
+    "job" : null,
+    "character" : "The Monkey (puppeteer)"
+  }, {
+    "id" : 4721198,
+    "birthDate" : "null",
+    "name" : "Maya Logstrup",
+    "job" : null,
+    "character" : "The Monkey (puppeteer)"
+  }, {
+    "id" : 4721202,
+    "birthDate" : "null",
+    "name" : "Henry the squirrel",
+    "job" : null,
+    "character" : "Themself"
+  }, {
+    "id" : 4721211,
+    "birthDate" : "null",
+    "name" : "Nicklas Lind",
+    "job" : null,
+    "character" : "Person in the store"
+  } ],
+  "director" : {
+    "id" : 4721192,
+    "birthDate" : null,
+    "name" : "HC Heibøll",
+    "job" : "Director"
+  },
+  "popularity" : 3.804,
+  "release_date" : "2024-05-24",
+  "original_language" : "da"
+}, {
   "id" : 1207126,
-  "overview" : "A middle-class family, on the surface happy and perfect, are close to disintegration due to the father's escalating alcoholism. After several years of failure and broken promises, they finally give him an ultimatum. However, they must soon recognize that the solution rests on everyone's shoulders.",
-  "popularity" : 2.95,
-  "revenue" : 0,
-  "tagline" : null,
   "title" : "Fuld af kærlighed",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1327785,
-      "name" : "Viilbjørk Malling Agger",
-      "character" : "Sofia",
-      "birth_date" : "1997-01-10",
-      "cast_id" : 11
-    }, {
-      "id" : 588175,
-      "name" : "Lars Ranthe",
-      "character" : "Peter",
-      "birth_date" : "1969-08-26",
-      "cast_id" : 17
-    }, {
-      "id" : 71155,
-      "name" : "Stine Stengade",
-      "character" : "Helen",
-      "birth_date" : "1972-06-01",
-      "cast_id" : 12
-    }, {
-      "id" : 3368397,
-      "name" : "Malaika Berenth Mosendane",
-      "character" : "Louise",
-      "birth_date" : "2000-01-25",
-      "cast_id" : 13
-    }, {
-      "id" : 3699110,
-      "name" : "Viktor Hjelmsø",
-      "character" : "Nelson",
-      "birth_date" : "2001-01-15",
-      "cast_id" : 14
-    }, {
-      "id" : 1335537,
-      "name" : "Morten Hebsgaard",
-      "character" : "Lars",
-      "birth_date" : "1963-03-31",
-      "cast_id" : 15
-    }, {
-      "id" : 2532345,
-      "name" : "Mathias Bøgelund",
-      "character" : "Malthe",
-      "birth_date" : "null",
-      "cast_id" : 16
-    } ],
-    "director" : {
-      "id" : 564018,
-      "name" : "Christina Rosendahl",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
+  "overview" : "A middle-class family, on the surface happy and perfect, are close to disintegration due to the father's escalating alcoholism. After several years of failure and broken promises, they finally give him an ultimatum. However, they must soon recognize that the solution rests on everyone's shoulders.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1327785,
+    "birthDate" : "1997-01-10",
+    "name" : "Viilbjørk Malling Agger",
+    "job" : null,
+    "character" : "Sofia"
+  }, {
+    "id" : 588175,
+    "birthDate" : "1969-08-26",
+    "name" : "Lars Ranthe",
+    "job" : null,
+    "character" : "Peter"
+  }, {
+    "id" : 71155,
+    "birthDate" : "1972-06-01",
+    "name" : "Stine Stengade",
+    "job" : null,
+    "character" : "Helen"
+  }, {
+    "id" : 3368397,
+    "birthDate" : "2000-01-25",
+    "name" : "Malaika Berenth Mosendane",
+    "job" : null,
+    "character" : "Louise"
+  }, {
+    "id" : 3699110,
+    "birthDate" : "2001-01-15",
+    "name" : "Viktor Hjelmsø",
+    "job" : null,
+    "character" : "Nelson"
+  }, {
+    "id" : 1335537,
+    "birthDate" : "1963-03-31",
+    "name" : "Morten Hebsgaard",
+    "job" : null,
+    "character" : "Lars"
+  }, {
+    "id" : 2532345,
+    "birthDate" : "null",
+    "name" : "Mathias Bøgelund",
+    "job" : null,
+    "character" : "Malthe"
+  } ],
+  "director" : {
+    "id" : 564018,
+    "birthDate" : null,
+    "name" : "Christina Rosendahl",
+    "job" : "Director"
   },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Fuld af kærlighed",
+  "popularity" : 4.13,
   "release_date" : "2024-05-23",
-  "vote_average" : 7.0,
-  "vote_count" : 3
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
+  "id" : 1297476,
+  "title" : "Skyldig",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4016184,
+    "birthDate" : "2005-01-08",
+    "name" : "Emil Guttorm",
+    "job" : null,
+    "character" : "Hovedperson"
+  }, {
+    "id" : 4016183,
+    "birthDate" : "null",
+    "name" : "Emil Lyster",
+    "job" : null,
+    "character" : "Fange"
+  }, {
+    "id" : 4506360,
+    "birthDate" : "null",
+    "name" : "Anna bræstrup",
+    "job" : null,
+    "character" : "Indsamler"
+  }, {
+    "id" : 4216026,
+    "birthDate" : "null",
+    "name" : "Lærke Mikkelsen",
+    "job" : null,
+    "character" : "Lillesøster"
+  }, {
+    "id" : 4743350,
+    "birthDate" : "null",
+    "name" : "Frida Mikkelsen",
+    "job" : null,
+    "character" : "Lille pige"
+  }, {
+    "id" : 4016187,
+    "birthDate" : "null",
+    "name" : "Hjalte Larsen",
+    "job" : null,
+    "character" : "Soldat"
+  }, {
+    "id" : 4485414,
+    "birthDate" : "null",
+    "name" : "Valdemar Haulund",
+    "job" : null,
+    "character" : "General"
   } ],
+  "director" : {
+    "id" : 4016184,
+    "birthDate" : null,
+    "name" : "Emil Guttorm",
+    "job" : "Director"
+  },
+  "popularity" : 1.658,
+  "release_date" : "2024-05-19",
+  "original_language" : "da"
+}, {
+  "id" : 1291359,
+  "title" : "80 år som Ulla Terkelsen",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.185,
+  "release_date" : "2024-05-16",
+  "original_language" : "da"
+}, {
+  "id" : 1289599,
+  "title" : "Slog min ven Emilie Meng ihjel?",
+  "overview" : "Who is the man she thought she knew so well? That question has consumed a former friend of the 33-year-old man who is charged with the abduction, rape, and murder of Emilie Meng. For the first time, she shares what it is like to have been very close to the accused.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4715991,
+    "birthDate" : "null",
+    "name" : "Ida Marie Lomholt Wismann",
+    "job" : null,
+    "character" : "Herself"
+  } ],
+  "director" : null,
+  "popularity" : 0.267,
+  "release_date" : "2024-05-13",
+  "original_language" : "da"
+}, {
+  "id" : 1232769,
+  "title" : "Destination",
+  "overview" : "Fueled by his obsession with the past, Frank instigates a manhunt to find his former henchman Rob.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 2277303,
+    "birthDate" : "2001-04-15",
+    "name" : "Frederik Johnsson",
+    "job" : null,
+    "character" : "Frank"
+  }, {
+    "id" : 2277299,
+    "birthDate" : "null",
+    "name" : "Marius Johnsson",
+    "job" : null,
+    "character" : "Rob"
+  }, {
+    "id" : 2277300,
+    "birthDate" : "null",
+    "name" : "Sander R. D. Larsen",
+    "job" : null,
+    "character" : "Alain"
+  }, {
+    "id" : 2929411,
+    "birthDate" : "null",
+    "name" : "Simon Thomasberg",
+    "job" : null,
+    "character" : "Timothy Bender"
+  }, {
+    "id" : 2941716,
+    "birthDate" : "null",
+    "name" : "Rachel Ballandies",
+    "job" : null,
+    "character" : "Erica"
+  } ],
+  "director" : {
+    "id" : 2277303,
+    "birthDate" : null,
+    "name" : "Frederik Johnsson",
+    "job" : "Director"
+  },
+  "popularity" : 1.607,
+  "release_date" : "2024-05-13",
+  "original_language" : "da"
+}, {
+  "id" : 1295020,
+  "title" : "Louise Brink - Er Klar Om 5",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4733146,
+    "birthDate" : "null",
+    "name" : "Louise Brink",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 0.674,
+  "release_date" : "2024-05-12",
+  "original_language" : "da"
+}, {
+  "id" : 1285195,
+  "title" : "Sidste tjek ud fra Badehotellet",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.166,
+  "release_date" : "2024-05-04",
+  "original_language" : "da"
+}, {
+  "id" : 1284021,
+  "title" : "Børsen - Danmarkshistorie i flammer",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.405,
+  "release_date" : "2024-05-02",
+  "original_language" : "da"
+}, {
+  "id" : 1205456,
+  "title" : "One & the same",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1087000,
+    "birthDate" : "1980-03-14",
+    "name" : "Nicolai Jandorf Klok",
+    "job" : null,
+    "character" : "Far"
+  }, {
+    "id" : 1476834,
+    "birthDate" : "1987-04-10",
+    "name" : "Josephine Park",
+    "job" : null,
+    "character" : "Faster"
+  }, {
+    "id" : 1353296,
+    "birthDate" : "null",
+    "name" : "Sigurd Philip Dalgas",
+    "job" : null,
+    "character" : "Anders"
+  }, {
+    "id" : 4405127,
+    "birthDate" : "null",
+    "name" : "Lasse Øhrstrøm",
+    "job" : null,
+    "character" : "Bjørn"
+  }, {
+    "id" : 3699111,
+    "birthDate" : "null",
+    "name" : "Zoe Bryan Hertz",
+    "job" : null,
+    "character" : "Nabo"
+  }, {
+    "id" : 2998429,
+    "birthDate" : "null",
+    "name" : "Jack Pedersen",
+    "job" : null,
+    "character" : "Nabo"
+  } ],
+  "director" : {
+    "id" : 3779168,
+    "birthDate" : null,
+    "name" : "Mikkel Bjørn Kehlert",
+    "job" : "Director"
+  },
+  "popularity" : 1.536,
+  "release_date" : "2024-05-02",
+  "original_language" : "da"
+}, {
+  "id" : 1288664,
+  "title" : "Jakob Svendsen - Det Burde Jeg Vide",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1355003,
+    "birthDate" : "1980-08-28",
+    "name" : "Jakob Svendsen",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 1.074,
+  "release_date" : "2024-05-01",
+  "original_language" : "da"
+}, {
+  "id" : 1288265,
+  "title" : "Philophobic",
+  "overview" : "Philophobic delves into the complexities of modern relationships, offering a glimpse into the emotional journey of a young woman navigating love and fear. Through the lens of her bedroom and the use of viewmaster reels, viewers witness her struggle to reconcile her longing for connection with her deep-seated fear of vulnerability. As she grapples with her emotional detachment, Philophobic prompts reflection on the fragile nature of Gen Z relationships and the universal quest for validation.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 3699111,
+    "birthDate" : "null",
+    "name" : "Zoe Bryan Hertz",
+    "job" : null,
+    "character" : "Stella"
+  }, {
+    "id" : 3554738,
+    "birthDate" : "null",
+    "name" : "Oliver Overgaard",
+    "job" : null,
+    "character" : "Mads"
+  } ],
+  "director" : {
+    "id" : 3551327,
+    "birthDate" : null,
+    "name" : "Safien van Westing",
+    "job" : "Director"
+  },
+  "popularity" : 2.612,
+  "release_date" : "2024-04-30",
+  "original_language" : "da"
+}, {
+  "id" : 1281090,
+  "title" : "HITMAN",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4668383,
+    "birthDate" : "2008-06-22",
+    "name" : "Lasse Jørgensen",
+    "job" : null,
+    "character" : "Diplomat/Centrets ejer/Businessmand"
+  }, {
+    "id" : 4668384,
+    "birthDate" : "null",
+    "name" : "Sebastian Poulsen",
+    "job" : null,
+    "character" : "Hitman"
+  } ],
+  "director" : {
+    "id" : 4668383,
+    "birthDate" : null,
+    "name" : "Lasse Jørgensen",
+    "job" : "Director"
+  },
+  "popularity" : 1.461,
+  "release_date" : "2024-04-28",
+  "original_language" : "da"
+}, {
+  "id" : 1255174,
+  "title" : "The Break",
+  "overview" : "An accidental switch of lunchboxes during their break is Linda's final straw and she suddenly decides to let it all out on her annoying coworker, Marianne.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4576010,
+    "birthDate" : "null",
+    "name" : "Line Frank Karlson",
+    "job" : null,
+    "character" : "Linda"
+  }, {
+    "id" : 4576011,
+    "birthDate" : "null",
+    "name" : "Julie Bjørnsen Hansen",
+    "job" : null,
+    "character" : "Marianne"
+  } ],
+  "director" : {
+    "id" : 3004038,
+    "birthDate" : null,
+    "name" : "Oliver Birk Wisholm",
+    "job" : "Director"
+  },
+  "popularity" : 0.479,
+  "release_date" : "2024-04-25",
+  "original_language" : "da"
+}, {
+  "id" : 1278804,
+  "title" : "En farlig forbindelse: Mødtes på Snapchat",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.164,
+  "release_date" : "2024-04-23",
+  "original_language" : "da"
+}, {
+  "id" : 1277680,
+  "title" : "Siggi - drengen der blev FBI-spion",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4666004,
+    "birthDate" : "null",
+    "name" : "Siggi",
+    "job" : null,
+    "character" : "Sig selv"
+  } ],
+  "director" : null,
+  "popularity" : 1.67,
+  "release_date" : "2024-04-21",
+  "original_language" : "da"
+}, {
+  "id" : 1278898,
+  "title" : "Hugorm feat. Frank Hvam",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.433,
+  "release_date" : "2024-04-12",
+  "original_language" : "da"
+}, {
+  "id" : 1270077,
+  "title" : "Peter Werner - WERNER OM DIG",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 3682319,
+    "birthDate" : "null",
+    "name" : "Peter Werner",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 1.371,
+  "release_date" : "2024-04-05",
+  "original_language" : "da"
+}, {
+  "id" : 983524,
+  "title" : "Birthday Girl",
+  "overview" : "On a cruise ship bound for the Caribbean, 42 year old Nanna has invited her daughter Cille and her best friend on a cruise to celebrate Cille's 18th birthday. The expectations are high, and they have big plans set for the three days aboard the cruise. But on the first evening, the dream vacation descends a nightmare, and Nanna realizes that in order to get justice, she must take matters into her own hands.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4460,
+    "birthDate" : "1972-04-15",
+    "name" : "Trine Dyrholm",
+    "job" : null,
+    "character" : "Nanna"
+  }, {
+    "id" : 1680371,
+    "birthDate" : "2005-07-14",
+    "name" : "Flora Ofelia Hofmann Lindahl",
+    "job" : null,
+    "character" : "Cille"
+  }, {
+    "id" : 1565240,
+    "birthDate" : "1997-04-02",
+    "name" : "Herman Tømmeraas",
+    "job" : null,
+    "character" : "Kevin"
+  }, {
+    "id" : 3699116,
+    "birthDate" : "null",
+    "name" : "Maja Ida Thiele",
+    "job" : null,
+    "character" : "Lea"
+  }, {
+    "id" : 3574712,
+    "birthDate" : "null",
+    "name" : "Nathan Popa",
+    "job" : null,
+    "character" : "Ryan"
+  }, {
+    "id" : 4273857,
+    "birthDate" : "null",
+    "name" : "Sebastian DeMots",
+    "job" : null,
+    "character" : "Bacon"
+  }, {
+    "id" : 3864258,
+    "birthDate" : "null",
+    "name" : "Keith Eric Chappelle",
+    "job" : null,
+    "character" : "Jerome"
+  }, {
+    "id" : 4749412,
+    "birthDate" : "null",
+    "name" : "Viktor Bjerke Hofgaard",
+    "job" : null,
+    "character" : "Mats"
+  } ],
+  "director" : {
+    "id" : 141884,
+    "birthDate" : null,
+    "name" : "Michael Noer",
+    "job" : "Director"
+  },
+  "popularity" : 12.19,
+  "release_date" : "2024-04-04",
+  "original_language" : "da"
+}, {
+  "id" : 1230328,
+  "title" : "Moder",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4414345,
+    "birthDate" : "1991-09-22",
+    "name" : "Lisa Riesner",
+    "job" : null,
+    "character" : "Christine Bachmann"
+  }, {
+    "id" : 84244,
+    "birthDate" : "1979-05-18",
+    "name" : "Sofie Lassen-Kahlke",
+    "job" : null,
+    "character" : "Sundhedsplejersken Bea"
+  }, {
+    "id" : 2040125,
+    "birthDate" : "1992-03-24",
+    "name" : "Diêm Camille",
+    "job" : null,
+    "character" : "Abby"
+  }, {
+    "id" : 1639191,
+    "birthDate" : "1989-09-07",
+    "name" : "Alban Lendorf",
+    "job" : null,
+    "character" : "David Bachmann"
+  }, {
+    "id" : 3322327,
+    "birthDate" : "1994-01-29",
+    "name" : "Coco Hjardemaal",
+    "job" : null,
+    "character" : "Betjent 1"
+  }, {
+    "id" : 1282432,
+    "birthDate" : "1988-04-01",
+    "name" : "Aske Bang",
+    "job" : null,
+    "character" : "Betjent 2"
+  } ],
+  "director" : {
+    "id" : 4428869,
+    "birthDate" : null,
+    "name" : "Tara Salas",
+    "job" : "Director"
+  },
+  "popularity" : 0.98,
+  "release_date" : "2024-04-01",
+  "original_language" : "da"
+}, {
+  "id" : 1271735,
+  "title" : "Martin Nørgaard - Sådan er det bare",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1421812,
+    "birthDate" : "1990-01-01",
+    "name" : "Martin Nørgaard",
+    "job" : null,
+    "character" : ""
+  } ],
+  "director" : null,
+  "popularity" : 1.985,
+  "release_date" : "2024-03-31",
+  "original_language" : "da"
+}, {
   "id" : 1263917,
-  "overview" : "",
-  "popularity" : 0.175,
-  "revenue" : 0,
-  "tagline" : null,
   "title" : "Konkurs på 1. klasse - Jagten på Lauritz-millionerne",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Konkurs på 1. klasse - Jagten på Lauritz-millionerne",
+  "overview" : "",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : null,
+  "popularity" : 0.245,
   "release_date" : "2024-03-24",
-  "vote_average" : 10.0,
-  "vote_count" : 1
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 964318,
-  "overview" : "Jan, a nurse who is also a father, was sexually abused by his father as a teenager. Working in Nuuk, Greenland, he tries to connect to the culture with sex. When someone calls him a Kalak, a Greenlandic word with a double meaning of both a \"true\" and \"dirty\" Greenlander, he wears the epithet as a badge of honor. Ultimately, he has to confront his father.",
-  "popularity" : 5.055,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Kalak",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1010903,
-      "name" : "Emil Johnsen",
-      "character" : "Jan",
-      "birth_date" : "1978-05-26",
-      "cast_id" : 6
-    }, {
-      "id" : 1994008,
-      "name" : "Asta Kamma August",
-      "character" : "Lærke",
-      "birth_date" : "1991-11-05",
-      "cast_id" : 5
-    }, {
-      "id" : 2890804,
-      "name" : "Berda Larsen",
-      "character" : "Karina",
-      "birth_date" : "null",
-      "cast_id" : 11
-    }, {
-      "id" : 3892187,
-      "name" : "Connie Kristoffersen",
-      "character" : "Ella",
-      "birth_date" : "null",
-      "cast_id" : 9
-    }, {
-      "id" : 4367278,
-      "name" : "Vigga Tukula",
-      "character" : "Nikoline",
-      "birth_date" : "null",
-      "cast_id" : 12
-    }, {
-      "id" : 4367280,
-      "name" : "Bertram Krassel",
-      "character" : "Markus",
-      "birth_date" : "null",
-      "cast_id" : 14
-    }, {
-      "id" : 4367279,
-      "name" : "Allie Maggie Kvist",
-      "character" : "Amanda",
-      "birth_date" : "null",
-      "cast_id" : 13
-    }, {
-      "id" : 1977324,
-      "name" : "Søren Hellerup",
-      "character" : "Ole",
-      "birth_date" : "1954-04-28",
-      "cast_id" : 7
-    }, {
-      "id" : 1640021,
-      "name" : "Anders Mossling",
-      "character" : "Sören",
-      "birth_date" : "1963-07-20",
-      "cast_id" : 37
-    }, {
-      "id" : 3892186,
-      "name" : "Hans Jukku Noahsen",
-      "character" : "Nukappi",
-      "birth_date" : "null",
-      "cast_id" : 8
-    }, {
-      "id" : 4942343,
-      "name" : "Lisbeth Vængtoft Noahsen",
-      "character" : "Maria",
-      "birth_date" : "null",
-      "cast_id" : 38
-    }, {
-      "id" : 4942344,
-      "name" : "Aviana Heuser",
-      "character" : "Sara",
-      "birth_date" : "null",
-      "cast_id" : 39
-    }, {
-      "id" : 4942345,
-      "name" : "Arnaq Carla Lynge",
-      "character" : "Karina's mother",
-      "birth_date" : "null",
-      "cast_id" : 40
-    }, {
-      "id" : 4942346,
-      "name" : "Nino Fencker",
-      "character" : "Karina's father",
-      "birth_date" : "null",
-      "cast_id" : 41
-    } ],
-    "director" : {
-      "id" : 1932374,
-      "name" : "Isabella Eklöf",
-      "job" : "Director",
-      "birth_date" : "1978-02-10"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Kalak",
-  "release_date" : "2024-03-07",
-  "vote_average" : 6.0,
-  "vote_count" : 5
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 1240287,
-  "overview" : "",
-  "popularity" : 0.812,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Mødet med muren",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1458453,
-      "name" : "Kevin Magnussen",
-      "character" : "Himself",
-      "birth_date" : "1992-10-05",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Mødet med muren",
-  "release_date" : "2024-01-01",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 1171372,
-  "overview" : "The brand new and unsinkable rescue boat RF2 goes down on one of its first rescue missions in 1981, Hirtshals. 9 men died. Henrik, the son of the captain of RF2, starts an investigation as his father is set to blame for the accident. However, Henrik faces opposition from the townspeople, meanwhile grief threatens to tear Henrik's family apart. The film is inspired by true events.",
-  "popularity" : 3.126,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Synkefri",
-  "credits" : {
-    "actors" : [ {
-      "id" : 82534,
-      "name" : "Iben Dorner",
-      "character" : "Silje",
-      "birth_date" : "1978-10-19",
-      "cast_id" : 1
-    }, {
-      "id" : 1297500,
-      "name" : "Johanne Louise Schmidt",
-      "character" : "Iben",
-      "birth_date" : "1983-10-16",
-      "cast_id" : 2
-    }, {
-      "id" : 1244882,
-      "name" : "Henrik Birch",
-      "character" : "Castro",
-      "birth_date" : "1956-09-05",
-      "cast_id" : 3
-    }, {
-      "id" : 1150553,
-      "name" : "Anne Sofie Espersen",
-      "character" : "Birte",
-      "birth_date" : "1973-08-27",
-      "cast_id" : 4
-    }, {
-      "id" : 1388460,
-      "name" : "Esben Dalgaard Andersen",
-      "character" : "Krudt Kaj",
-      "birth_date" : "1976-07-03",
-      "cast_id" : 5
-    }, {
-      "id" : 1180028,
-      "name" : "Sylvester Byder",
-      "character" : "Henrik",
-      "birth_date" : "1999-08-14",
-      "cast_id" : 6
-    }, {
-      "id" : 1433679,
-      "name" : "Anders Brink Madsen",
-      "character" : "Rasmus",
-      "birth_date" : "1975-09-30",
-      "cast_id" : 7
-    }, {
-      "id" : 2038235,
-      "name" : "Sofie Torp",
-      "character" : "Lissy",
-      "birth_date" : "1990-01-16",
-      "cast_id" : 8
-    }, {
-      "id" : 2117343,
-      "name" : "Elias Budde Christensen",
-      "character" : "Claus",
-      "birth_date" : "2002-03-26",
-      "cast_id" : 9
-    }, {
-      "id" : 208175,
-      "name" : "Martin Strange-Hansen",
-      "character" : "Præst",
-      "birth_date" : "1971-04-08",
-      "cast_id" : 10
-    }, {
-      "id" : 1350477,
-      "name" : "Lars Torpp Thomsen",
-      "character" : "Bo",
-      "birth_date" : "1972-07-25",
-      "cast_id" : 11
-    }, {
-      "id" : 2532340,
-      "name" : "Magnus Haugaard",
-      "character" : "Niels",
-      "birth_date" : "1995-02-20",
-      "cast_id" : 12
-    }, {
-      "id" : 1439692,
-      "name" : "Christian Hetland Jepsen",
-      "character" : "Nyhedsvært",
-      "birth_date" : "null",
-      "cast_id" : 13
-    }, {
-      "id" : 1441841,
-      "name" : "Ane Stensgaard Juul",
-      "character" : "Louise",
-      "birth_date" : "1993-12-08",
-      "cast_id" : 14
-    }, {
-      "id" : 1919009,
-      "name" : "Anders Baggesen",
-      "character" : "Nyhedsvært",
-      "birth_date" : "1958-10-09",
-      "cast_id" : 15
-    }, {
-      "id" : 2729517,
-      "name" : "John Bonadies",
-      "character" : "Torben Stryg",
-      "birth_date" : "null",
-      "cast_id" : 16
-    }, {
-      "id" : 1522961,
-      "name" : "Kathrine Høj Andersen",
-      "character" : "Sygeplejerske",
-      "birth_date" : "null",
-      "cast_id" : 17
-    }, {
-      "id" : 1174442,
-      "name" : "Lotte Bergstrøm",
-      "character" : "Inga",
-      "birth_date" : "1973-06-20",
-      "cast_id" : 18
-    } ],
-    "director" : {
-      "id" : 2504928,
-      "name" : "Christian Andersen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Synkefri",
-  "release_date" : "2023-11-30",
-  "vote_average" : 6.5,
-  "vote_count" : 4
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 1188736,
-  "overview" : "",
-  "popularity" : 2.234,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Forfulgt af politiet?",
-  "credits" : {
-    "actors" : [ {
-      "id" : 4313866,
-      "name" : "Claus Bonnez",
-      "character" : "Self",
-      "birth_date" : "null",
-      "cast_id" : 27
-    }, {
-      "id" : 4313868,
-      "name" : "Adam Diderichsen",
-      "character" : "Self",
-      "birth_date" : "null",
-      "cast_id" : 28
-    }, {
-      "id" : 4313825,
-      "name" : "Thomas Lemke",
-      "character" : "Self",
-      "birth_date" : "null",
-      "cast_id" : 29
-    }, {
-      "id" : 4313870,
-      "name" : "Jens Lyng Michelsen",
-      "character" : "Self (voice)",
-      "birth_date" : "null",
-      "cast_id" : 30
-    }, {
-      "id" : 4313874,
-      "name" : "Eva Smith",
-      "character" : "Self",
-      "birth_date" : "null",
-      "cast_id" : 31
-    }, {
-      "id" : 4313884,
-      "name" : "Mohamad Abdou",
-      "character" : "Self",
-      "birth_date" : "null",
-      "cast_id" : 32
-    }, {
-      "id" : 4313889,
-      "name" : "Carit Thomas Andersen",
-      "character" : "Self",
-      "birth_date" : "null",
-      "cast_id" : 33
-    } ],
-    "director" : {
-      "id" : 4313825,
-      "name" : "Thomas Lemke",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Forfulgt af politiet?",
-  "release_date" : "2023-10-08",
-  "vote_average" : 10.0,
-  "vote_count" : 1
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 1137197,
-  "overview" : "When Danish filmmakers Mira Jargil and Christian Sønderby Jepsen try to find balance in their stressful lives, they seek guidance from a renowned Danish HIV researcher turned monk deep in the mountains of Sri Lanka. But their filming process goes differently than expected. When they hear that the renowned Danish doctor and HIV scientist Jan Erik Hansen has burned all boats to live as a Buddhist monk on a mountain in Sri Lanka, the two Danish documentary makers Mira Jargil and Christian Sønderby Jepsen decide to make a film about him. to make. Jan Erik Hansen, as monk Bhante, has become an important voice in the Buddhist community. He has a YouTube channel with many followers, and people from all over the world ask him their life questions. The film project ends unexpectedly when the monk and the filmmakers appear to have different ideas about the film.",
-  "popularity" : 8.483,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Munken",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1668410,
-      "name" : "Mira Jargil",
-      "character" : "Self",
-      "birth_date" : "null",
-      "cast_id" : 8
-    }, {
-      "id" : 1193043,
-      "name" : "Christian Sønderby Jepsen",
-      "character" : "Self",
-      "birth_date" : "null",
-      "cast_id" : 9
-    }, {
-      "id" : 4735250,
-      "name" : "Jan Erik Hansen",
-      "character" : "Self",
-      "birth_date" : "null",
-      "cast_id" : 10
-    } ],
-    "director" : {
-      "id" : 1193043,
-      "name" : "Christian Sønderby Jepsen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Munken",
-  "release_date" : "2023-09-21",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 1174003,
-  "overview" : "Helena seeks out her long lost friend Charlotte, who has just buried her father. Helena’s flashbacks take us 35 years back in time to Helena’s and Charlotte’s childhood. The girls are close but have a complex and tense relationship. She recalls the crucial incident that ended their friendship.",
-  "popularity" : 0.933,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Watch",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 1476906,
-      "name" : "Sandra Yi Sencindiver",
-      "job" : "Director",
-      "birth_date" : "1980-01-30"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Watch",
-  "release_date" : "2023-08-28",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ ],
-  "id" : 1316739,
-  "overview" : "",
-  "popularity" : 1.372,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Please mig, please",
-  "credits" : {
-    "actors" : [ {
-      "id" : 4823798,
-      "name" : "Sara Dhimitri",
-      "character" : "Pleaser",
-      "birth_date" : "null",
-      "cast_id" : 1
-    }, {
-      "id" : 3913375,
-      "name" : "Alma Benkjer",
-      "character" : "Mathilde",
-      "birth_date" : "null",
-      "cast_id" : 2
-    }, {
-      "id" : 1352860,
-      "name" : "Dorte Rømer",
-      "character" : "Kunde",
-      "birth_date" : "1968-11-08",
-      "cast_id" : 3
-    }, {
-      "id" : 3314722,
-      "name" : "Jakob Øster",
-      "character" : "Far",
-      "birth_date" : "null",
-      "cast_id" : 4
-    }, {
-      "id" : 4828873,
-      "name" : "Andreas Bitsch",
-      "character" : "Viktor",
-      "birth_date" : "null",
-      "cast_id" : 5
-    } ],
-    "director" : {
-      "id" : 3858432,
-      "name" : "Amanda Rostgaard Phillipsen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Please mig, please",
-  "release_date" : "2023-07-17",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 1264248,
-  "overview" : "",
-  "popularity" : 2.308,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Hjort",
-  "credits" : {
-    "actors" : [ {
-      "id" : 3261978,
-      "name" : "Milo Campanale",
-      "character" : "Anders",
-      "birth_date" : "null",
-      "cast_id" : 1
-    }, {
-      "id" : 2671987,
-      "name" : "Helene Gregersen",
-      "character" : "Emilia (sister)",
-      "birth_date" : "null",
-      "cast_id" : 2
-    }, {
-      "id" : 4613190,
-      "name" : "Lise Junggreen",
-      "character" : "Mom",
-      "birth_date" : "null",
-      "cast_id" : 3
-    }, {
-      "id" : 4613192,
-      "name" : "Casper Højslet Lunøe",
-      "character" : "Anders as a kid",
-      "birth_date" : "null",
-      "cast_id" : 4
-    } ],
-    "director" : {
-      "id" : 4613193,
-      "name" : "Luis Kølkjær Hansen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Hjort",
-  "release_date" : "2023-06-13",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
+  "id" : 1210993,
+  "title" : "Efterklang - The Makedonium Band",
+  "overview" : "\"Efterklang - The Makedonium Band\" is a new music documentary directed by Danish filmmaker Andreas Johnsen. It follows Efterklang as they embark on a journey to Skopje in North Macedonia, to form a new band and create a show to be performed in front of the local freedom monument Makedonium. All within 6 days.  With the help of Grga, a concert organiser from MKC Youth Cultural Centre, and by reaching out to local musicians through open calls, the band manages to form connections with a wide range of talented musicians from both the traditional and the contemporary scene of North Macedonia.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 224471,
+    "birthDate" : "null",
+    "name" : "Mads Brauer",
+    "job" : null,
+    "character" : "Himself"
   }, {
-    "id" : 35,
-    "name" : "Comedy"
-  } ],
-  "id" : 1072444,
-  "overview" : "As a “free colored” woman, Anna Elizabeth Heegaard is wealthy and owns her own slaves when she begins a love affair with the Danish colony’s governor-general Peter von Scholten. During communal feasts, they discuss social reforms while a slave boy hangs above the table and cools the diners with a feather. And in the shadows, whispers begin of a slave revolt.",
-  "popularity" : 2.192,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Viften",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1177773,
-      "name" : "Anna Neye Poulsen",
-      "character" : "Anna",
-      "birth_date" : "1969-07-07",
-      "cast_id" : 2
-    }, {
-      "id" : 2847036,
-      "name" : "Sara Fanta Traore",
-      "character" : "Petrine",
-      "birth_date" : "1992-01-01",
-      "cast_id" : 3
-    }, {
-      "id" : 77539,
-      "name" : "Claus Riis Østergaard",
-      "character" : "Peter Von Scholten",
-      "birth_date" : "1969-11-11",
-      "cast_id" : 4
-    }, {
-      "id" : 2163397,
-      "name" : "Jesper Groth",
-      "character" : "Admiral Irminger",
-      "birth_date" : "1989-01-31",
-      "cast_id" : 5
-    }, {
-      "id" : 1563,
-      "name" : "Jesper Asholt",
-      "character" : "Mr. Nielsen",
-      "birth_date" : "1960-05-11",
-      "cast_id" : 6
-    }, {
-      "id" : 1544029,
-      "name" : "Søs Sif Thiele",
-      "character" : "Mrs. Nielsen",
-      "birth_date" : "1973-02-02",
-      "cast_id" : 7
-    }, {
-      "id" : 1433679,
-      "name" : "Anders Brink Madsen",
-      "character" : "Mr. Hagensen",
-      "birth_date" : "1975-09-30",
-      "cast_id" : 8
-    }, {
-      "id" : 1734054,
-      "name" : "Prince Yaw Appiah",
-      "character" : "Sorte Svend",
-      "birth_date" : "null",
-      "cast_id" : 9
-    }, {
-      "id" : 1181,
-      "name" : "Peter Gantzler",
-      "character" : "The King",
-      "birth_date" : "1958-09-28",
-      "cast_id" : 10
-    }, {
-      "id" : 1441512,
-      "name" : "Christopher Læssø",
-      "character" : "Butler",
-      "birth_date" : "1985-03-07",
-      "cast_id" : 11
-    }, {
-      "id" : 3407,
-      "name" : "Søren Sætter-Lassen",
-      "character" : "Narrator",
-      "birth_date" : "1955-07-11",
-      "cast_id" : 12
-    } ],
-    "director" : {
-      "id" : 1062347,
-      "name" : "Frederikke Aspöck",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Viften",
-  "release_date" : "2023-04-20",
-  "vote_average" : 6.625,
-  "vote_count" : 8
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 1108174,
-  "overview" : "Film screening and talk. Experience a coral’s response to rising water temperatures in a visual work that documents the tragic beauty of corals’ endangered existence. Shown in a loop followed by a talk between the artist and scientist Elena Bollati.",
-  "popularity" : 0.057,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Silent Extinction",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 1172252,
-      "name" : "Maja Friis",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Silent Extinction",
-  "release_date" : "2023-03-16",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 1096505,
-  "overview" : "",
-  "popularity" : 0.148,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Steriliseret af staten",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Steriliseret af staten",
-  "release_date" : "2023-03-07",
-  "vote_average" : 10.0,
-  "vote_count" : 1
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 1076248,
-  "overview" : "At the reception for Klara's new collection of poems, the main character of the evening is eager to celebrate with her friend Simone. But Simone is more reluctant. She doesn't want to get drunk and rejects Klara's initiatives to party like they once did. Longing for the twoness they had in the past, Klara makes a drastic decision. But the night ends with a fateful accident.",
-  "popularity" : 1.273,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Dig & mig & mælkevejen",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1494062,
-      "name" : "Roberta Reichhardt",
-      "character" : "",
-      "birth_date" : "1996-09-17",
-      "cast_id" : 11
-    }, {
-      "id" : 582051,
-      "name" : "Frederikke Dahl Hansen",
-      "character" : "",
-      "birth_date" : "1994-03-26",
-      "cast_id" : 12
-    }, {
-      "id" : 1357453,
-      "name" : "Nanna Bøttcher",
-      "character" : "",
-      "birth_date" : "1973-12-14",
-      "cast_id" : 13
-    } ],
-    "director" : {
-      "id" : 3021532,
-      "name" : "Marie Gøtzsche",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Dig & mig & mælkevejen",
-  "release_date" : "2023-01-14",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
+    "id" : 224473,
+    "birthDate" : "null",
+    "name" : "Casper Clausen",
+    "job" : null,
+    "character" : "Himself"
   }, {
-    "id" : 36,
-    "name" : "History"
-  } ],
-  "id" : 950890,
-  "overview" : "Beautiful hand-drawn animations tell the adventurous story of the filmmaker’s grandfather, an old-school ship captain and seafarer who spent 50 dramatic years at sea before facing up to family life.",
-  "popularity" : 2.274,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Kaptajnens hjerte",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 1565492,
-      "name" : "Simon Bang",
-      "job" : "Director",
-      "birth_date" : "1960-11-27"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Kaptajnens hjerte",
-  "release_date" : "2022-12-08",
-  "vote_average" : 10.0,
-  "vote_count" : 1
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 35,
-    "name" : "Comedy"
-  } ],
-  "id" : 1044149,
-  "overview" : "",
-  "popularity" : 1.289,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Mahamad Habane - Ham Der Komikeren",
-  "credits" : {
-    "actors" : [ {
-      "id" : 2208065,
-      "name" : "Mahamad Habane",
-      "character" : "",
-      "birth_date" : "1990-11-03",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Mahamad Habane - Ham Der Komikeren",
-  "release_date" : "2022-11-04",
-  "vote_average" : 8.0,
-  "vote_count" : 2
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 35,
-    "name" : "Comedy"
-  } ],
-  "id" : 1022459,
-  "overview" : "",
-  "popularity" : 1.378,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Heino Hansens første comedy show",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1355004,
-      "name" : "Heino Hansen",
-      "character" : "Self",
-      "birth_date" : "1984-09-12",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Heino Hansens første comedy show",
-  "release_date" : "2022-09-09",
-  "vote_average" : 7.0,
-  "vote_count" : 2
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 1027342,
-  "overview" : "",
-  "popularity" : 2.4,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Snydt af dit kød!",
-  "credits" : {
-    "actors" : [ {
-      "id" : 3711408,
-      "name" : "Selma Puntervold",
-      "character" : "Erika",
-      "birth_date" : "null",
-      "cast_id" : 1
-    }, {
-      "id" : 2541751,
-      "name" : "Bertram Bisgaard Enevoldsen",
-      "character" : "David",
-      "birth_date" : "2006-04-03",
-      "cast_id" : 2
-    }, {
-      "id" : 3711411,
-      "name" : "Ronja Hauge Schierup",
-      "character" : "Pjerrot",
-      "birth_date" : "null",
-      "cast_id" : 3
-    }, {
-      "id" : 3711414,
-      "name" : "Charlotte Wangel",
-      "character" : "Mor",
-      "birth_date" : "null",
-      "cast_id" : 4
-    } ],
-    "director" : {
-      "id" : 3711416,
-      "name" : "Jo Loui Borup",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Snydt af dit kød!",
-  "release_date" : "2022-08-15",
-  "vote_average" : 5.5,
-  "vote_count" : 2
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ ],
-  "id" : 982323,
-  "overview" : "",
-  "popularity" : 0.65,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Men's Room 4",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1079967,
-      "name" : "Torben Chris",
-      "character" : "",
-      "birth_date" : "1977-02-13",
-      "cast_id" : 1
-    }, {
-      "id" : 82536,
-      "name" : "Thomas Hartmann",
-      "character" : "",
-      "birth_date" : "1969-11-19",
-      "cast_id" : 2
-    } ],
-    "director" : {
-      "id" : 3571290,
-      "name" : "Andreas Martin",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Men's Room 4",
-  "release_date" : "2022-05-30",
-  "vote_average" : 9.0,
-  "vote_count" : 1
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 1096083,
-  "overview" : "Mikkel owns an old nursery garden but the business has financial issues after a new nursery has just opened across the street. Mikkels daughter finds it difficult to tell Mikkel that she has just got a job on the other nursery and wont be helping him anymore. Mikkel will do anything that can bring back his daughter and costumers and he has to do something drastic.",
-  "popularity" : 1.795,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Grønne fingre",
-  "credits" : {
-    "actors" : [ {
-      "id" : 2644690,
-      "name" : "Anders Glud Jensen",
-      "character" : "Mikkel",
-      "birth_date" : "null",
-      "cast_id" : 9
-    }, {
-      "id" : 1902323,
-      "name" : "Iris Mealor Olsen",
-      "character" : "Kathrine",
-      "birth_date" : "2003-05-24",
-      "cast_id" : 10
-    }, {
-      "id" : 3951594,
-      "name" : "Sune Ratleff",
-      "character" : "Kunde 1",
-      "birth_date" : "null",
-      "cast_id" : 11
-    }, {
-      "id" : 3951596,
-      "name" : "Jacob Brick",
-      "character" : "Kunde 2",
-      "birth_date" : "null",
-      "cast_id" : 12
-    } ],
-    "director" : {
-      "id" : 3951581,
-      "name" : "Frederik Hagedorn-Poulsen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Grønne fingre",
-  "release_date" : "2022-03-25",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 949596,
-  "overview" : "Lars, Eino and Thomas are fighting for a better future for themselves and their friends in Tasiilaq in eastern Greenland. A youth film about hope, dreams and the right to be yourself in turbulent times.",
-  "popularity" : 2.04,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Tsumu - Where Do You Go With Your Dreams?",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 2004308,
-      "name" : "Kasper Kiertzner",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Tsumu - Where Do You Go With Your Dreams?",
-  "release_date" : "2022-03-25",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ ],
-  "id" : 949036,
-  "overview" : "",
-  "popularity" : 0.024,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Sammen for Ukraine",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Sammen for Ukraine",
-  "release_date" : "2022-03-12",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 35,
-    "name" : "Comedy"
-  } ],
-  "id" : 848725,
-  "overview" : "",
-  "popularity" : 1.947,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Thomas Warberg: Et storslået menneske",
-  "credits" : {
-    "actors" : [ {
-      "id" : 558129,
-      "name" : "Thomas Warberg",
-      "character" : "Self",
-      "birth_date" : "1985-06-11",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Thomas Warberg: Et storslået menneske",
-  "release_date" : "2021-12-24",
-  "vote_average" : 8.0,
-  "vote_count" : 2
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 1180571,
-  "overview" : "",
-  "popularity" : 1.246,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "En Dans For Livet",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1932373,
-      "name" : "Laura Kjær",
-      "character" : "Ebba (Ung)",
-      "birth_date" : "1996-11-18",
-      "cast_id" : 1
-    }, {
-      "id" : 3132906,
-      "name" : "Line Falcon",
-      "character" : "Danser",
-      "birth_date" : "1995-01-03",
-      "cast_id" : 2
-    }, {
-      "id" : 1674304,
-      "name" : "Stine Primdahl",
-      "character" : "Tyskerpigen",
-      "birth_date" : "1988-03-23",
-      "cast_id" : 3
-    }, {
-      "id" : 1385111,
-      "name" : "Casper Sloth",
-      "character" : "SS Officer",
-      "birth_date" : "1984-10-26",
-      "cast_id" : 19
-    }, {
-      "id" : 4279643,
-      "name" : "Ebba Hjortshøj Rasmussen",
-      "character" : "(Self)",
-      "birth_date" : "null",
-      "cast_id" : 20
-    } ],
-    "director" : {
-      "id" : 4279626,
-      "name" : "Jonas Markussen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "En Dans For Livet",
-  "release_date" : "2021-10-30",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 36,
-    "name" : "History"
+    "id" : 224477,
+    "birthDate" : "null",
+    "name" : "Rasmus Stolberg",
+    "job" : null,
+    "character" : "Himself"
   }, {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 659370,
-  "overview" : "1402. Queen Margrete I has gathered the Nordic kingdoms in a union, ruled through her adopted son, Erik. But a conspiracy is in the making and Margrete finds herself in an impossible dilemma that could shatter her life's work: The Kalmar Union.",
-  "popularity" : 11.709,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Margrete den første",
-  "credits" : {
-    "actors" : [ {
-      "id" : 4460,
-      "name" : "Trine Dyrholm",
-      "character" : "Queen Margrete",
-      "birth_date" : "1972-04-15",
-      "cast_id" : 7
-    }, {
-      "id" : 82537,
-      "name" : "Søren Malling",
-      "character" : "Peder",
-      "birth_date" : "1964-02-03",
-      "cast_id" : 8
-    }, {
-      "id" : 76555,
-      "name" : "Jakob Oftebro",
-      "character" : "Man from Graudenz",
-      "birth_date" : "1986-01-12",
-      "cast_id" : 9
-    }, {
-      "id" : 1921846,
-      "name" : "Morten Hee Andersen",
-      "character" : "Erik",
-      "birth_date" : "1991-05-22",
-      "cast_id" : 10
-    }, {
-      "id" : 135726,
-      "name" : "Simon J. Berger",
-      "character" : "Jacob Nilsson",
-      "birth_date" : "1979-06-01",
-      "cast_id" : 11
-    }, {
-      "id" : 43231,
-      "name" : "Paul Blackthorne",
-      "character" : "William Bourcier",
-      "birth_date" : "1969-03-05",
-      "cast_id" : 12
-    }, {
-      "id" : 49487,
-      "name" : "Richard Sammel",
-      "character" : "Raberlin",
-      "birth_date" : "1960-10-13",
-      "cast_id" : 13
-    }, {
-      "id" : 234741,
-      "name" : "Thomas W. Gabrielsson",
-      "character" : "Jens Due",
-      "birth_date" : "1963-06-29",
-      "cast_id" : 14
-    }, {
-      "id" : 143391,
-      "name" : "Magnus Krepper",
-      "character" : "Johan Sparre",
-      "birth_date" : "1967-01-10",
-      "cast_id" : 15
-    }, {
-      "id" : 79270,
-      "name" : "Annika Hallin",
-      "character" : "Malin",
-      "birth_date" : "1968-02-16",
-      "cast_id" : 16
-    }, {
-      "id" : 1081068,
-      "name" : "Tinna Hrafnsdóttir",
-      "character" : "Sigrid",
-      "birth_date" : "1975-08-25",
-      "cast_id" : 17
-    }, {
-      "id" : 67988,
-      "name" : "Bjørn Floberg",
-      "character" : "Asle Jonsson",
-      "birth_date" : "1947-09-12",
-      "cast_id" : 18
-    }, {
-      "id" : 142874,
-      "name" : "Halldóra Geirharðsdóttir",
-      "character" : "Hildur",
-      "birth_date" : "1968-08-12",
-      "cast_id" : 19
-    }, {
-      "id" : 1143777,
-      "name" : "Per Kjerstad",
-      "character" : "Elvar Sigurdsson",
-      "birth_date" : "null",
-      "cast_id" : 20
-    }, {
-      "id" : 2423315,
-      "name" : "Agnes Westerlund Rase",
-      "character" : "Astrid",
-      "birth_date" : "1994-01-18",
-      "cast_id" : 21
-    }, {
-      "id" : 3334361,
-      "name" : "Linus James Nilsson",
-      "character" : "Roar",
-      "birth_date" : "null",
-      "cast_id" : 26
-    }, {
-      "id" : 110604,
-      "name" : "Joen Højerslev",
-      "character" : "Folmer Jakobsen Lunge",
-      "birth_date" : "1974-07-30",
-      "cast_id" : 27
-    }, {
-      "id" : 3334362,
-      "name" : "Diana Martinová",
-      "character" : "Philippa",
-      "birth_date" : "null",
-      "cast_id" : 28
-    }, {
-      "id" : 3334363,
-      "name" : "Nicole Rosney",
-      "character" : "Margrete (8)",
-      "birth_date" : "null",
-      "cast_id" : 29
-    }, {
-      "id" : 3334364,
-      "name" : "Ole Niemann",
-      "character" : "Bourcier's Interpreter",
-      "birth_date" : "null",
-      "cast_id" : 30
-    }, {
-      "id" : 1409765,
-      "name" : "Pavel Myslík",
-      "character" : "Valdemar Atterdag",
-      "birth_date" : "1955-03-24",
-      "cast_id" : 31
-    }, {
-      "id" : 25732,
-      "name" : "Curtis Matthew",
-      "character" : "Herald",
-      "birth_date" : "null",
-      "cast_id" : 32
-    }, {
-      "id" : 2476750,
-      "name" : "Rostislav Pastorek",
-      "character" : "Old Priest",
-      "birth_date" : "null",
-      "cast_id" : 33
-    }, {
-      "id" : 2231004,
-      "name" : "Ondřej Macek",
-      "character" : "Stable Boy",
-      "birth_date" : "null",
-      "cast_id" : 34
-    }, {
-      "id" : 1518815,
-      "name" : "Mathilde Wedell Wedellsborg",
-      "character" : "Lady-in-Waiting",
-      "birth_date" : "null",
-      "cast_id" : 35
-    } ],
-    "director" : {
-      "id" : 72372,
-      "name" : "Charlotte Sieling",
-      "job" : "Director",
-      "birth_date" : "1960-07-13"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Margrete den første",
-  "release_date" : "2021-09-16",
-  "vote_average" : 6.521,
-  "vote_count" : 73
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 35,
-    "name" : "Comedy"
-  } ],
-  "id" : 1019311,
-  "overview" : "",
-  "popularity" : 0.892,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Tjelle Vejrup - PRINSESSE",
-  "credits" : {
-    "actors" : [ {
-      "id" : 2229054,
-      "name" : "Tjelle Vejrup",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Tjelle Vejrup - PRINSESSE",
-  "release_date" : "2021-08-08",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 10751,
-    "name" : "Family"
-  } ],
-  "id" : 839095,
-  "overview" : "Buster, 11, loves everything about his life. He’s an optimist who knows that the going can get tough, but if you apply a little magic and a lot of love, things will work out. He's always willing to lend a helping hand to his little sister who has a limp, to his parents and to his old friend Mr. Larsen who is, like Buster, a \"master magician\". This summer, Buster hopes to be a big hit at the town’s talent show. But he has a lot on his plate: He has a crush on Joanna, Mr. Larsen’s health is deteriorating and his family also needs him. Here is where Faith, Hope and Charity save the day. That’s the way things work in Buster’s world.",
-  "popularity" : 1.688,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Buster: Oregon Mortensen",
-  "credits" : {
-    "actors" : [ {
-      "id" : 3120897,
-      "name" : "Manfred Weber Cortzen",
-      "character" : "Buster",
-      "birth_date" : "null",
-      "cast_id" : 1
-    }, {
-      "id" : 1438708,
-      "name" : "Magnus Millang",
-      "character" : "Far",
-      "birth_date" : "1981-07-20",
-      "cast_id" : 2
-    }, {
-      "id" : 2754078,
-      "name" : "Ibi Støving",
-      "character" : "Mor",
-      "birth_date" : "1975-02-02",
-      "cast_id" : 3
-    }, {
-      "id" : 64125,
-      "name" : "Henning Jensen",
-      "character" : "Hr. Larsen",
-      "birth_date" : "1943-01-05",
-      "cast_id" : 4
-    }, {
-      "id" : 3120899,
-      "name" : "Kerstin Jannerup Gjesing",
-      "character" : "Ingeborg",
-      "birth_date" : "2011-03-31",
-      "cast_id" : 5
-    }, {
-      "id" : 1885455,
-      "name" : "Viola Martinsen",
-      "character" : "Joanna",
-      "birth_date" : "null",
-      "cast_id" : 6
-    }, {
-      "id" : 3120902,
-      "name" : "Bertil K. Truelsen Smith",
-      "character" : "Simon-Olaf",
-      "birth_date" : "null",
-      "cast_id" : 7
-    }, {
-      "id" : 89959,
-      "name" : "Linda Petersen",
-      "character" : "Irma",
-      "birth_date" : "1984-07-15",
-      "cast_id" : 8
-    }, {
-      "id" : 2645213,
-      "name" : "Joey Moe",
-      "character" : "Flyttemand",
-      "birth_date" : "null",
-      "cast_id" : 9
-    }, {
-      "id" : 2927139,
-      "name" : "Louise Davidsen",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 22
-    }, {
-      "id" : 3259876,
-      "name" : "Josephine Nørring",
-      "character" : "",
-      "birth_date" : "1980-06-03",
-      "cast_id" : 23
-    }, {
-      "id" : 3259878,
-      "name" : "Alma Sofie A. Allarp",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 24
-    }, {
-      "id" : 3259879,
-      "name" : "Genie Argiris",
-      "character" : "",
-      "birth_date" : "1990-09-01",
-      "cast_id" : 25
-    }, {
-      "id" : 3259880,
-      "name" : "Charly \"Comkean\" Baasch",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 26
-    }, {
-      "id" : 3259881,
-      "name" : "Ella Nilsson",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 27
-    }, {
-      "id" : 3259884,
-      "name" : "Malena Lucia Lodahl",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 28
-    }, {
-      "id" : 3259885,
-      "name" : "Asta Lyhne",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 29
-    }, {
-      "id" : 202624,
-      "name" : "Ann-Mari Max Hansen",
-      "character" : "",
-      "birth_date" : "1949-01-14",
-      "cast_id" : 30
-    }, {
-      "id" : 3259886,
-      "name" : "Sara Caroline Kenter",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 31
-    }, {
-      "id" : 2999531,
-      "name" : "Natali Vallespir Sand",
-      "character" : "",
-      "birth_date" : "1972-05-20",
-      "cast_id" : 33
-    } ],
-    "director" : {
-      "id" : 225517,
-      "name" : "Martin Miehe-Renard",
-      "job" : "Director",
-      "birth_date" : "1956-08-10"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Buster: Oregon Mortensen",
-  "release_date" : "2021-06-17",
-  "vote_average" : 5.6,
-  "vote_count" : 8
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 816490,
-  "overview" : "The corona year 2020 has been examined from all angles by the media. But what was it like to hold Ramadan in a year of restrictions, prohibitions and social distancing? Six young Muslims express their thoughts and feelings about a different kind of year when communal meals and prayer lines were replaced by a quarantine that pulls the individual relationship with God into focus. What can poetry and the quarantine of the heart teach us about a deeper meaning at a time when illness and fear are so predominant? And what kind of spirituality do we dare imagine in a society that moves further and further away from believing in God?",
-  "popularity" : 0.357,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Ramdan Muslim - in Quarantine with God",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 3044504,
-      "name" : "Anne Ahn Lund",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Ramdan Muslim - in Quarantine with God",
-  "release_date" : "2021-04-25",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ ],
-  "id" : 817592,
-  "overview" : "",
-  "popularity" : 0.017,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Uskyldig dømt",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Uskyldig dømt",
-  "release_date" : "2021-04-12",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 794901,
-  "overview" : "A writer is struggling to live his life to the fullest, because he is obsessed with his work.",
-  "popularity" : 0.324,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Pathécolor",
-  "credits" : {
-    "actors" : [ {
-      "id" : 2970238,
-      "name" : "Anton Kapetanopoulos",
-      "character" : "Boy",
-      "birth_date" : "null",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 2970240,
-      "name" : "Johannes Bohnsen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Pathécolor",
-  "release_date" : "2021-02-08",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 35,
-    "name" : "Comedy"
-  } ],
-  "id" : 776259,
-  "overview" : "",
-  "popularity" : 1.505,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Simon Talbot: Danish Invasion",
-  "credits" : {
-    "actors" : [ {
-      "id" : 234058,
-      "name" : "Simon Talbot",
-      "character" : "",
-      "birth_date" : "1986-07-18",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Simon Talbot: Danish Invasion",
-  "release_date" : "2020-12-14",
-  "vote_average" : 4.0,
-  "vote_count" : 1
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 797116,
-  "overview" : "Kasper's life is full of speed. He has a wonderful girlfriend, a successful career as a racing driver, and loves his university studies. But underneath the surface traces from a traumatic and violent childhood threaten his road to adulthood.",
-  "popularity" : 1.123,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Turned",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1180028,
-      "name" : "Sylvester Byder",
-      "character" : "Kasper",
-      "birth_date" : "1999-08-14",
-      "cast_id" : 11
-    }, {
-      "id" : 1433475,
-      "name" : "Jacob Ulrik Lohmann",
-      "character" : "Michael",
-      "birth_date" : "1974-02-04",
-      "cast_id" : 12
-    }, {
-      "id" : 1676769,
-      "name" : "Clara Rosager",
-      "character" : "Veronika",
-      "birth_date" : "1996-11-11",
-      "cast_id" : 13
-    }, {
-      "id" : 234976,
-      "name" : "Kaja Kamuk",
-      "character" : "Lisbeth",
-      "birth_date" : "null",
-      "cast_id" : 14
-    }, {
-      "id" : 1919009,
-      "name" : "Anders Baggesen",
-      "character" : "Claus",
-      "birth_date" : "1958-10-09",
-      "cast_id" : 15
-    }, {
-      "id" : 1476944,
-      "name" : "Holger Østergaard Kristensen",
-      "character" : "Professor Rasmussen",
-      "birth_date" : "null",
-      "cast_id" : 16
-    }, {
-      "id" : 2638819,
-      "name" : "Viktor Medom",
-      "character" : "Anders",
-      "birth_date" : "1996-04-08",
-      "cast_id" : 17
-    } ],
-    "director" : {
-      "id" : 1284964,
-      "name" : "Anders Walter",
-      "job" : "Director",
-      "birth_date" : "1978-02-05"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Turned",
-  "release_date" : "2020-10-20",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 10402,
-    "name" : "Music"
+    "id" : 4422713,
+    "birthDate" : "null",
+    "name" : "Martina Barakoska",
+    "job" : null,
+    "character" : "Herself"
   }, {
-    "id" : 99,
-    "name" : "Documentary"
+    "id" : 4422714,
+    "birthDate" : "null",
+    "name" : "Dina Jashari",
+    "job" : null,
+    "character" : "Herself"
+  }, {
+    "id" : 4422715,
+    "birthDate" : "null",
+    "name" : "Jane Trajkovski",
+    "job" : null,
+    "character" : "Himself"
+  }, {
+    "id" : 4422716,
+    "birthDate" : "null",
+    "name" : "Stefche Stojkovski",
+    "job" : null,
+    "character" : "Himself"
+  }, {
+    "id" : 4422717,
+    "birthDate" : "null",
+    "name" : "Iva Damjanovski",
+    "job" : null,
+    "character" : "Herself"
+  }, {
+    "id" : 1601243,
+    "birthDate" : "null",
+    "name" : "Dejan Spasović",
+    "job" : null,
+    "character" : "Himself"
   } ],
-  "id" : 962236,
+  "director" : {
+    "id" : 88564,
+    "birthDate" : null,
+    "name" : "Andreas Johnsen",
+    "job" : "Director"
+  },
+  "popularity" : 0.635,
+  "release_date" : "2024-03-23",
+  "original_language" : "da"
+}, {
+  "id" : 1262716,
+  "title" : "Jersey Bred",
   "overview" : "",
-  "popularity" : 1.154,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "The Minds of 99 - Solkongen Live fra Dodekalitten",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1731807,
-      "name" : "Niels Brandt",
-      "character" : "Himself",
-      "birth_date" : "null",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "The Minds of 99 - Solkongen Live fra Dodekalitten",
-  "release_date" : "2020-09-12",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 53,
-    "name" : "Thriller"
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1218163,
+    "birthDate" : "null",
+    "name" : "Chris Tardio",
+    "job" : null,
+    "character" : ""
   }, {
-    "id" : 9648,
-    "name" : "Mystery"
+    "id" : 112879,
+    "birthDate" : "1978-03-23",
+    "name" : "Jeremy Luke",
+    "job" : null,
+    "character" : ""
   }, {
-    "id" : 18,
-    "name" : "Drama"
+    "id" : 1450407,
+    "birthDate" : "1977-08-18",
+    "name" : "Lorenzo Antonucci",
+    "job" : null,
+    "character" : ""
   } ],
-  "id" : 518245,
-  "overview" : "When four female colleagues receive an email death threat each, they are convinced the sender is a war criminal, whom they have exposed. But what if the threats come from within their own office at the Danish Center for Information on Genocide?",
-  "popularity" : 3.348,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Undtagelsen",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1078979,
-      "name" : "Danica Ćurčić",
-      "character" : "Iben",
-      "birth_date" : "1985-08-27",
-      "cast_id" : 0
-    }, {
-      "id" : 32683,
-      "name" : "Sidse Babett Knudsen",
-      "character" : "Anne-Lise",
-      "birth_date" : "1968-11-22",
-      "cast_id" : 1
-    }, {
-      "id" : 1602451,
-      "name" : "Amanda Collin",
-      "character" : "Malene",
-      "birth_date" : "1986-03-04",
-      "cast_id" : 14
-    }, {
-      "id" : 82352,
-      "name" : "Lene Maria Christensen",
-      "character" : "Camilla",
-      "birth_date" : "1972-04-10",
-      "cast_id" : 15
-    }, {
-      "id" : 143391,
-      "name" : "Magnus Krepper",
-      "character" : "Gunnar",
-      "birth_date" : "1967-01-10",
-      "cast_id" : 16
-    }, {
-      "id" : 1366062,
-      "name" : "Olaf Johannessen",
-      "character" : "Poul",
-      "birth_date" : "1961-07-08",
-      "cast_id" : 17
-    }, {
-      "id" : 1290402,
-      "name" : "Simon Sears",
-      "character" : "Rasmus",
-      "birth_date" : "1984-01-25",
-      "cast_id" : 18
-    }, {
-      "id" : 1297500,
-      "name" : "Johanne Louise Schmidt",
-      "character" : "Tess",
-      "birth_date" : "1983-10-16",
-      "cast_id" : 19
-    }, {
-      "id" : 2130931,
-      "name" : "Marie Dalsgaard",
-      "character" : "Charlotte",
-      "birth_date" : "1981-09-03",
-      "cast_id" : 20
-    }, {
-      "id" : 66027,
-      "name" : "Sergej Trifunović",
-      "character" : "Dragan Jelisić",
-      "birth_date" : "1972-09-02",
-      "cast_id" : 21
-    }, {
-      "id" : 2027779,
-      "name" : "Virgil Katring-Rasmussen",
-      "character" : "Nikolaj",
-      "birth_date" : "null",
-      "cast_id" : 22
-    }, {
-      "id" : 1011088,
-      "name" : "Julie Carlsen",
-      "character" : "Nina",
-      "birth_date" : "1968-04-20",
-      "cast_id" : 23
-    }, {
-      "id" : 565155,
-      "name" : "Morten Hauch-Fausbøll",
-      "character" : "Henrik",
-      "birth_date" : "1961-04-03",
-      "cast_id" : 24
-    }, {
-      "id" : 2135911,
-      "name" : "Likho Mango",
-      "character" : "Omoro",
-      "birth_date" : "null",
-      "cast_id" : 25
-    }, {
-      "id" : 584815,
-      "name" : "Borut Veselko",
-      "character" : "Mirko Žigić",
-      "birth_date" : "null",
-      "cast_id" : 26
-    }, {
-      "id" : 1819825,
-      "name" : "Thomas Guldberg Madsen",
-      "character" : "Finn",
-      "birth_date" : "1971-12-15",
-      "cast_id" : 27
-    }, {
-      "id" : 1259906,
-      "name" : "Filippa Suenson",
-      "character" : "Gritt",
-      "birth_date" : "1986-04-16",
-      "cast_id" : 28
-    }, {
-      "id" : 2135912,
-      "name" : "Henrik Meller",
-      "character" : "Man with dog",
-      "birth_date" : "null",
-      "cast_id" : 29
-    }, {
-      "id" : 2135913,
-      "name" : "Kaj Aagaard",
-      "character" : "Erik Prins",
-      "birth_date" : "null",
-      "cast_id" : 30
-    }, {
-      "id" : 1232920,
-      "name" : "Susan A. Olsen",
-      "character" : "Dorte Ingemann",
-      "birth_date" : "1964-04-27",
-      "cast_id" : 31
-    }, {
-      "id" : 2135914,
-      "name" : "Andre Schultz",
-      "character" : "Rapist",
-      "birth_date" : "null",
-      "cast_id" : 32
-    }, {
-      "id" : 2135915,
-      "name" : "Caspar Juel Berg",
-      "character" : "Male Guest 2",
-      "birth_date" : "1981-10-12",
-      "cast_id" : 33
-    }, {
-      "id" : 1476844,
-      "name" : "Bue Wandahl",
-      "character" : "",
-      "birth_date" : "1964-02-06",
-      "cast_id" : 34
-    }, {
-      "id" : 2135933,
-      "name" : "Kim Magne Solberg",
-      "character" : "Henrik's Guest 1",
-      "birth_date" : "null",
-      "cast_id" : 38
-    }, {
-      "id" : 2135917,
-      "name" : "Tina Grønlund",
-      "character" : "Henrik's Guest 2",
-      "birth_date" : "null",
-      "cast_id" : 35
-    }, {
-      "id" : 1482914,
-      "name" : "Mikkel Hilgart",
-      "character" : "Guest Daniel",
-      "birth_date" : "1991-12-26",
-      "cast_id" : 36
-    }, {
-      "id" : 2135932,
-      "name" : "Rita Engberg Steen",
-      "character" : "Clara",
-      "birth_date" : "2006-05-10",
-      "cast_id" : 37
-    }, {
-      "id" : 2135934,
-      "name" : "Signe Kjær Høiberg",
-      "character" : "Helene",
-      "birth_date" : "null",
-      "cast_id" : 39
-    }, {
-      "id" : 1364310,
-      "name" : "Dado Ćosić",
-      "character" : "Mirko's driver",
-      "birth_date" : "1987-12-14",
-      "cast_id" : 40
-    }, {
-      "id" : 1560171,
-      "name" : "Ernst Boye",
-      "character" : "Camilla's child",
-      "birth_date" : "null",
-      "cast_id" : 41
-    }, {
-      "id" : 2846604,
-      "name" : "Sara Hvass Pedersen",
-      "character" : "",
-      "birth_date" : "1983-08-04",
-      "cast_id" : 44
-    }, {
-      "id" : 2846605,
-      "name" : "Adolf Ringhofer",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 45
-    } ],
-    "director" : {
-      "id" : 99747,
-      "name" : "Jesper W. Nielsen",
-      "job" : "Director",
-      "birth_date" : "1962-08-15"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Undtagelsen",
-  "release_date" : "2020-07-02",
-  "vote_average" : 5.3,
-  "vote_count" : 14
+  "director" : null,
+  "popularity" : 2.459,
+  "release_date" : "2024-03-21",
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ ],
-  "id" : 716660,
+  "id" : 1270643,
+  "title" : "Christian Kjærs sidste vilje",
   "overview" : "",
-  "popularity" : 0.687,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Rejedrengen",
-  "credits" : {
-    "actors" : [ {
-      "id" : 2682270,
-      "name" : "Jacob Mott Ellegaard",
-      "character" : "Peter Emil",
-      "birth_date" : "null",
-      "cast_id" : 4
-    }, {
-      "id" : 2682271,
-      "name" : "Sine Simonsen",
-      "character" : "Susie",
-      "birth_date" : "null",
-      "cast_id" : 5
-    }, {
-      "id" : 2682272,
-      "name" : "Nikolaj Stang Asmussen",
-      "character" : "Anders",
-      "birth_date" : "null",
-      "cast_id" : 6
-    }, {
-      "id" : 2682273,
-      "name" : "Christian Møllegaard Madsen",
-      "character" : "Bastian",
-      "birth_date" : "null",
-      "cast_id" : 7
-    }, {
-      "id" : 2682274,
-      "name" : "Jeanet Rytter",
-      "character" : "Mor",
-      "birth_date" : "null",
-      "cast_id" : 8
-    } ],
-    "director" : {
-      "id" : 1885773,
-      "name" : "Søren la Cour Frederiksen",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Rejedrengen",
-  "release_date" : "2020-03-30",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ ],
-  "id" : 684280,
-  "overview" : "Jørgen Leth looks back at more than 50 years as a filmmaker in a cheerful film, whose contagious enthusiasm initiates us in his special poetry.",
-  "popularity" : 3.118,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Tilfældets gaver - en film om Jørgen Leth",
-  "credits" : {
-    "actors" : [ {
-      "id" : 72343,
-      "name" : "Jørgen Leth",
-      "character" : "Himself",
-      "birth_date" : "1937-06-14",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 2570293,
-      "name" : "Kasper Bech Dyg",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Tilfældets gaver - en film om Jørgen Leth",
-  "release_date" : "2020-03-01",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4637618,
+    "birthDate" : "null",
+    "name" : "Thomas Klinkby",
+    "job" : null,
+    "character" : "Indtaling"
+  }, {
+    "id" : 2960889,
+    "birthDate" : "null",
+    "name" : "Christian Kjær",
+    "job" : null,
+    "character" : "Christian Kjær"
   } ],
-  "id" : 1176704,
-  "overview" : "During the summer, the relationship between two brothers is set to the test when they join the older brother's friends at the harbor.",
-  "popularity" : 0.709,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Stime",
-  "credits" : {
-    "actors" : [ {
-      "id" : 3018873,
-      "name" : "Oscar Langer Carlsen",
-      "character" : "Villads",
-      "birth_date" : "null",
-      "cast_id" : 1
-    }, {
-      "id" : 2120409,
-      "name" : "Justin Geertsen",
-      "character" : "Christian",
-      "birth_date" : "2004-08-11",
-      "cast_id" : 2
-    }, {
-      "id" : 2974764,
-      "name" : "Max Tranberg",
-      "character" : "Anton",
-      "birth_date" : "null",
-      "cast_id" : 3
-    }, {
-      "id" : 4265498,
-      "name" : "Frederik Bloch",
-      "character" : "Kasper",
-      "birth_date" : "null",
-      "cast_id" : 4
-    }, {
-      "id" : 4265499,
-      "name" : "Marcus Le Fevre",
-      "character" : "Man 1",
-      "birth_date" : "null",
-      "cast_id" : 5
-    }, {
-      "id" : 4265500,
-      "name" : "Jan Weicher",
-      "character" : "Man 2",
-      "birth_date" : "null",
-      "cast_id" : 6
-    } ],
-    "director" : {
-      "id" : 2653084,
-      "name" : "Cecilie Elmholt Skou",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
+  "director" : {
+    "id" : 1577412,
+    "birthDate" : null,
+    "name" : "Ulrik Gutt-Nielsen",
+    "job" : "Director"
   },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Stime",
-  "release_date" : "2020-01-01",
-  "vote_average" : 0.0,
-  "vote_count" : 0
+  "popularity" : 5.052,
+  "release_date" : "2024-03-19",
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 35,
-    "name" : "Comedy"
+  "id" : 1249304,
+  "title" : "En forsinket begravelse",
+  "overview" : "A Danish family travels to Brazil to say goodbye to their mother, who passed away six years ago. But things don't quite go according to plan. Can the father and the two adult sisters reach each other and talk about loss, life and death?",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 2474806,
+    "birthDate" : "null",
+    "name" : "Julie Bezerra Madsen",
+    "job" : null,
+    "character" : "Herself"
   } ],
-  "id" : 818837,
+  "director" : {
+    "id" : 2474806,
+    "birthDate" : null,
+    "name" : "Julie Bezerra Madsen",
+    "job" : "Director"
+  },
+  "popularity" : 1.024,
+  "release_date" : "2024-03-18",
+  "original_language" : "da"
+}, {
+  "id" : 1249291,
+  "title" : "Om sorg",
+  "overview" : "A gentle, personal story about a filmmaker who has lost his older brother and decides to explore the culture of grief with a group of experts in psychology.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 1112337,
+    "birthDate" : null,
+    "name" : "Sami Saif",
+    "job" : "Director"
+  },
+  "popularity" : 0.714,
+  "release_date" : "2024-03-18",
+  "original_language" : "da"
+}, {
+  "id" : 1241287,
+  "title" : "Magisk mudder",
+  "overview" : "The world is facing a gigantic challenge: ensuring a more sustainable food production for a growing population on a decreasing cropland. A radical idea might strengthen sustainable agriculture -  and at the same time reduce climate change",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 2162618,
+    "birthDate" : null,
+    "name" : "Jakob Gottschau",
+    "job" : "Director"
+  },
+  "popularity" : 0.718,
+  "release_date" : "2024-03-18",
+  "original_language" : "da"
+}, {
+  "id" : 1263071,
+  "title" : "Blodsuger",
+  "overview" : "The film follows the daily life of the vampire Viktor as he is controlled by his maker Celeste.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 4608404,
+    "birthDate" : "null",
+    "name" : "Amanda Svane",
+    "job" : null,
+    "character" : "Jessica"
+  }, {
+    "id" : 2190163,
+    "birthDate" : "1991-02-28",
+    "name" : "Mie Gren",
+    "job" : null,
+    "character" : "Isabella"
+  }, {
+    "id" : 2094504,
+    "birthDate" : "null",
+    "name" : "Frederik Carlsen",
+    "job" : null,
+    "character" : "Viktor"
+  }, {
+    "id" : 2350923,
+    "birthDate" : "1993-02-28",
+    "name" : "Emmelie de Forest",
+    "job" : null,
+    "character" : "Mia"
+  }, {
+    "id" : 1899167,
+    "birthDate" : "null",
+    "name" : "Jacob Skyggebjerg",
+    "job" : null,
+    "character" : "Adam"
+  }, {
+    "id" : 4608407,
+    "birthDate" : "null",
+    "name" : "Cecilie Häggqvist",
+    "job" : null,
+    "character" : "Celeste"
+  }, {
+    "id" : 4608410,
+    "birthDate" : "null",
+    "name" : "Brian Brichs",
+    "job" : null,
+    "character" : "Nick"
+  }, {
+    "id" : 4608411,
+    "birthDate" : "null",
+    "name" : "Sille Dahlin",
+    "job" : null,
+    "character" : "Gry"
+  } ],
+  "director" : {
+    "id" : 1447650,
+    "birthDate" : null,
+    "name" : "Kasper Juhl",
+    "job" : "Director"
+  },
+  "popularity" : 2.456,
+  "release_date" : "2024-03-16",
+  "original_language" : "da"
+}, {
+  "id" : 1248626,
+  "title" : "Trans Hero",
+  "overview" : "In this curious and loving documentary, we meet five children aged 5-13: Charli, Nya, Chris, Alia og Milo. They tell their own stories in their own voices. They are stories about being between genders. Some are curiously exploring who they are, some feel that they are something other than what their surroundings expect, and others may be both.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 4551428,
+    "birthDate" : null,
+    "name" : "Evo Solas Smilla S. Sidney",
+    "job" : "Director"
+  },
+  "popularity" : 0.122,
+  "release_date" : "2024-03-13",
+  "original_language" : "da"
+}, {
+  "id" : 1245224,
+  "title" : "G – 21 Scenes from Gottsunda",
+  "overview" : "Loran, a filmmaker from the notorious suburb Gottsunda, grapples with the desire to move away but is torn by loyalty to his childhood friends who lead a criminal life. \"G\" marks Loran's farewell to Gottsunda but completing the film in a changed community tests his sense of belonging and identity.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 4537492,
+    "birthDate" : null,
+    "name" : "Loran Batti",
+    "job" : "Director"
+  },
+  "popularity" : 4.117,
+  "release_date" : "2024-03-13",
+  "original_language" : "da"
+}, {
+  "id" : 1245200,
+  "title" : "The Son and the Moon",
+  "overview" : "The Danish-Iranian filmmaker Roja is in the most difficult period of her 36-year life. She is pregnant with her son Oskar and is diagnosed with incurable cancer. In the midst of all this, she must try to find herself. The film is her journey filmed over six dramatic years, in which she documents her everyday life and her thoughts about living with a disease that can cost her everything. How do you live when your precious time on earth is running out too soon? However, Roja is the last to feel sorry for herself. She immerses herself in being present, and then she sets out to chart her Iranian origins and the dramatic history of her family, which opened a new chapter when her politically engaged parents fled Iran after the revolution and ended up in Denmark.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 4537439,
+    "birthDate" : null,
+    "name" : "Roja Pakari",
+    "job" : "Director"
+  },
+  "popularity" : 0.174,
+  "release_date" : "2024-03-13",
+  "original_language" : "da"
+}, {
+  "id" : 1220815,
+  "title" : "Death of a Saint",
+  "overview" : "A Danish director travels to Uganda to find out what happened the Christmas Eve her mother lost her life. A personal and life-affirming film about family, motherhood and confronting the past.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 4441701,
+    "birthDate" : null,
+    "name" : "Patricia Bbaale Bandak",
+    "job" : "Director"
+  },
+  "popularity" : 0.928,
+  "release_date" : "2024-03-13",
+  "original_language" : "da"
+}, {
+  "id" : 951037,
+  "title" : "A Place in the Sun",
+  "overview" : "At the south tip of Gran Canaria, the sun is always shining. Resorts warmly captures the easy and complicated lives of 6 tourists that never left their holiday. A visual tour of the pastel-coloured holiday destination of Gran Canaria, a haven for millions of tourists – and for people fleeing more than just rain and cold. The paradoxes of tourism meet the harsh realities of those who live in paradise all year round.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 1616235,
+    "birthDate" : null,
+    "name" : "Mette Carla Albrechtsen",
+    "job" : "Director"
+  },
+  "popularity" : 1.782,
+  "release_date" : "2024-03-13",
+  "original_language" : "da"
+}, {
+  "id" : 1241851,
+  "title" : "Livet og andre problemer",
+  "overview" : "The meaning of life, death and everything else? The possible answers are plenty in Max Kestner's adventurous film, which starts when the death of a giraffe at the Copenhagen Zoo goes viral from Hollywood to Chechnya.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 1318414,
+    "birthDate" : "null",
+    "name" : "Max Kestner",
+    "job" : null,
+    "character" : "Self"
+  }, {
+    "id" : 4526607,
+    "birthDate" : "null",
+    "name" : "Karen Lloyd",
+    "job" : null,
+    "character" : "Self – Biologist"
+  }, {
+    "id" : 4526608,
+    "birthDate" : "1971-06-05",
+    "name" : "Eske Willerslev",
+    "job" : null,
+    "character" : "Self – Biologist"
+  }, {
+    "id" : 4526610,
+    "birthDate" : "null",
+    "name" : "Charles Foster",
+    "job" : null,
+    "character" : "Self – Author"
+  } ],
+  "director" : {
+    "id" : 1318414,
+    "birthDate" : null,
+    "name" : "Max Kestner",
+    "job" : "Director"
+  },
+  "popularity" : 1.368,
+  "release_date" : "2024-03-12",
+  "original_language" : "da"
+}, {
+  "id" : 1271287,
+  "title" : "SMALL TALK - Impro Special med Oliver Stanescu",
   "overview" : "",
-  "popularity" : 0.907,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Krudt & Kærlighed",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 1289715,
-      "name" : "Otto Rosing",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Ukiutoqqami Pilluaritsi",
-  "release_date" : "2019-11-26",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
+  "genres" : null,
+  "actors" : [ {
+    "id" : 3694064,
+    "birthDate" : "null",
+    "name" : "Oliver Stanescu",
+    "job" : null,
+    "character" : ""
   } ],
-  "id" : 714932,
-  "overview" : "It Takes A Family is a complex, personal story about the director’s family, its secrets and repressed memories. Susanne Kovács knows that her paternal grandparents survived the Holocaust and fled to Denmark to begin a new life. The Hungarian couple kept their own story under lock and key throughout their lives and focused on immersing themselves into Danish everyday life as quickly as possible. A picture book life, seen from the outside. To escape the memory of death, they smiled and remained silent. If no one sees the darkness, they hoped, normality becomes possible. However the unsaid did not fade but grew and finally began to darken the present.  Now, Susanne wants to break the silence. But her probing questions bring back painful memories. Is she at all allowed to dig into a family history that holds so many ghosts from the past? And maybe there is more than one truth?",
-  "popularity" : 1.476,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "De skygger vi arver",
-  "credits" : {
-    "actors" : [ {
-      "id" : 2676041,
-      "name" : "Susanne Kovács",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 1
-    } ],
-    "director" : {
-      "id" : 2676041,
-      "name" : "Susanne Kovács",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "De skygger vi arver",
-  "release_date" : "2019-10-29",
-  "vote_average" : 8.0,
-  "vote_count" : 1
+  "director" : null,
+  "popularity" : 1.122,
+  "release_date" : "2024-03-10",
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 16,
-    "name" : "Animation"
+  "id" : 1205662,
+  "title" : "Fighting Demons with Dragons",
+  "overview" : "Three pupils on the precipice between childhood and adulthood are studying at Østerskov Boarding School, one of the most unique schools in the world; here, classes are conducted through role-playing games, and the pupils are taught to come to terms with the trauma and their fluid selves through masquerades and metamorphosis. For two school years, the film follows the pupils and their highly emotional adventure through puberty, self-discovery, and maturity, illuminating with a sharp, intimate, humorous as well as poignant gaze, the chaos, the anguish, and the inexpressible joy of the first years of one’s youth.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 1467724,
+    "birthDate" : null,
+    "name" : "Camilla Magid",
+    "job" : "Director"
+  },
+  "popularity" : 0.953,
+  "release_date" : "2024-03-09",
+  "original_language" : "da"
+}, {
+  "id" : 1125607,
+  "title" : "Jagtsæson 2: I medgang og modgang",
+  "overview" : "Eva, facing job loss and personal challenges, sees a job opportunity in organizing Bella's bachelorette party. The weekend goes awry, but Eva must navigate career, love, and friendship amid chaos.",
+  "genres" : null,
+  "actors" : [ {
+    "id" : 135753,
+    "birthDate" : "1974-03-17",
+    "name" : "Mille Dinesen",
+    "job" : null,
+    "character" : "Eva"
   }, {
-    "id" : 35,
-    "name" : "Comedy"
-  } ],
-  "id" : 603094,
-  "overview" : "'The Street Party' is an animated comedy for the whole family. The story is about the 10 year old kid, Mugge, who's parents are about to get a divorce. To recreate the balance and harmony that the adults are about to smash, the always optimistic and indomitable Mugge decides to put together the best street party ever - and in that way bring his mom and dad together again.",
-  "popularity" : 2.927,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Mugge Og Vejfesten",
-  "credits" : {
-    "actors" : [ {
-      "id" : 101732,
-      "name" : "Jens Jacob Tychsen",
-      "character" : "Mugge (voice)",
-      "birth_date" : "1975-11-19",
-      "cast_id" : 3
-    }, {
-      "id" : 1562,
-      "name" : "Iben Hjejle",
-      "character" : "Kirsten (voice)",
-      "birth_date" : "1971-03-22",
-      "cast_id" : 4
-    }, {
-      "id" : 3891,
-      "name" : "Martin Brygmann",
-      "character" : "Pierre (voice)",
-      "birth_date" : "1963-01-25",
-      "cast_id" : 5
-    }, {
-      "id" : 111076,
-      "name" : "Jan Gintberg",
-      "character" : "Leon (voice)",
-      "birth_date" : "1963-12-03",
-      "cast_id" : 6
-    }, {
-      "id" : 93108,
-      "name" : "Lars Hjortshøj",
-      "character" : "Pelle (voice)",
-      "birth_date" : "1967-06-03",
-      "cast_id" : 7
-    }, {
-      "id" : 41906,
-      "name" : "Nicolaj Kopernikus",
-      "character" : "Henrik Skovlykke (voice)",
-      "birth_date" : "1967-08-09",
-      "cast_id" : 8
-    }, {
-      "id" : 227125,
-      "name" : "Sofie Linde",
-      "character" : "Elsebeth (voice)",
-      "birth_date" : "1989-09-22",
-      "cast_id" : 9
-    }, {
-      "id" : 42094,
-      "name" : "Mia Lyhne",
-      "character" : "Britta Skovlykke (voice)",
-      "birth_date" : "1971-07-06",
-      "cast_id" : 10
-    }, {
-      "id" : 82566,
-      "name" : "Anders Morgenthaler",
-      "character" : "Thorbjørn (voice)",
-      "birth_date" : "1972-12-05",
-      "cast_id" : 11
-    }, {
-      "id" : 938727,
-      "name" : "Stephania Potalivo",
-      "character" : "Sophia (voice)",
-      "birth_date" : "1986-09-26",
-      "cast_id" : 12
-    }, {
-      "id" : 137445,
-      "name" : "Mikael Wulff",
-      "character" : "Allan (x5) (voice)",
-      "birth_date" : "1972-09-02",
-      "cast_id" : 13
-    }, {
-      "id" : 83257,
-      "name" : "Mick Øgendahl",
-      "character" : "Weirdoen fra Nakskov (voice)",
-      "birth_date" : "1973-04-07",
-      "cast_id" : 14
-    } ],
-    "director" : {
-      "id" : 137445,
-      "name" : "Mikael Wulff",
-      "job" : "Director",
-      "birth_date" : "1972-09-02"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Mugge & vejfesten",
-  "release_date" : "2019-09-19",
-  "vote_average" : 6.3,
-  "vote_count" : 9
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 35,
-    "name" : "Comedy"
+    "id" : 938727,
+    "birthDate" : "1986-09-26",
+    "name" : "Stephania Potalivo",
+    "job" : null,
+    "character" : "Bella"
   }, {
-    "id" : 18,
-    "name" : "Drama"
-  } ],
-  "id" : 629034,
-  "overview" : "A treatise of the human animal no. 38: HEARTACHE is an absurd depiction of the human being and its eternal tendency to have its heart broken. In eight standalone chapters, we meet the patients at the now closed Sanatorium for Heartache, in their assiduous attempt to cure themselves of this terrible disease. Meanwhile, on Antarctica, we join the penguin Edgar on an epic journey, as he traverses snowy plains and stormy mountains in an attempt to once again be reunited with the love of his life.",
-  "popularity" : 0.892,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Studie udi menneskedyret no. 38: HJERTEKVALER",
-  "credits" : {
-    "actors" : [ {
-      "id" : 2654696,
-      "name" : "Nicolai Jørgensen",
-      "character" : "",
-      "birth_date" : "1990-04-08",
-      "cast_id" : 5
-    }, {
-      "id" : 1366062,
-      "name" : "Olaf Johannessen",
-      "character" : "",
-      "birth_date" : "1961-07-08",
-      "cast_id" : 6
-    }, {
-      "id" : 1353300,
-      "name" : "Nicolai Dahl Hamilton",
-      "character" : "",
-      "birth_date" : "1976-07-19",
-      "cast_id" : 7
-    }, {
-      "id" : 1616206,
-      "name" : "Simon Bennebjerg",
-      "character" : "",
-      "birth_date" : "1989-10-05",
-      "cast_id" : 8
-    }, {
-      "id" : 137443,
-      "name" : "Peter Plaugborg",
-      "character" : "",
-      "birth_date" : "1980-04-12",
-      "cast_id" : 9
-    }, {
-      "id" : 1065730,
-      "name" : "Henrik Ipsen",
-      "character" : "",
-      "birth_date" : "1966-12-01",
-      "cast_id" : 10
-    }, {
-      "id" : 1640021,
-      "name" : "Anders Mossling",
-      "character" : "",
-      "birth_date" : "1963-07-20",
-      "cast_id" : 11
-    }, {
-      "id" : 1460359,
-      "name" : "Peter Christoffersen",
-      "character" : "",
-      "birth_date" : "1980-02-12",
-      "cast_id" : 12
-    }, {
-      "id" : 1458362,
-      "name" : "Besir Zeciri",
-      "character" : "",
-      "birth_date" : "1990-07-06",
-      "cast_id" : 13
-    }, {
-      "id" : 2795012,
-      "name" : "Mathias Sprogøe Fletting",
-      "character" : "",
-      "birth_date" : "1988-12-31",
-      "cast_id" : 14
-    }, {
-      "id" : 2638818,
-      "name" : "Thomas Bek",
-      "character" : "",
-      "birth_date" : "1991-12-17",
-      "cast_id" : 15
-    }, {
-      "id" : 1439681,
-      "name" : "Morten Thunbo",
-      "character" : "",
-      "birth_date" : "1966-05-09",
-      "cast_id" : 16
-    }, {
-      "id" : 2795014,
-      "name" : "Marcus Gad Johansen",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 17
-    }, {
-      "id" : 2506184,
-      "name" : "Tue Lunding",
-      "character" : "",
-      "birth_date" : "1992-09-24",
-      "cast_id" : 18
-    }, {
-      "id" : 2795016,
-      "name" : "Tryggvi Sæberg Björnsson",
-      "character" : "",
-      "birth_date" : "null",
-      "cast_id" : 19
-    }, {
-      "id" : 1358364,
-      "name" : "Jens Malthe Næsby",
-      "character" : "",
-      "birth_date" : "1995-07-17",
-      "cast_id" : 20
-    } ],
-    "director" : {
-      "id" : 2405043,
-      "name" : "Jacob Møller",
-      "job" : "Director",
-      "birth_date" : "null"
-    }
-  },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Studie udi menneskedyret no. 38: HJERTEKVALER",
-  "release_date" : "2019-08-26",
-  "vote_average" : 0.0,
-  "vote_count" : 0
-}, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 18,
-    "name" : "Drama"
+    "id" : 587170,
+    "birthDate" : "1975-09-23",
+    "name" : "Lærke Winther",
+    "job" : null,
+    "character" : "Marlene"
   }, {
-    "id" : 53,
-    "name" : "Thriller"
+    "id" : 588175,
+    "birthDate" : "1969-08-26",
+    "name" : "Lars Ranthe",
+    "job" : null,
+    "character" : "jan"
+  }, {
+    "id" : 112735,
+    "birthDate" : "1972-01-05",
+    "name" : "Rasmus Botoft",
+    "job" : null,
+    "character" : "Anders"
+  }, {
+    "id" : 1437421,
+    "birthDate" : "1980-10-09",
+    "name" : "Martin Greis-Rosenthal",
+    "job" : null,
+    "character" : "Jacob Martin"
+  }, {
+    "id" : 4056809,
+    "birthDate" : "1985-11-24",
+    "name" : "Olivia Franciska Fevel Borgels",
+    "job" : null,
+    "character" : "Dorte"
+  }, {
+    "id" : 1259903,
+    "birthDate" : "1984-05-01",
+    "name" : "Julie Agnete Vang",
+    "job" : null,
+    "character" : "Karen"
+  }, {
+    "id" : 1460363,
+    "birthDate" : "1994-04-11",
+    "name" : "Kasper Løfvall Stensbirk",
+    "job" : null,
+    "character" : "Træner i fitness"
+  }, {
+    "id" : 3740237,
+    "birthDate" : "null",
+    "name" : "Tobias Stelzner",
+    "job" : null,
+    "character" : "Lasse"
+  }, {
+    "id" : 1150872,
+    "birthDate" : "1944-04-22",
+    "name" : "Kurt Dreyer",
+    "job" : null,
+    "character" : "Bellas Far"
+  }, {
+    "id" : 1935780,
+    "birthDate" : "1981-07-25",
+    "name" : "Martin Bo Lindsten",
+    "job" : null,
+    "character" : "Steen"
+  }, {
+    "id" : 3259876,
+    "birthDate" : "1980-06-03",
+    "name" : "Josephine Nørring",
+    "job" : null,
+    "character" : "Jobkonsulent"
+  }, {
+    "id" : 2927147,
+    "birthDate" : "1991-12-12",
+    "name" : "Kenny Duerlund",
+    "job" : null,
+    "character" : "Bartender"
+  }, {
+    "id" : 4056810,
+    "birthDate" : "null",
+    "name" : "Suad Demirovic",
+    "job" : null,
+    "character" : "Mand på tanken"
+  }, {
+    "id" : 3490097,
+    "birthDate" : "1997-04-29",
+    "name" : "Adam Blædel Körner",
+    "job" : null,
+    "character" : "Anton"
+  }, {
+    "id" : 4056811,
+    "birthDate" : "null",
+    "name" : "Anders Kristian Aamodt",
+    "job" : null,
+    "character" : "Evas gamle kollega"
+  }, {
+    "id" : 2999531,
+    "birthDate" : "1972-05-20",
+    "name" : "Natali Vallespir Sand",
+    "job" : null,
+    "character" : "Pædagog"
   } ],
-  "id" : 629150,
-  "overview" : "When Helle Pii moves into Molly’s flat, all seems to work out for both parties. Molly needs a roommate; Helle Pii and her mantis need a place to call home. So what if the room is not very private; and so what if the walls are paper thin? Soon this happy solution turns into both girls’ worst nightmare. There is no turning back when Helle Pii overhears something awful through the wall.",
-  "popularity" : 0.6,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Knæler",
-  "credits" : {
-    "actors" : [ {
-      "id" : 1309343,
-      "name" : "Nanna Finding Koppel",
-      "character" : "Helle Pii",
-      "birth_date" : "1996-01-01",
-      "cast_id" : 3
-    }, {
-      "id" : 1494062,
-      "name" : "Roberta Reichhardt",
-      "character" : "Molly",
-      "birth_date" : "1996-09-17",
-      "cast_id" : 4
-    } ],
-    "director" : {
-      "id" : 1494062,
-      "name" : "Roberta Reichhardt",
-      "job" : "Director",
-      "birth_date" : "1996-09-17"
-    }
+  "director" : {
+    "id" : 4056815,
+    "birthDate" : null,
+    "name" : "Peter Molde-Amelung",
+    "job" : "Director"
   },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Knæler",
-  "release_date" : "2019-06-20",
-  "vote_average" : 0.0,
-  "vote_count" : 0
+  "popularity" : 4.906,
+  "release_date" : "2024-03-09",
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 1277124,
-  "overview" : "",
-  "popularity" : 0.021,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Uden min far",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 0,
-      "name" : null,
-      "job" : null,
-      "birth_date" : null
-    }
+  "id" : 1249267,
+  "title" : "Altid/Aldrig noget andet",
+  "overview" : "Half symphony, half documentary. A poetic collage film about Chinese poetry, the secret life of translator Sidse Laugesen, and the art of translation.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 2040206,
+    "birthDate" : null,
+    "name" : "Sebastian Cordes",
+    "job" : "Director"
   },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Uden min far",
-  "release_date" : "2019-05-02",
-  "vote_average" : 0.0,
-  "vote_count" : 0
+  "popularity" : 0.244,
+  "release_date" : "2024-03-08",
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 590917,
-  "overview" : "DON’T GIVE A FOX is a documentary about a group of young and wild girls in Roskilde, who, despite coming from completely different backgrounds, find a fellowship in skating. A place where they can forget their everyday life and gain courage to change a skate culture that has been dominated exclusively by boys for the past decades. DON’T GIVE A FOX follows three different girls in their early 20s, who each are seeking to gain a foothold. It’s a coming-of-age story about identity, love and skating.",
-  "popularity" : 1.242,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Skaterpigerne – Don't give a fox",
-  "credits" : {
-    "actors" : [ {
-      "id" : 2274471,
-      "name" : "Sofie Ekerdine",
-      "character" : "Herself",
-      "birth_date" : "null",
-      "cast_id" : 5
-    }, {
-      "id" : 2274472,
-      "name" : "Line Mortensen Thoresen",
-      "character" : "Herself",
-      "birth_date" : "null",
-      "cast_id" : 6
-    }, {
-      "id" : 2274473,
-      "name" : "Signe Werenberg",
-      "character" : "Herself",
-      "birth_date" : "null",
-      "cast_id" : 7
-    }, {
-      "id" : 2274474,
-      "name" : "Amanda Oline",
-      "character" : "Herself",
-      "birth_date" : "null",
-      "cast_id" : 8
-    } ],
-    "director" : {
-      "id" : 1169973,
-      "name" : "Kaspar Astrup Schröder",
-      "job" : "Director",
-      "birth_date" : "1979-09-13"
-    }
+  "id" : 1249250,
+  "title" : "Finale",
+  "overview" : "The daily routine of a funeral home in a film where a floating camera spies on the employees and their clients.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 2108192,
+    "birthDate" : null,
+    "name" : "Marlene Emilie Lyngstad",
+    "job" : "Director"
   },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Skaterpigerne – Don't give a fox",
-  "release_date" : "2019-03-20",
-  "vote_average" : 7.0,
-  "vote_count" : 1
+  "popularity" : 1.555,
+  "release_date" : "2024-03-08",
+  "original_language" : "da"
 }, {
-  "adult" : false,
-  "budget" : 0,
-  "genres" : [ {
-    "id" : 99,
-    "name" : "Documentary"
-  } ],
-  "id" : 661533,
-  "overview" : "Grandpa doesn't want to move into a nursing home. A film about letting go of life.",
-  "popularity" : 2.552,
-  "revenue" : 0,
-  "tagline" : null,
-  "title" : "Morfra Flytter Hjemmefra?",
-  "credits" : {
-    "actors" : [ ],
-    "director" : {
-      "id" : 2502417,
-      "name" : "Laurits Helligsøe",
-      "job" : "Director",
-      "birth_date" : "2000-12-30"
-    }
+  "id" : 1244090,
+  "title" : "Inde ved siden af",
+  "overview" : "A collage of images in 16 mm developed by hand which compile voices from people who live in a racially stigmatised area of Copenhagen. Words and images on hope, desperation, insecurity and resistance. A piece which looks at how we talk to each other and amongst ourselves.",
+  "genres" : null,
+  "actors" : [ ],
+  "director" : {
+    "id" : 4532678,
+    "birthDate" : null,
+    "name" : "Maia Torp Neergaard",
+    "job" : "Director"
   },
-  "imdb_id" : null,
-  "original_language" : "da",
-  "original_title" : "Morfra Flytter Hjemmefra?",
-  "release_date" : "2019-01-12",
-  "vote_average" : 0.0,
-  "vote_count" : 0
+  "popularity" : 0.119,
+  "release_date" : "2024-03-08",
+  "original_language" : "da"
 } ]
