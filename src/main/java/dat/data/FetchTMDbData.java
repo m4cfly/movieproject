@@ -55,7 +55,7 @@ public class FetchTMDbData {
 
         List<MovieDTO> moviesList = new ArrayList<>();
 
-        for (int page = 1; page <= 49; page++) {
+        for (int page = 1; page <= 5; page++) {
 
             Request request = new Request.Builder()
                     .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page +
