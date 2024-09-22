@@ -55,7 +55,8 @@ public class FetchTMDbData {
 
         List<MovieDTO> moviesList = new ArrayList<>();
 
-        for (int page = 1; page <= 5; page++) {
+        for (int page = 1; page <= 49; page++) {
+
             Request request = new Request.Builder()
                     .url("https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=da&page=" + page +
                             "&primary_release_date.gte=2019-01-01&primary_release_date.lte=2024-12-31&region=DK&sort_by=primary_release_date.desc&with_origin_country=DK&with_original_language=da")
@@ -63,6 +64,7 @@ public class FetchTMDbData {
                     .addHeader("accept", "application/json")
                     .addHeader("Authorization", "Bearer " + apiKey)
                     .build();
+
 
             try (Response response = client.newCall(request).execute()) {
                 if (response.isSuccessful()) {
@@ -84,7 +86,7 @@ public class FetchTMDbData {
                     }
                 } else {
                     System.out.println("Failed to fetch data: " + response.code() + " - " + response.message());
-                }
+                } Thread.sleep(1000);
             } catch (Exception e) {
                 e.printStackTrace();
             }

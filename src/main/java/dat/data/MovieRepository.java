@@ -63,7 +63,7 @@ public class MovieRepository {
 
     public static void main(String[] args) {
         // Initialize EntityManagerFactory
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("MovieDB");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("moviedb");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         // Initialize MovieRepository

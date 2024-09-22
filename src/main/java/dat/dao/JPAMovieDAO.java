@@ -41,7 +41,7 @@ public class JPAMovieDAO implements MovieDAO {
             List<Actor> managedActors = new ArrayList<>();
             for (Actor actor : movie.getActors()) {
                 Actor managedActor = em.merge(actor);
-                managedActor.setMovie(movie);
+//                managedActor.setMovie(movie);
                 managedActors.add(managedActor);
             }
             movie.setActors(managedActors);

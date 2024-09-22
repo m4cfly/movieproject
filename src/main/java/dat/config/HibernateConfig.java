@@ -34,7 +34,7 @@ public class HibernateConfig {
         configuration.addAnnotatedClass(Director.class);
         configuration.addAnnotatedClass(Genre.class);
         configuration.addAnnotatedClass(Movie.class);
-        configuration.addAnnotatedClass(Credits.class);
+//        configuration.addAnnotatedClass(Credits.class);
     }
 
     private static EntityManagerFactory createEMF(boolean forTest, String movieDB) {
@@ -78,14 +78,14 @@ public class HibernateConfig {
     }
 
     private static Properties setDeployedProperties(Properties props, String DBName) {
-        props.setProperty("hibernate.connection.url", System.getenv("CONNECTION_STR") + "movieDB");
+        props.setProperty("hibernate.connection.url", System.getenv("CONNECTION_STR") + "moviedb");
         props.setProperty("hibernate.connection.username", System.getenv("postgres"));
         props.setProperty("hibernate.connection.password", System.getenv("postgres"));
         return props;
     }
 
     private static Properties setDevProperties(Properties props, String DBName) {
-        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + "movieDB");
+        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + "moviedb");
         props.put("hibernate.connection.username", "postgres");
         props.put("hibernate.connection.password", "postgres");
         return props;

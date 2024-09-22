@@ -40,11 +40,11 @@ public class Movie {
     @Column(columnDefinition = "TEXT")
     private String overview;
 
-    @Column(nullable = false)
-    private Long budget = 0L;
+    @Column()
+    private Long budget;
 
     @Column(nullable = false)
-    private Double popularity = 0.0;
+    private Double popularity;
 
     @ManyToMany(cascade = CascadeType.MERGE)
     @JoinTable(
@@ -57,8 +57,8 @@ public class Movie {
     @OneToMany(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Actor> actors = new ArrayList<>();
 
-    @OneToOne(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Credits credits;
+//    @OneToOne(mappedBy = "movie", cascade = CascadeType.ALL, orphanRemoval = true)
+//    private Credits credits;
 
     @ManyToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "director_id")
