@@ -1,28 +1,56 @@
 package dat.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import dat.DTO.ActorDTO;
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
-@ToString
-@Entity
-@AllArgsConstructor
+import java.util.Objects;
+
+@Data
 @NoArgsConstructor
-
+@AllArgsConstructor
+@Entity
+@Table(name = "actors")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Actor {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
-    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "birthdate", nullable = false)
-    private int birthdate;
+    @JsonProperty("birth_date")
+    private String birthDate;
 
-    public Long getId() {
-        return id;
+    private String job;
+
+    private String character;
+
+    @ManyToOne
+    @JoinColumn(name = "movie_id")
+    private Movie movie;
+
+    public Actor(ActorDTO actorDTO) {
+        this.id = actorDTO.getId();
+        this.name = actorDTO.getName();
+        this.character = actorDTO.getCharacter();
+        this.birthDate = actorDTO.getBirthDate();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Actor)) return false;
+        Actor actor = (Actor) o;
+        return Objects.equals(getId(), actor.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
     }
 }

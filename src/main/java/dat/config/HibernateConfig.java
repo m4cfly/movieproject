@@ -1,12 +1,14 @@
 package dat.config;
 
-import dat.entities.Person;
+import dat.entities.*;
+import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
+import java.util.List;
 import java.util.Properties;
 
 public class HibernateConfig {
@@ -14,9 +16,9 @@ public class HibernateConfig {
     private static EntityManagerFactory emf;
     private static EntityManagerFactory emfTest;
 
-    public static EntityManagerFactory getEntityManagerFactory(String DBName) {
+    public static EntityManagerFactory getEntityManagerFactory(String movieDB) {
         if (emf == null)
-            emf = createEMF(false, DBName);
+            emf = createEMF(false, movieDB);
         return emf;
     }
 
@@ -28,10 +30,14 @@ public class HibernateConfig {
 
     // TODO: IMPORTANT: Add Entity classes here for them to be registered with Hibernate
     private static void getAnnotationConfiguration(Configuration configuration) {
-        configuration.addAnnotatedClass(Person.class);
+        configuration.addAnnotatedClass(Actor.class);
+        configuration.addAnnotatedClass(Director.class);
+        configuration.addAnnotatedClass(Genre.class);
+        configuration.addAnnotatedClass(Movie.class);
+//        configuration.addAnnotatedClass(Credits.class);
     }
 
-    private static EntityManagerFactory createEMF(boolean forTest, String DBName) {
+    private static EntityManagerFactory createEMF(boolean forTest, String movieDB) {
         try {
             Configuration configuration = new Configuration();
             Properties props = new Properties();
@@ -40,9 +46,9 @@ public class HibernateConfig {
             if (forTest) {
                 props = setTestProperties(props);
             } else if (System.getenv("DEPLOYED") != null) {
-                setDeployedProperties(props, DBName);
+                setDeployedProperties(props, movieDB);
             } else {
-                props = setDevProperties(props, DBName);
+                props = setDevProperties(props, movieDB);
             }
             configuration.setProperties(props);
             getAnnotationConfiguration(configuration);
@@ -72,14 +78,14 @@ public class HibernateConfig {
     }
 
     private static Properties setDeployedProperties(Properties props, String DBName) {
-        props.setProperty("hibernate.connection.url", System.getenv("CONNECTION_STR") + DBName);
-        props.setProperty("hibernate.connection.username", System.getenv("DB_USERNAME"));
-        props.setProperty("hibernate.connection.password", System.getenv("DB_PASSWORD"));
+        props.setProperty("hibernate.connection.url", System.getenv("CONNECTION_STR") + "moviedb");
+        props.setProperty("hibernate.connection.username", System.getenv("postgres"));
+        props.setProperty("hibernate.connection.password", System.getenv("postgres"));
         return props;
     }
 
     private static Properties setDevProperties(Properties props, String DBName) {
-        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + DBName);
+        props.put("hibernate.connection.url", "jdbc:postgresql://localhost:5432/" + "moviedb");
         props.put("hibernate.connection.username", "postgres");
         props.put("hibernate.connection.password", "postgres");
         return props;
@@ -95,5 +101,27 @@ public class HibernateConfig {
         props.put("hibernate.show_sql", "true");
         props.put("hibernate.hbm2ddl.auto", "create-drop"); // update for production
         return props;
+    }
+
+    // New method to save movies to the database
+    public static void saveMoviesToDatabase(List<Movie> movieList) {
+        EntityManager entityManager = getEntityManagerFactory("moviedb").createEntityManager();
+
+        try {
+            entityManager.getTransaction().begin();
+            for (Movie movie : movieList) {
+                entityManager.merge(movie);  // Merge for handling detached entities
+            }
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            if (entityManager.getTransaction().isActive()) {
+                entityManager.getTransaction().rollback();
+            }
+            e.printStackTrace();
+        } finally {
+            if (entityManager != null) {
+                entityManager.close();
+            }
+        }
     }
 }
