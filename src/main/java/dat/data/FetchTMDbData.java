@@ -1,5 +1,5 @@
 package dat.data;
-
+import dat.controller.MovieDatabaseController;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -8,6 +8,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import dat.DTO.ActorDTO;
 import dat.DTO.DirectorDTO;
 import dat.DTO.MovieDTO;
+import dat.controller.MovieDatabaseController;
 import dat.dao.JPAMovieDAO;
 import dat.entities.Movie;
 import dat.config.HibernateConfig;
@@ -46,6 +47,15 @@ public class FetchTMDbData {
         }
 
         saveMoviesToDatabase(movieList);
+
+        // Initialize the JPAMovieDAO with the EntityManagerFactory
+        JPAMovieDAO movieDAO = new JPAMovieDAO(FetchTMDbData.entityManagerFactory);
+
+        // Create the MovieDatabaseController with the movieDAO
+        MovieDatabaseController controller = new MovieDatabaseController(movieDAO);
+
+        // Start the menu-driven interface
+        controller.start();
     }
 
     public static void fetchMovieData(List<Movie> movieList) {
